@@ -1,0 +1,253 @@
+{
+  "cell_size": [
+    192,
+    208
+  ],
+  "states": {
+    "idle": {
+      "source_frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\warm-idle-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\warm-idle-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\warm-idle-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\warm-idle-04.png"
+      ],
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        3,
+        2
+      ],
+      "frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-06.png"
+      ],
+      "note": "calm warm-idle loop from approved v2 sheet"
+    },
+    "running-right": {
+      "source_frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-06.png"
+      ],
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        5,
+        4
+      ],
+      "frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-06.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-07.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-08.png"
+      ],
+      "note": "front-facing dance loop used as placeholder locomotion for v1"
+    },
+    "running-left": {
+      "source_frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-06.png"
+      ],
+      "order": [
+        4,
+        5,
+        6,
+        1,
+        2,
+        3,
+        2,
+        1
+      ],
+      "frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-06.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-07.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-08.png"
+      ],
+      "note": "front-facing dance loop reused for left movement in v1; no side-specific mirroring"
+    },
+    "waving": {
+      "source_frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-06.png"
+      ],
+      "order": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-04.png"
+      ],
+      "note": "iconic one-foot waving gesture"
+    },
+    "jumping": {
+      "source_frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-06.png"
+      ],
+      "order": [
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\jumping\\jumping-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\jumping\\jumping-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\jumping\\jumping-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\jumping\\jumping-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\jumping\\jumping-05.png"
+      ],
+      "note": "cheer bounce used as jump-like joyful lift"
+    },
+    "failed": {
+      "source_frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-06.png"
+      ],
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        5,
+        4
+      ],
+      "frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-06.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-07.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-08.png"
+      ],
+      "note": "soft sleeping-with-zzz loop for gentle failure/rest state"
+    },
+    "waiting": {
+      "source_frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-06.png"
+      ],
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waiting\\waiting-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waiting\\waiting-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waiting\\waiting-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waiting\\waiting-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waiting\\waiting-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waiting\\waiting-06.png"
+      ],
+      "note": "healing unicorn-hug waiting loop"
+    },
+    "running": {
+      "source_frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-06.png"
+      ],
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running\\running-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running\\running-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running\\running-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running\\running-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running\\running-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running\\running-06.png"
+      ],
+      "note": "front-facing dance loop used for generic in-place running"
+    },
+    "review": {
+      "source_frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-04.png"
+      ],
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        3,
+        2
+      ],
+      "frames": [
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\review\\review-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\review\\review-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\review\\review-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\review\\review-04.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\review\\review-05.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\review\\review-06.png"
+      ],
+      "note": "approved headphones listening loop for focused/review state"
+    }
+  }
+}
