@@ -1,0 +1,244 @@
+{
+  "pet_id": "capybara-lulu",
+  "display_name": "\u6c34\u8c5a\u565c\u565c",
+  "description": "A cute orange-yellow capybara-like desktop pet with a tiny orange fruit on its head.",
+  "created_at": "2026-05-03T17:42:22.579060+00:00",
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cell_width": 192,
+    "cell_height": 208,
+    "width": 1536,
+    "height": 1872
+  },
+  "rows": [
+    {
+      "state": "idle",
+      "row": 0,
+      "frames": 6,
+      "purpose": "neutral breathing/blinking loop"
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frames": 8,
+      "purpose": "rightward locomotion loop"
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frames": 8,
+      "purpose": "leftward locomotion loop"
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frames": 4,
+      "purpose": "greeting gesture with raised wave and return"
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frames": 5,
+      "purpose": "anticipation, lift, peak, descent, settle"
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frames": 8,
+      "purpose": "sad, failed, or deflated reaction"
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frames": 6,
+      "purpose": "patient waiting loop with small motion"
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frames": 6,
+      "purpose": "generic in-place running loop"
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frames": 6,
+      "purpose": "focused inspecting or review loop"
+    }
+  ],
+  "layout_guides": [
+    {
+      "state": "idle",
+      "path": "references\\layout-guides\\idle.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "running-right",
+      "path": "references\\layout-guides\\running-right.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "running-left",
+      "path": "references\\layout-guides\\running-left.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "waving",
+      "path": "references\\layout-guides\\waving.png",
+      "width": 768,
+      "height": 208,
+      "frames": 4,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "jumping",
+      "path": "references\\layout-guides\\jumping.png",
+      "width": 960,
+      "height": 208,
+      "frames": 5,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "failed",
+      "path": "references\\layout-guides\\failed.png",
+      "width": 1536,
+      "height": 208,
+      "frames": 8,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "waiting",
+      "path": "references\\layout-guides\\waiting.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "running",
+      "path": "references\\layout-guides\\running.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "state": "review",
+      "path": "references\\layout-guides\\review.png",
+      "width": 1152,
+      "height": 208,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 208,
+      "safe_margin_x": 18,
+      "safe_margin_y": 16,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    }
+  ],
+  "references": [
+    {
+      "path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-01.jpg",
+      "width": 1135,
+      "height": 1047,
+      "mode": "RGB",
+      "format": "JPEG",
+      "source_path": "C:\\Users\\rynne\\Documents\\xwechat_files\\wxid_13qnh32cev2f12_1af3\\temp\\RWTemp\\2026-05\\9e20f478899dc29eb19741386f9343c8\\bcf3501ae9a8b6cc5b95424bb121e88e.jpg",
+      "copied_path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-01.jpg"
+    },
+    {
+      "path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-02.jpg",
+      "width": 1260,
+      "height": 1439,
+      "mode": "RGB",
+      "format": "JPEG",
+      "source_path": "C:\\Users\\rynne\\Documents\\xwechat_files\\wxid_13qnh32cev2f12_1af3\\temp\\RWTemp\\2026-05\\9e20f478899dc29eb19741386f9343c8\\0a7ec8eac2b6dafa781a99801d1f100f.jpg",
+      "copied_path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-02.jpg"
+    },
+    {
+      "path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-03.jpg",
+      "width": 1260,
+      "height": 1168,
+      "mode": "RGB",
+      "format": "JPEG",
+      "source_path": "C:\\Users\\rynne\\Documents\\xwechat_files\\wxid_13qnh32cev2f12_1af3\\temp\\RWTemp\\2026-05\\9e20f478899dc29eb19741386f9343c8\\a5771691ebe755d41cf60e76f38a46b3.jpg",
+      "copied_path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-03.jpg"
+    },
+    {
+      "path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-04.jpg",
+      "width": 1045,
+      "height": 1214,
+      "mode": "RGB",
+      "format": "JPEG",
+      "source_path": "C:\\Users\\rynne\\Documents\\xwechat_files\\wxid_13qnh32cev2f12_1af3\\temp\\RWTemp\\2026-05\\9e20f478899dc29eb19741386f9343c8\\b30d16613c01a675716afaf740d41252.jpg",
+      "copied_path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-04.jpg"
+    }
+  ],
+  "chroma_key": {
+    "hex": "#0000FF",
+    "rgb": [
+      0,
+      0,
+      255
+    ],
+    "name": "blue",
+    "selection": "auto",
+    "score": 219.77
+  },
+  "pet_notes": "\u6c34\u8c5a\u565c\u565c: a very round yellow-orange capybara-like cartoon companion, oversized orange muzzle and cheek area, large black glossy eyes with pale blue-white rims, tiny triangular ears, tiny orange fruit with a short green stem on top of the head, simple nubby arms and legs, orange shorts, joyful friendly face.",
+  "style_notes": "Adapt the 3D plush-like reference character into Codex digital pet style: pixel-art-adjacent, compact chibi proportions, thick dark 1-2 px outline, visible stepped edges, limited warm yellow/orange palette, flat cel shading, simple readable face, no scenery, no headphone prop unless specifically needed, no brand logos, no text.",
+  "house_style": "Codex digital pet sprite style: pixel-art-adjacent low-resolution mascot sprite, compact chibi proportions, chunky whole-body silhouette, thick dark 1-2 px outline, visible stepped/pixel edges, limited palette, flat cel shading with at most one small highlight and one shadow step, simple readable face, tiny limbs, and no detail that disappears at 192x208. Avoid polished illustration, painterly rendering, anime key art, 3D render, vector app-icon polish, glossy lighting, soft gradients, realistic fur or material texture, anti-aliased high-detail edges, and complex tiny accessories.",
+  "primary_generation_skill": "$imagegen",
+  "canonical_identity_reference": {
+    "path": "references\\canonical-base.png",
+    "source_job": "base",
+    "sha256": "a1b96e3bbf17b53337170d816dac85eb61ce8fa724bf5c1007adb6a6db8c887e",
+    "metadata": {
+      "width": 1203,
+      "height": 1308,
+      "mode": "RGB",
+      "format": "PNG"
+    }
+  }
+}

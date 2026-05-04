@@ -1,0 +1,346 @@
+{
+  "cell_size": [
+    192,
+    208
+  ],
+  "columns": 6,
+  "actions": [
+    "one-foot-wave",
+    "dance",
+    "proud-cheer",
+    "sleep-prone-zzz",
+    "hug-unicorn-nuzzle"
+  ],
+  "frames": [
+    {
+      "action": "one-foot-wave",
+      "frame": 1,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\one-foot-wave\\one-foot-wave-01.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-01.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "one-foot-wave",
+      "frame": 2,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\one-foot-wave\\one-foot-wave-02.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-02.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "one-foot-wave",
+      "frame": 3,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\one-foot-wave\\one-foot-wave-03.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-03.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "one-foot-wave",
+      "frame": 4,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\one-foot-wave\\one-foot-wave-04.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-04.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "one-foot-wave",
+      "frame": 5,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\one-foot-wave\\one-foot-wave-05.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-05.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "one-foot-wave",
+      "frame": 6,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\one-foot-wave\\one-foot-wave-06.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-06.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "dance",
+      "frame": 1,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\dance\\dance-01.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-01.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "dance",
+      "frame": 2,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\dance\\dance-02.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-02.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "dance",
+      "frame": 3,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\dance\\dance-03.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-03.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "dance",
+      "frame": 4,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\dance\\dance-04.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-04.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "dance",
+      "frame": 5,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\dance\\dance-05.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-05.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "dance",
+      "frame": 6,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\dance\\dance-06.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\dance\\dance-06.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "proud-cheer",
+      "frame": 1,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\proud-cheer\\proud-cheer-01.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-01.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "proud-cheer",
+      "frame": 2,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\proud-cheer\\proud-cheer-02.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-02.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "proud-cheer",
+      "frame": 3,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\proud-cheer\\proud-cheer-03.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-03.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "proud-cheer",
+      "frame": 4,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\proud-cheer\\proud-cheer-04.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-04.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "proud-cheer",
+      "frame": 5,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\proud-cheer\\proud-cheer-05.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-05.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "proud-cheer",
+      "frame": 6,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\proud-cheer\\proud-cheer-06.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\proud-cheer\\proud-cheer-06.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-a-v2.png"
+    },
+    {
+      "action": "sleep-prone-zzz",
+      "frame": 1,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\sleep-prone-zzz\\sleep-prone-zzz-01.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-01.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "sleep-prone-zzz",
+      "frame": 2,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\sleep-prone-zzz\\sleep-prone-zzz-02.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-02.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "sleep-prone-zzz",
+      "frame": 3,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\sleep-prone-zzz\\sleep-prone-zzz-03.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-03.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "sleep-prone-zzz",
+      "frame": 4,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\sleep-prone-zzz\\sleep-prone-zzz-04.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-04.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "sleep-prone-zzz",
+      "frame": 5,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\sleep-prone-zzz\\sleep-prone-zzz-05.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-05.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "sleep-prone-zzz",
+      "frame": 6,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\sleep-prone-zzz\\sleep-prone-zzz-06.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\sleep-prone-zzz\\sleep-prone-zzz-06.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "hug-unicorn-nuzzle",
+      "frame": 1,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-01.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-01.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "hug-unicorn-nuzzle",
+      "frame": 2,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-02.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-02.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "hug-unicorn-nuzzle",
+      "frame": 3,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-03.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-03.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "hug-unicorn-nuzzle",
+      "frame": 4,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-04.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-04.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "hug-unicorn-nuzzle",
+      "frame": 5,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-05.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-05.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    },
+    {
+      "action": "hug-unicorn-nuzzle",
+      "frame": 6,
+      "size": [
+        192,
+        208
+      ],
+      "blue_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-blue-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-06.png",
+      "alpha_frame": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\hug-unicorn-nuzzle\\hug-unicorn-nuzzle-06.png",
+      "source_sheet": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\lulu-expanded-actions-sheet-b-v2.png"
+    }
+  ]
+}
