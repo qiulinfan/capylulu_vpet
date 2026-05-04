@@ -25,3 +25,8 @@ QA artifacts:
 
 - `pet-runs/capybara-lulu/final/validation.json`
 - `pet-runs/capybara-lulu/qa/contact-sheet.png`
+
+Runtime behavior patch:
+
+- `tools/patch-capylulu-runtime.mjs`
+- `docs/capylulu-runtime-patch.md`
