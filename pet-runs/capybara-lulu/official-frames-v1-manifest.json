@@ -3,21 +3,44 @@
     192,
     208
   ],
+  "idle_sequence": {
+    "format": "animated WebP atlas timeline; all six idle cells are synchronized per image frame",
+    "frames": 184,
+    "duration_ms": 130120,
+    "segments": [
+      {
+        "state": "waving",
+        "loops": 1
+      },
+      {
+        "state": "review",
+        "loops": 6
+      },
+      {
+        "state": "waiting",
+        "loops": 8
+      },
+      {
+        "state": "failed",
+        "loops": 12,
+        "meaning": "sleeping"
+      }
+    ],
+    "note": "This avoids a Codex runtime patch. The static PNG and idle source files hold the first frame as a fallback; the installable spritesheet.webp contains the full slower sequence. Waving runs at 0.5x the original speed, review at 0.25x, waiting at 0.5x, and failed/sleeping at one-sixth speed."
+  },
   "states": {
     "idle": {
       "source_frames": [
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-01.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-02.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-03.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-04.png"
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\review\\review-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waiting\\waiting-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-01.png"
       ],
       "order": [
-        1,
-        2,
-        3,
-        4,
-        3,
-        2
+        "waving x1",
+        "review x6",
+        "waiting x8",
+        "failed x12"
       ],
       "frames": [
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-01.png",
@@ -27,7 +50,7 @@
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-05.png",
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-06.png"
       ],
-      "note": "headphones listening loop promoted to default idle by user request; original warm-idle replaced"
+      "note": "static fallback for the no-runtime-patch animated idle sequence; every idle cell holds the first waving frame while spritesheet.webp carries the full 60-frame timeline"
     },
     "running-right": {
       "source_frames": [
