@@ -58,7 +58,7 @@
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-07.png",
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-08.png"
       ],
-      "note": "front-facing dance loop used as placeholder locomotion for v1; first frame replaced with open-eye variant"
+      "note": "front-facing dance loop used as placeholder locomotion for v1; first frame replaced with open-eye variant; paired frames halve perceived drag animation speed"
     },
     "running-left": {
       "source_frames": [
@@ -89,7 +89,7 @@
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-07.png",
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-left\\running-left-08.png"
       ],
-      "note": "front-facing dance loop reused for left movement in v1; no side-specific mirroring"
+      "note": "front-facing dance loop reused for left movement in v1; paired frames halve perceived drag animation speed"
     },
     "waving": {
       "source_frames": [
