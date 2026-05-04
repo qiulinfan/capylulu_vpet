@@ -58,7 +58,7 @@
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-07.png",
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running-right\\running-right-08.png"
       ],
-      "note": "front-facing dance loop used as placeholder locomotion for v1"
+      "note": "front-facing dance loop used as placeholder locomotion for v1; first frame replaced with open-eye variant"
     },
     "running-left": {
       "source_frames": [
@@ -137,7 +137,7 @@
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\jumping\\jumping-04.png",
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\jumping\\jumping-05.png"
       ],
-      "note": "cheer bounce used as jump-like joyful lift"
+      "note": "cheer bounce used as jump-like joyful lift; frame 04 replaced with second-row open-eye dance frame to avoid odd side glance"
     },
     "failed": {
       "source_frames": [
@@ -222,7 +222,7 @@
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running\\running-05.png",
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\running\\running-06.png"
       ],
-      "note": "front-facing dance loop used for generic in-place running"
+      "note": "front-facing dance loop used for generic in-place running; first frame replaced with open-eye variant"
     },
     "review": {
       "source_frames": [
