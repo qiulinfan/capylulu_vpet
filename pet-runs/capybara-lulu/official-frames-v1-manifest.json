@@ -6,10 +6,10 @@
   "states": {
     "idle": {
       "source_frames": [
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\warm-idle-01.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\warm-idle-02.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\warm-idle-03.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\warm-idle-04.png"
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-01.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-02.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-03.png",
+        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\frames-v2\\headphones-approved-04.png"
       ],
       "order": [
         1,
@@ -27,7 +27,7 @@
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-05.png",
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-06.png"
       ],
-      "note": "calm warm-idle loop from approved v2 sheet"
+      "note": "headphones listening loop promoted to default idle by user request; original warm-idle replaced"
     },
     "running-right": {
       "source_frames": [
