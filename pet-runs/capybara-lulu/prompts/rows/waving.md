@@ -15,11 +15,23 @@ Style contract: Codex digital pet sprite style: pixel-art-adjacent low-resolutio
 
 Use this prompt as an authoritative sprite-production spec. Do not expand it into a polished illustration, painterly character image, anime key art, 3D render, vector mascot, glossy app icon, realistic animal portrait, or marketing artwork.
 
-Animation action: greeting gesture with raised wave and return.
+Animation action: four-frame "yay, success!" celebration with a readable
+wind-up before the kick-and-wave peak.
 
 
 State-specific requirements:
-- Show the greeting through paw pose only: paw down, paw raised, paw tilted, paw returning.
+- Frame 1 is a normal front-facing stand with both feet grounded and both arms
+  down.
+- Frame 2 begins the action: shift weight onto the support foot, lift the other
+  foot only slightly, and start raising both arms.
+- Frame 3 is the open-eye success peak with one foot fully kicked out and both
+  arms raised in an excited wave.
+- Frame 4 holds the success pose with both eyes closed together and one arm
+  still raised.
+- Both eyes must always share the same state. Never use a one-eye wink or a
+  sequential left/right blink.
+- Preserve the exact canonical V1 head, face, fruit, scale, and ground anchor;
+  only the action pose may change.
 - Do not draw wave marks, motion arcs, lines, sparkles, symbols, or floating effects around the paw.
 
 Transparency and artifact rules:

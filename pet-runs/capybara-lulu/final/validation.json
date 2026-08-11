@@ -1,516 +1,865 @@
 {
   "ok": true,
-  "file": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\final\\spritesheet.png",
-  "format": "PNG",
-  "mode": "RGBA",
+  "scope": "formal-v1",
+  "format": "RGBA PNG + single-frame lossless WebP",
   "width": 1536,
   "height": 1872,
+  "cell_size": [
+    192,
+    208
+  ],
   "errors": [],
   "warnings": [],
+  "idle_reuses": "review",
+  "waving_eye_states": [
+    [
+      false,
+      false
+    ],
+    [
+      true,
+      true
+    ],
+    [
+      true,
+      true
+    ],
+    [
+      false,
+      false
+    ]
+  ],
+  "waving_bboxes": [
+    [
+      34,
+      10,
+      158,
+      200
+    ],
+    [
+      26,
+      10,
+      166,
+      200
+    ],
+    [
+      22,
+      10,
+      169,
+      200
+    ],
+    [
+      25,
+      10,
+      167,
+      200
+    ]
+  ],
+  "waving_alpha_is_binary": true,
+  "waving_frame_durations_ms": [
+    140,
+    140,
+    140,
+    280
+  ],
   "cells": [
     {
       "state": "idle",
       "row": 0,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 17536
+      "bbox": [
+        17,
+        10,
+        175,
+        200
+      ]
     },
     {
       "state": "idle",
       "row": 0,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 17536
+      "bbox": [
+        17,
+        10,
+        175,
+        200
+      ]
     },
     {
       "state": "idle",
       "row": 0,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 17536
+      "bbox": [
+        18,
+        10,
+        174,
+        200
+      ]
     },
     {
       "state": "idle",
       "row": 0,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 17536
+      "bbox": [
+        17,
+        10,
+        175,
+        200
+      ]
     },
     {
       "state": "idle",
       "row": 0,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 17536
+      "bbox": [
+        18,
+        10,
+        174,
+        200
+      ]
     },
     {
       "state": "idle",
       "row": 0,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 17536
+      "bbox": [
+        17,
+        10,
+        175,
+        200
+      ]
     },
     {
       "state": "idle",
       "row": 0,
       "column": 6,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "idle",
       "row": 0,
       "column": 7,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "running-right",
       "row": 1,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 18172
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
     },
     {
       "state": "running-right",
       "row": 1,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 18172
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
     },
     {
       "state": "running-right",
       "row": 1,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 18338
+      "bbox": [
+        23,
+        10,
+        168,
+        200
+      ]
     },
     {
       "state": "running-right",
       "row": 1,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 18338
+      "bbox": [
+        23,
+        10,
+        168,
+        200
+      ]
     },
     {
       "state": "running-right",
       "row": 1,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 17672
+      "bbox": [
+        32,
+        10,
+        159,
+        200
+      ]
     },
     {
       "state": "running-right",
       "row": 1,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 17672
+      "bbox": [
+        32,
+        10,
+        159,
+        200
+      ]
     },
     {
       "state": "running-right",
       "row": 1,
       "column": 6,
       "used": true,
-      "nontransparent_pixels": 17825
+      "bbox": [
+        24,
+        10,
+        167,
+        199
+      ]
     },
     {
       "state": "running-right",
       "row": 1,
       "column": 7,
       "used": true,
-      "nontransparent_pixels": 17825
+      "bbox": [
+        24,
+        10,
+        167,
+        199
+      ]
     },
     {
       "state": "running-left",
       "row": 2,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 17672
+      "bbox": [
+        32,
+        10,
+        159,
+        200
+      ]
     },
     {
       "state": "running-left",
       "row": 2,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 17672
+      "bbox": [
+        32,
+        10,
+        159,
+        200
+      ]
     },
     {
       "state": "running-left",
       "row": 2,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 17590
+      "bbox": [
+        21,
+        10,
+        170,
+        200
+      ]
     },
     {
       "state": "running-left",
       "row": 2,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 17590
+      "bbox": [
+        21,
+        10,
+        170,
+        200
+      ]
     },
     {
       "state": "running-left",
       "row": 2,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 18172
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
     },
     {
       "state": "running-left",
       "row": 2,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 18172
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
     },
     {
       "state": "running-left",
       "row": 2,
       "column": 6,
       "used": true,
-      "nontransparent_pixels": 18338
+      "bbox": [
+        23,
+        10,
+        168,
+        200
+      ]
     },
     {
       "state": "running-left",
       "row": 2,
       "column": 7,
       "used": true,
-      "nontransparent_pixels": 18338
+      "bbox": [
+        23,
+        10,
+        168,
+        200
+      ]
     },
     {
       "state": "waving",
       "row": 3,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 17536
+      "bbox": [
+        34,
+        10,
+        158,
+        200
+      ]
     },
     {
       "state": "waving",
       "row": 3,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 17569
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
     },
     {
       "state": "waving",
       "row": 3,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 17667
+      "bbox": [
+        22,
+        10,
+        169,
+        200
+      ]
     },
     {
       "state": "waving",
       "row": 3,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 17433
+      "bbox": [
+        25,
+        10,
+        167,
+        200
+      ]
     },
     {
       "state": "waving",
       "row": 3,
       "column": 4,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "waving",
       "row": 3,
       "column": 5,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "waving",
       "row": 3,
       "column": 6,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "waving",
       "row": 3,
       "column": 7,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "jumping",
       "row": 4,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 18281
+      "bbox": [
+        19,
+        10,
+        173,
+        200
+      ]
     },
     {
       "state": "jumping",
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 18138
+      "bbox": [
+        19,
+        10,
+        173,
+        200
+      ]
     },
     {
       "state": "jumping",
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 18236
+      "bbox": [
+        18,
+        10,
+        174,
+        200
+      ]
     },
     {
       "state": "jumping",
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 18172
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
     },
     {
       "state": "jumping",
       "row": 4,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 18199
+      "bbox": [
+        17,
+        10,
+        174,
+        200
+      ]
     },
     {
       "state": "jumping",
       "row": 4,
       "column": 5,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "jumping",
       "row": 4,
       "column": 6,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "jumping",
       "row": 4,
       "column": 7,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "failed",
       "row": 5,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 15680
+      "bbox": [
+        8,
+        60,
+        184,
+        200
+      ]
     },
     {
       "state": "failed",
       "row": 5,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 15556
+      "bbox": [
+        8,
+        54,
+        184,
+        200
+      ]
     },
     {
       "state": "failed",
       "row": 5,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 14647
+      "bbox": [
+        8,
+        57,
+        184,
+        200
+      ]
     },
     {
       "state": "failed",
       "row": 5,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 15220
+      "bbox": [
+        8,
+        77,
+        184,
+        200
+      ]
     },
     {
       "state": "failed",
       "row": 5,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 14063
+      "bbox": [
+        8,
+        83,
+        184,
+        200
+      ]
     },
     {
       "state": "failed",
       "row": 5,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 13015
+      "bbox": [
+        8,
+        64,
+        184,
+        200
+      ]
     },
     {
       "state": "failed",
       "row": 5,
       "column": 6,
       "used": true,
-      "nontransparent_pixels": 14063
+      "bbox": [
+        8,
+        83,
+        184,
+        200
+      ]
     },
     {
       "state": "failed",
       "row": 5,
       "column": 7,
       "used": true,
-      "nontransparent_pixels": 15220
+      "bbox": [
+        8,
+        77,
+        184,
+        200
+      ]
     },
     {
       "state": "waiting",
       "row": 6,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 20396
+      "bbox": [
+        23,
+        10,
+        169,
+        200
+      ]
     },
     {
       "state": "waiting",
       "row": 6,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 20427
+      "bbox": [
+        22,
+        10,
+        169,
+        200
+      ]
     },
     {
       "state": "waiting",
       "row": 6,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 20356
+      "bbox": [
+        23,
+        10,
+        168,
+        200
+      ]
     },
     {
       "state": "waiting",
       "row": 6,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 20237
+      "bbox": [
+        24,
+        10,
+        168,
+        200
+      ]
     },
     {
       "state": "waiting",
       "row": 6,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 20053
+      "bbox": [
+        25,
+        10,
+        166,
+        200
+      ]
     },
     {
       "state": "waiting",
       "row": 6,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 19918
+      "bbox": [
+        25,
+        10,
+        167,
+        200
+      ]
     },
     {
       "state": "waiting",
       "row": 6,
       "column": 6,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "waiting",
       "row": 6,
       "column": 7,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "running",
       "row": 7,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 18172
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
     },
     {
       "state": "running",
       "row": 7,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 18172
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
     },
     {
       "state": "running",
       "row": 7,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 18338
+      "bbox": [
+        23,
+        10,
+        168,
+        200
+      ]
     },
     {
       "state": "running",
       "row": 7,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 17606
+      "bbox": [
+        34,
+        10,
+        158,
+        200
+      ]
     },
     {
       "state": "running",
       "row": 7,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 17672
+      "bbox": [
+        32,
+        10,
+        159,
+        200
+      ]
     },
     {
       "state": "running",
       "row": 7,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 17825
+      "bbox": [
+        24,
+        10,
+        167,
+        199
+      ]
     },
     {
       "state": "running",
       "row": 7,
       "column": 6,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "running",
       "row": 7,
       "column": 7,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "review",
       "row": 8,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 22223
+      "bbox": [
+        17,
+        10,
+        175,
+        200
+      ]
     },
     {
       "state": "review",
       "row": 8,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 22102
+      "bbox": [
+        17,
+        10,
+        175,
+        200
+      ]
     },
     {
       "state": "review",
       "row": 8,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 21685
+      "bbox": [
+        18,
+        10,
+        174,
+        200
+      ]
     },
     {
       "state": "review",
       "row": 8,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 21919
+      "bbox": [
+        17,
+        10,
+        175,
+        200
+      ]
     },
     {
       "state": "review",
       "row": 8,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 21685
+      "bbox": [
+        18,
+        10,
+        174,
+        200
+      ]
     },
     {
       "state": "review",
       "row": 8,
       "column": 5,
       "used": true,
-      "nontransparent_pixels": 22102
+      "bbox": [
+        17,
+        10,
+        175,
+        200
+      ]
     },
     {
       "state": "review",
       "row": 8,
       "column": 6,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     },
     {
       "state": "review",
       "row": 8,
       "column": 7,
       "used": false,
-      "nontransparent_pixels": 0
+      "bbox": null
     }
-  ]
+  ],
+  "sha256": {
+    "spritesheet.png": "b41b2e27a29bde17fa4a90c1b56edf6b1c18a48c644fac604e4345bada06c364",
+    "spritesheet.webp": "7675bcabe94dfea12d6f90671d855b62bb6377e333d74cef41be437b3e26218f"
+  },
+  "toolchain": {
+    "pillow": "12.3.0",
+    "webp": true,
+    "webp_version": "1.6.0"
+  }
 }

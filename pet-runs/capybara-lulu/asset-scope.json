@@ -1,0 +1,31 @@
+{
+  "formal_version": "v1",
+  "installable_package": "final/",
+  "formal_frames": "official-frames-v1/",
+  "atlas": {
+    "columns": 8,
+    "rows": 9,
+    "cell_size": [192, 208]
+  },
+  "runtime_states": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "state_aliases": {
+    "idle": "review"
+  },
+  "draft_roots": [
+    "sequence-drafts/"
+  ],
+  "release_excludes": [
+    "sequence-drafts/**",
+    "**/pet.draft.json"
+  ]
+}

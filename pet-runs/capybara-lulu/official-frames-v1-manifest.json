@@ -4,43 +4,22 @@
     208
   ],
   "idle_sequence": {
-    "format": "animated WebP atlas timeline; all six idle cells are synchronized per image frame",
-    "frames": 184,
-    "duration_ms": 100840,
-    "segments": [
-      {
-        "state": "waving",
-        "loops": 1
-      },
-      {
-        "state": "review",
-        "loops": 6
-      },
-      {
-        "state": "waiting",
-        "loops": 8
-      },
-      {
-        "state": "failed",
-        "loops": 12,
-        "meaning": "sleeping"
-      }
-    ],
-    "note": "This avoids a Codex runtime patch. The static PNG and idle source files hold the first frame as a fallback; the installable spritesheet.webp contains the full slower sequence. Waving runs at 0.5x the original speed, review at 0.25x, waiting at 0.5x, and failed/sleeping at 0.25x."
+    "format": "six formal atlas cells in a single-frame lossless WebP",
+    "frames": 6,
+    "alias_of": "review",
+    "meaning": "focused listening",
+    "note": "Idle directly reuses the approved focused-listening review loop. The retired 184-frame composite-idle experiment is preserved under sequence-drafts/idle-sequence-experiment/."
   },
   "states": {
     "idle": {
-      "source_frames": [
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-01.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\review\\review-01.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waiting\\waiting-01.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\failed\\failed-01.png"
-      ],
+      "alias_of": "review",
       "order": [
-        "waving x1",
-        "review x6",
-        "waiting x8",
-        "failed x12"
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
       ],
       "frames": [
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-01.png",
@@ -50,7 +29,7 @@
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-05.png",
         "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\idle\\idle-06.png"
       ],
-      "note": "static fallback for the no-runtime-patch animated idle sequence; every idle cell holds the first waving frame while spritesheet.webp carries the full 60-frame timeline"
+      "note": "each idle frame is pixel-identical to the corresponding focused-listening review frame"
     },
     "running-right": {
       "source_frames": [
@@ -116,26 +95,24 @@
     },
     "waving": {
       "source_frames": [
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-01.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-02.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-03.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-04.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-05.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\sequence-drafts\\expanded-frames-v2-alpha-192x208\\one-foot-wave\\one-foot-wave-06.png"
+        "official-frames-v1/running/running-04.png",
+        "sequence-drafts/v1-action-work/waving-success-windup/anticipation-gold-face-preview.png",
+        "sequence-drafts/v1-retired-variants/waving-no-windup/frames/waving-01.png",
+        "sequence-drafts/v1-retired-variants/waving-no-windup/frames/waving-04.png"
       ],
       "order": [
         1,
         2,
-        4,
-        6
+        3,
+        4
       ],
       "frames": [
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-01.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-02.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-03.png",
-        "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\official-frames-v1\\waving\\waving-04.png"
+        "official-frames-v1/waving/waving-01.png",
+        "official-frames-v1/waving/waving-02.png",
+        "official-frames-v1/waving/waving-03.png",
+        "official-frames-v1/waving/waving-04.png"
       ],
-      "note": "iconic one-foot waving gesture"
+      "note": "four-frame runtime-compatible success celebration with a normal-stand wind-up; frame 2 uses a new early limb pose but retains the exact formal V1 upper head and face; eye states are closed/closed, open/open, open/open, closed/closed so both eyes always change together"
     },
     "jumping": {
       "source_frames": [

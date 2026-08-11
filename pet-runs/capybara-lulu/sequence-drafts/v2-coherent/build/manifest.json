@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "status": "draft",
+  "installable": false,
+  "release_input": false,
+  "atlas": {
+    "columns": 8,
+    "rows": 11,
+    "cell": [
+      192,
+      208
+    ],
+    "sprite_version": 2
+  },
+  "sources": {
+    "waddle": "sources/waddle-right-alpha.png",
+    "status_actions": "sources/status-actions-alpha.png",
+    "idle_library": "sequence-drafts/v2-coherent/sources/idle-library-gold-aligned-alpha.png",
+    "idle_library_neutral": "sequence-drafts/v2-coherent/sources/idle-library-gold-aligned-neutral.png",
+    "idle_library_original": "sources/idle-library-alpha.png",
+    "gold_reference": "sequence-drafts/v2-coherent/sources/legacy-v1/running/running-01.png",
+    "legacy_waving": "sources/legacy-v1/waving/",
+    "legacy_jumping": "sources/legacy-v1/jumping/"
+  },
+  "states": {
+    "idle": {
+      "row": 0,
+      "frames": 6
+    },
+    "running-right": {
+      "row": 1,
+      "frames": 8
+    },
+    "running-left": {
+      "row": 2,
+      "frames": 8
+    },
+    "waving": {
+      "row": 3,
+      "frames": 4
+    },
+    "jumping": {
+      "row": 4,
+      "frames": 5
+    },
+    "failed": {
+      "row": 5,
+      "frames": 8
+    },
+    "waiting": {
+      "row": 6,
+      "frames": 6
+    },
+    "running": {
+      "row": 7,
+      "frames": 6
+    },
+    "review": {
+      "row": 8,
+      "frames": 6
+    },
+    "gaze-00-to-07": {
+      "row": 9,
+      "frames": 8
+    },
+    "gaze-08-to-15": {
+      "row": 10,
+      "frames": 8
+    }
+  },
+  "animation_library": {
+    "stretch": 6,
+    "sneeze": 6,
+    "kiss-shy": 6,
+    "warm-bath": 6,
+    "happy-snack": 6
+  },
+  "gold_alignment": {
+    "reference_sha256": "07e2f4302b479d84e92cfe5c33224d1224336e33f5845dbb7ea214ea2af9d8fd",
+    "reference_bbox": [
+      26,
+      10,
+      166,
+      200
+    ],
+    "reference_eye_centers": [
+      [
+        70.72375690607734,
+        74.12154696132596
+      ],
+      [
+        122.97752808988764,
+        74.19101123595506
+      ]
+    ],
+    "library_source_sha256": "c7edc659108b3947240f29cb2f06c3009fe57d297ddbba7a2216a34119f49b11",
+    "neutral_source_sha256": "09e6e91cec0e965db2a2b1539e4689ef8a87f23a839d71c80842bccef47ed931",
+    "neutral_bbox": [
+      26,
+      10,
+      166,
+      200
+    ],
+    "neutral_eye_centers": [
+      [
+        71.19327731092437,
+        72.96638655462185
+      ],
+      [
+        123.12653061224489,
+        73.39591836734694
+      ]
+    ],
+    "eye_center_drifts": [
+      1.2469342307373437,
+      0.8089341267249863
+    ],
+    "max_eye_center_drift": 2.0,
+    "neutral_width": 140,
+    "neutral_height": 190,
+    "ground_y": 200,
+    "max_action_width": 176,
+    "max_action_height": 196,
+    "shared_neutral_frames": [
+      0,
+      5
+    ],
+    "source_row_boundaries": [
+      0,
+      225,
+      429,
+      626,
+      821,
+      1024
+    ]
+  },
+  "continuity_rules": [
+    "Every native state begins near the relaxed standing anchor.",
+    "Every native state ends near the relaxed standing anchor before Codex returns to idle.",
+    "The fruit follows body motion with mild inertia and returns to center.",
+    "All standing actions share a fixed ground line and action-level scale.",
+    "Props appear only inside theme-relevant state stories and are put away before the final frame."
+  ]
+}
