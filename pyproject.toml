@@ -1,0 +1,11 @@
+[project]
+name = "capylulu-vpet-tools"
+version = "0.1.0"
+description = "Reproducible build and QA tools for the CapyLulu Codex pet."
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "Pillow==12.3.0",
+]
+
+[tool.uv]
+package = false

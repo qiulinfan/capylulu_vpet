@@ -1,1 +1,4 @@
 pet-runs/xiao-mo/
+.venv/
+__pycache__/
+*.py[cod]
