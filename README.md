@@ -27,8 +27,14 @@ character-identity and runtime-scale gold standard.
 
 Its nine formal states are declared in
 `pet-runs/capybara-lulu/asset-scope.json`. Idle deliberately reuses the six
-focused-listening `review` frames. Waving is a four-frame, runtime-compatible
-success celebration with a standing wind-up and synchronized two-eye blinking.
+focused-listening `review` frames. The runtime-required generic `running` row
+also reuses `review`; it has no independent running artwork. `running-right`
+and `running-left` are directional pointer-drag reactions, not locomotion. The
+selected authoring lineage locks one neutral gold sprite, creates individual
+keyframes, fills individual in-betweens, and only then assembles the rightward
+row; the leftward sequence is its exact mirror. Waving is a four-frame,
+runtime-compatible success
+celebration with a standing wind-up and synchronized two-eye blinking.
 
 Rebuild the formal package and QA with:
 

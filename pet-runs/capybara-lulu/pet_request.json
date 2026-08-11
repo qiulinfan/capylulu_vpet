@@ -16,19 +16,19 @@
       "state": "idle",
       "row": 0,
       "frames": 6,
-      "purpose": "neutral breathing/blinking loop"
+      "purpose": "focused-listening loop; exact visual alias of review"
     },
     {
       "state": "running-right",
       "row": 1,
       "frames": 8,
-      "purpose": "rightward locomotion loop"
+      "purpose": "pointer/window drag response toward screen-right; head leads while body and limbs trail left"
     },
     {
       "state": "running-left",
       "row": 2,
       "frames": 8,
-      "purpose": "leftward locomotion loop"
+      "purpose": "pointer/window drag response toward screen-left; exact horizontal mirror of running-right"
     },
     {
       "state": "waving",
@@ -58,7 +58,7 @@
       "state": "running",
       "row": 7,
       "frames": 6,
-      "purpose": "generic in-place running loop"
+      "purpose": "runtime-required task-active state; exact visual alias of review with no independent running artwork"
     },
     {
       "state": "review",
@@ -70,7 +70,7 @@
   "layout_guides": [
     {
       "state": "idle",
-      "path": "references\\layout-guides\\idle.png",
+      "path": "references/layout-guides/idle.png",
       "width": 1152,
       "height": 208,
       "frames": 6,
@@ -82,7 +82,7 @@
     },
     {
       "state": "running-right",
-      "path": "references\\layout-guides\\running-right.png",
+      "path": "references/layout-guides/running-right.png",
       "width": 1536,
       "height": 208,
       "frames": 8,
@@ -94,7 +94,7 @@
     },
     {
       "state": "running-left",
-      "path": "references\\layout-guides\\running-left.png",
+      "path": "references/layout-guides/running-left.png",
       "width": 1536,
       "height": 208,
       "frames": 8,
@@ -106,7 +106,7 @@
     },
     {
       "state": "waving",
-      "path": "references\\layout-guides\\waving.png",
+      "path": "references/layout-guides/waving.png",
       "width": 768,
       "height": 208,
       "frames": 4,
@@ -118,7 +118,7 @@
     },
     {
       "state": "jumping",
-      "path": "references\\layout-guides\\jumping.png",
+      "path": "references/layout-guides/jumping.png",
       "width": 960,
       "height": 208,
       "frames": 5,
@@ -130,7 +130,7 @@
     },
     {
       "state": "failed",
-      "path": "references\\layout-guides\\failed.png",
+      "path": "references/layout-guides/failed.png",
       "width": 1536,
       "height": 208,
       "frames": 8,
@@ -142,7 +142,7 @@
     },
     {
       "state": "waiting",
-      "path": "references\\layout-guides\\waiting.png",
+      "path": "references/layout-guides/waiting.png",
       "width": 1152,
       "height": 208,
       "frames": 6,
@@ -154,7 +154,7 @@
     },
     {
       "state": "running",
-      "path": "references\\layout-guides\\running.png",
+      "path": "references/layout-guides/running.png",
       "width": 1152,
       "height": 208,
       "frames": 6,
@@ -166,7 +166,7 @@
     },
     {
       "state": "review",
-      "path": "references\\layout-guides\\review.png",
+      "path": "references/layout-guides/review.png",
       "width": 1152,
       "height": 208,
       "frames": 6,
@@ -179,40 +179,40 @@
   ],
   "references": [
     {
-      "path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-01.jpg",
+      "path": "references/reference-01.jpg",
       "width": 1135,
       "height": 1047,
       "mode": "RGB",
       "format": "JPEG",
-      "source_path": "C:\\Users\\rynne\\Documents\\xwechat_files\\wxid_13qnh32cev2f12_1af3\\temp\\RWTemp\\2026-05\\9e20f478899dc29eb19741386f9343c8\\bcf3501ae9a8b6cc5b95424bb121e88e.jpg",
-      "copied_path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-01.jpg"
+      "source_path": "C:/Users/rynne/Documents/xwechat_files/wxid_13qnh32cev2f12_1af3/temp/RWTemp/2026-05/9e20f478899dc29eb19741386f9343c8/bcf3501ae9a8b6cc5b95424bb121e88e.jpg",
+      "copied_path": "references/reference-01.jpg"
     },
     {
-      "path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-02.jpg",
+      "path": "references/reference-02.jpg",
       "width": 1260,
       "height": 1439,
       "mode": "RGB",
       "format": "JPEG",
-      "source_path": "C:\\Users\\rynne\\Documents\\xwechat_files\\wxid_13qnh32cev2f12_1af3\\temp\\RWTemp\\2026-05\\9e20f478899dc29eb19741386f9343c8\\0a7ec8eac2b6dafa781a99801d1f100f.jpg",
-      "copied_path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-02.jpg"
+      "source_path": "C:/Users/rynne/Documents/xwechat_files/wxid_13qnh32cev2f12_1af3/temp/RWTemp/2026-05/9e20f478899dc29eb19741386f9343c8/0a7ec8eac2b6dafa781a99801d1f100f.jpg",
+      "copied_path": "references/reference-02.jpg"
     },
     {
-      "path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-03.jpg",
+      "path": "references/reference-03.jpg",
       "width": 1260,
       "height": 1168,
       "mode": "RGB",
       "format": "JPEG",
-      "source_path": "C:\\Users\\rynne\\Documents\\xwechat_files\\wxid_13qnh32cev2f12_1af3\\temp\\RWTemp\\2026-05\\9e20f478899dc29eb19741386f9343c8\\a5771691ebe755d41cf60e76f38a46b3.jpg",
-      "copied_path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-03.jpg"
+      "source_path": "C:/Users/rynne/Documents/xwechat_files/wxid_13qnh32cev2f12_1af3/temp/RWTemp/2026-05/9e20f478899dc29eb19741386f9343c8/a5771691ebe755d41cf60e76f38a46b3.jpg",
+      "copied_path": "references/reference-03.jpg"
     },
     {
-      "path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-04.jpg",
+      "path": "references/reference-04.jpg",
       "width": 1045,
       "height": 1214,
       "mode": "RGB",
       "format": "JPEG",
-      "source_path": "C:\\Users\\rynne\\Documents\\xwechat_files\\wxid_13qnh32cev2f12_1af3\\temp\\RWTemp\\2026-05\\9e20f478899dc29eb19741386f9343c8\\b30d16613c01a675716afaf740d41252.jpg",
-      "copied_path": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu\\references\\reference-04.jpg"
+      "source_path": "C:/Users/rynne/Documents/xwechat_files/wxid_13qnh32cev2f12_1af3/temp/RWTemp/2026-05/9e20f478899dc29eb19741386f9343c8/b30d16613c01a675716afaf740d41252.jpg",
+      "copied_path": "references/reference-04.jpg"
     }
   ],
   "chroma_key": {
@@ -231,7 +231,7 @@
   "house_style": "Codex digital pet sprite style: pixel-art-adjacent low-resolution mascot sprite, compact chibi proportions, chunky whole-body silhouette, thick dark 1-2 px outline, visible stepped/pixel edges, limited palette, flat cel shading with at most one small highlight and one shadow step, simple readable face, tiny limbs, and no detail that disappears at 192x208. Avoid polished illustration, painterly rendering, anime key art, 3D render, vector app-icon polish, glossy lighting, soft gradients, realistic fur or material texture, anti-aliased high-detail edges, and complex tiny accessories.",
   "primary_generation_skill": "$imagegen",
   "canonical_identity_reference": {
-    "path": "references\\canonical-base.png",
+    "path": "references/canonical-base.png",
     "source_job": "base",
     "sha256": "a1b96e3bbf17b53337170d816dac85eb61ce8fa724bf5c1007adb6a6db8c887e",
     "metadata": {

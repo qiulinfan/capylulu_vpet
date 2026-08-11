@@ -1,50 +1,31 @@
-Create a single horizontal sprite strip for the Codex app digital pet `capybara-lulu` in the state `running-right`.
+# Formal V1 `running-right`: rightward pointer drag
 
-Use the attached reference image(s) for pet identity and the attached base pet image as the canonical design. Use the attached layout guide image only for frame count, slot spacing, centering, and safe padding. Simplify any high-resolution reference details into the Codex digital pet sprite style. Do not simply copy the still reference pose. Generate distinct animation poses that create a readable cycle.
+This runtime state is not autonomous locomotion. It appears while the user
+drags Lulu's window toward screen-right.
 
-Identity lock:
-- Do not redesign the pet. Only change pose/action for the `running-right` animation.
-- Preserve the exact head shape, ear/horn/limb shape, face design, markings, palette, outline weight, body proportions, prop design, and overall silhouette from the canonical base pet.
-- Keep every frame recognizably the same individual pet, not a related variant.
-- If the pet has a prop or accessory, preserve its size, side, palette, and attachment style unless the row action requires a small pose-only adjustment.
-- Prefer a subtler animation over any change that mutates the pet identity.
+Do not generate a sprite sheet directly. First establish one approved neutral
+`192x208` gold sprite. Produce each action keyframe as its own image from that
+gold, then produce each in-between as its own image from the two neighboring
+poses. Remove the background and normalize each approved frame separately;
+only then assemble exactly eight frames into the formal row.
 
-Output exactly 8 separate animation frames arranged left-to-right in one single row. Each frame must show the same pet: 水豚噜噜: a very round yellow-orange capybara-like cartoon companion, oversized orange muzzle and cheek area, large black glossy eyes with pale blue-white rims, tiny triangular ears, tiny orange fruit with a short green stem on top of the head, simple nubby arms and legs, orange shorts, joyful friendly face..
+Keep Lulu substantially front-facing and preserve the formal V1 gold identity:
+rounded head, full rounded orange muzzle, gold body width and fullness, matched
+eye size and spacing, friendly centered gaze, original palette, outline, 190 px
+subject height, orange shorts, and attached fruit. Frames 1-6 and 8 keep both
+eyes open together. Frame 7 is one short synchronized two-eye blink; neither
+eye may wink independently.
 
-Style contract: Codex digital pet sprite style: pixel-art-adjacent low-resolution mascot sprite, compact chibi proportions, chunky whole-body silhouette, thick dark 1-2 px outline, visible stepped/pixel edges, limited palette, flat cel shading with at most one small highlight and one shadow step, simple readable face, tiny limbs, and no detail that disappears at 192x208. Avoid polished illustration, painterly rendering, anime key art, 3D render, vector app-icon polish, glossy lighting, soft gradients, realistic fur or material texture, anti-aliased high-detail edges, and complex tiny accessories. Additional user style notes: Adapt the 3D plush-like reference character into Codex digital pet style: pixel-art-adjacent, compact chibi proportions, thick dark 1-2 px outline, visible stepped edges, limited warm yellow/orange palette, flat cel shading, simple readable face, no scenery, no headphone prop unless specifically needed, no brand logos, no text..
+Communicate the interaction through center-of-mass inertia. The head leads
+toward screen-right while the torso, hips, both arms, feet, and fruit follow
+softly toward screen-left. Use a neutral-compatible pickup, increasing lag,
+one or two light toe skims, a brief airborne/trailing peak, elastic recovery,
+and a near-neutral loop closure. Do not show jogging, forceful push-off,
+alternating running arms, dancing, kicking, skating, speed lines, dust, floor
+shadows, detached effects, text, or scenery.
 
-Use this prompt as an authoritative sprite-production spec. Do not expand it into a polished illustration, painterly character image, anime key art, 3D render, vector mascot, glossy app icon, realistic animal portrait, or marketing artwork.
-
-Animation action: rightward locomotion loop.
-
-
-State-specific requirements:
-- Show locomotion through body, limb, and prop movement only.
-- Do not draw speed lines, dust clouds, floor shadows, motion trails, or detached motion effects.
-
-Transparency and artifact rules:
-- Prefer pose, expression, and silhouette changes over decorative effects.
-- Effects are allowed only when they are state-relevant, opaque, hard-edged, pixel-style, fully inside the same frame slot, and physically touching or overlapping the pet silhouette.
-- Allowed attached effects can include a tear touching the face, a small smoke puff touching the pet or prop, or tiny stars overlapping the pet during a failed/dizzy reaction.
-- Do not draw detached effects: floating stars, loose sparkles, floating punctuation, floating icons, falling tear drops, separated smoke clouds, loose dust, disconnected outline bits, or stray pixels.
-- Do not draw wave marks, motion arcs, speed lines, action streaks, afterimages, blur, smears, halos, glows, auras, floor patches, cast shadows, contact shadows, drop shadows, oval floor shadows, landing marks, or impact bursts.
-- Do not include text, labels, frame numbers, visible grids, guide marks, speech bubbles, thought bubbles, UI panels, code snippets, scenery, checkerboard transparency, white backgrounds, or black backgrounds.
-- Do not use the chroma-key color or chroma-key-adjacent colors in the pet, prop, effects, highlights, shadows, or outlines.
-- Reject any pose that is cropped, overlaps another pose, crosses into a neighboring frame slot, or creates a separate disconnected component that is not attached to the pet.
-
-Layout requirements:
-- Exactly 8 full-body frames, left to right, in one horizontal row.
-- The attached layout guide shows the 8 frame boxes and inner safe area for this row. Follow its slot count, spacing, centering, and padding.
-- Do not reproduce the layout guide itself: no visible boxes, guide lines, center marks, labels, guide colors, or guide background may appear in the output.
-- Treat the image as 8 equal-width invisible frame slots. Fill every slot: each requested slot must contain exactly one complete full-body pose.
-- Spread the 8 poses evenly across the whole image width. Do not leave any requested slot blank or create large empty gaps between poses.
-- Center one complete pose in each slot. No pose may cross into the neighboring slot.
-- Use a perfectly flat pure blue #0000FF chroma-key background across the whole image.
-- Do not draw visible grid lines, borders, labels, numbers, text, watermarks, or checkerboard transparency.
-- Do not include scenery or a background environment.
-- Keep the rendering sprite-like: chunky silhouette, dark pixel-style outline, limited palette, flat shading, minimal tiny detail.
-- Do not use #0000FF, pure blue, or colors close to that chroma key in the pet, props, highlights, shadows, motion marks, dust, landing marks, or effects.
-- Do not draw shadows, glows, smears, dust, or landing marks using darker/lighter versions of the chroma-key color.
-- Keep every frame self-contained with safe padding. No pet body part should be clipped by the frame slot.
-- Avoid motion blur. Use clear pose changes readable at 192x208.
-- Preserve the same silhouette, face, proportions, palette, material, and props across every frame.
+Use a flat removable chroma-key background for each generated source. Each
+source contains one isolated, uncropped sprite only—never multiple poses, a
+grid, labels, or an atlas. The selected frame lineage, prompt record,
+normalization, deterministic mirror, assembly, and QA live under
+`sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/`.

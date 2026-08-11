@@ -10,7 +10,247 @@
   ],
   "errors": [],
   "warnings": [],
-  "idle_reuses": "review",
+  "state_aliases": {
+    "idle": "review",
+    "running": "review"
+  },
+  "directional_drag": {
+    "semantics": {
+      "running-right": "pointer/window dragged right; body and limbs trail left",
+      "running-left": "exact horizontal mirror of running-right"
+    },
+    "source": "sequence-drafts/v1-action-work/drag-directional/right-drag-motion-v4-selected-alpha-hard.png",
+    "frame_durations_ms": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      220
+    ],
+    "gold_eye_spacing": 51.715083798882674,
+    "eye_spacings": {
+      "running-right": [
+        52.475639269406386,
+        52.290280050918355,
+        52.775198938992034,
+        52.489273508984695,
+        52.10976282404853,
+        53.45167173252278,
+        52.69413094871004,
+        52.9021513002364
+      ],
+      "running-left": [
+        52.475639269406386,
+        52.29028005091835,
+        52.77519893899205,
+        52.48927350898468,
+        52.10976282404854,
+        53.45167173252279,
+        52.69413094871005,
+        52.9021513002364
+      ]
+    },
+    "eye_spacing_drifts": {
+      "running-right": [
+        0.7605554705237125,
+        0.5751962520356813,
+        1.0601151401093603,
+        0.7741897101020214,
+        0.39467902516585696,
+        1.7365879336401093,
+        0.9790471498273661,
+        1.1870675013537237
+      ],
+      "running-left": [
+        0.7605554705237125,
+        0.5751962520356741,
+        1.0601151401093745,
+        0.7741897101020072,
+        0.39467902516586406,
+        1.7365879336401164,
+        0.9790471498273732,
+        1.1870675013537237
+      ]
+    },
+    "max_eye_spacing_drift": 2.5,
+    "eye_states": {
+      "running-right": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "running-left": [
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    "bboxes": {
+      "running-right": [
+        [
+          35,
+          10,
+          157,
+          200
+        ],
+        [
+          27,
+          8,
+          165,
+          198
+        ],
+        [
+          22,
+          6,
+          169,
+          196
+        ],
+        [
+          22,
+          5,
+          169,
+          195
+        ],
+        [
+          22,
+          4,
+          169,
+          194
+        ],
+        [
+          23,
+          6,
+          168,
+          196
+        ],
+        [
+          28,
+          8,
+          163,
+          198
+        ],
+        [
+          36,
+          9,
+          155,
+          199
+        ]
+      ],
+      "running-left": [
+        [
+          35,
+          10,
+          157,
+          200
+        ],
+        [
+          27,
+          8,
+          165,
+          198
+        ],
+        [
+          23,
+          6,
+          170,
+          196
+        ],
+        [
+          23,
+          5,
+          170,
+          195
+        ],
+        [
+          23,
+          4,
+          170,
+          194
+        ],
+        [
+          24,
+          6,
+          169,
+          196
+        ],
+        [
+          29,
+          8,
+          164,
+          198
+        ],
+        [
+          37,
+          9,
+          156,
+          199
+        ]
+      ]
+    },
+    "alpha_is_binary": true,
+    "left_is_exact_mirror": true
+  },
   "waving_eye_states": [
     [
       false,
@@ -62,6 +302,42 @@
     140,
     280
   ],
+  "action_gif_durations_ms": {
+    "02-running-right.gif": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      220
+    ],
+    "03-running-left.gif": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      220
+    ],
+    "04-waving.gif": [
+      140,
+      140,
+      140,
+      280
+    ],
+    "08-running.gif": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      220
+    ]
+  },
   "cells": [
     {
       "state": "idle",
@@ -155,9 +431,9 @@
       "column": 0,
       "used": true,
       "bbox": [
-        26,
+        35,
         10,
-        166,
+        157,
         200
       ]
     },
@@ -167,10 +443,10 @@
       "column": 1,
       "used": true,
       "bbox": [
-        26,
-        10,
-        166,
-        200
+        27,
+        8,
+        165,
+        198
       ]
     },
     {
@@ -179,10 +455,10 @@
       "column": 2,
       "used": true,
       "bbox": [
-        23,
-        10,
-        168,
-        200
+        22,
+        6,
+        169,
+        196
       ]
     },
     {
@@ -191,10 +467,10 @@
       "column": 3,
       "used": true,
       "bbox": [
-        23,
-        10,
-        168,
-        200
+        22,
+        5,
+        169,
+        195
       ]
     },
     {
@@ -203,10 +479,10 @@
       "column": 4,
       "used": true,
       "bbox": [
-        32,
-        10,
-        159,
-        200
+        22,
+        4,
+        169,
+        194
       ]
     },
     {
@@ -215,10 +491,10 @@
       "column": 5,
       "used": true,
       "bbox": [
-        32,
-        10,
-        159,
-        200
+        23,
+        6,
+        168,
+        196
       ]
     },
     {
@@ -227,10 +503,10 @@
       "column": 6,
       "used": true,
       "bbox": [
-        24,
-        10,
-        167,
-        199
+        28,
+        8,
+        163,
+        198
       ]
     },
     {
@@ -239,9 +515,9 @@
       "column": 7,
       "used": true,
       "bbox": [
-        24,
-        10,
-        167,
+        36,
+        9,
+        155,
         199
       ]
     },
@@ -251,9 +527,9 @@
       "column": 0,
       "used": true,
       "bbox": [
-        32,
+        35,
         10,
-        159,
+        157,
         200
       ]
     },
@@ -263,10 +539,10 @@
       "column": 1,
       "used": true,
       "bbox": [
-        32,
-        10,
-        159,
-        200
+        27,
+        8,
+        165,
+        198
       ]
     },
     {
@@ -275,10 +551,10 @@
       "column": 2,
       "used": true,
       "bbox": [
-        21,
-        10,
+        23,
+        6,
         170,
-        200
+        196
       ]
     },
     {
@@ -287,10 +563,10 @@
       "column": 3,
       "used": true,
       "bbox": [
-        21,
-        10,
+        23,
+        5,
         170,
-        200
+        195
       ]
     },
     {
@@ -299,10 +575,10 @@
       "column": 4,
       "used": true,
       "bbox": [
-        26,
-        10,
-        166,
-        200
+        23,
+        4,
+        170,
+        194
       ]
     },
     {
@@ -311,10 +587,10 @@
       "column": 5,
       "used": true,
       "bbox": [
-        26,
-        10,
-        166,
-        200
+        24,
+        6,
+        169,
+        196
       ]
     },
     {
@@ -323,10 +599,10 @@
       "column": 6,
       "used": true,
       "bbox": [
-        23,
-        10,
-        168,
-        200
+        29,
+        8,
+        164,
+        198
       ]
     },
     {
@@ -335,10 +611,10 @@
       "column": 7,
       "used": true,
       "bbox": [
-        23,
-        10,
-        168,
-        200
+        37,
+        9,
+        156,
+        199
       ]
     },
     {
@@ -686,9 +962,9 @@
       "column": 0,
       "used": true,
       "bbox": [
-        26,
+        17,
         10,
-        166,
+        175,
         200
       ]
     },
@@ -698,9 +974,9 @@
       "column": 1,
       "used": true,
       "bbox": [
-        26,
+        17,
         10,
-        166,
+        175,
         200
       ]
     },
@@ -710,9 +986,9 @@
       "column": 2,
       "used": true,
       "bbox": [
-        23,
+        18,
         10,
-        168,
+        174,
         200
       ]
     },
@@ -722,9 +998,9 @@
       "column": 3,
       "used": true,
       "bbox": [
-        34,
+        17,
         10,
-        158,
+        175,
         200
       ]
     },
@@ -734,9 +1010,9 @@
       "column": 4,
       "used": true,
       "bbox": [
-        32,
+        18,
         10,
-        159,
+        174,
         200
       ]
     },
@@ -746,10 +1022,10 @@
       "column": 5,
       "used": true,
       "bbox": [
-        24,
+        17,
         10,
-        167,
-        199
+        175,
+        200
       ]
     },
     {
@@ -854,8 +1130,18 @@
     }
   ],
   "sha256": {
-    "spritesheet.png": "b41b2e27a29bde17fa4a90c1b56edf6b1c18a48c644fac604e4345bada06c364",
-    "spritesheet.webp": "7675bcabe94dfea12d6f90671d855b62bb6377e333d74cef41be437b3e26218f"
+    "spritesheet.png": "b091d2db1d343213a39dc0e4d3e0fdf6036204bfda305fc3c4de44b9c3e9480f",
+    "spritesheet.webp": "af904406f71ef9a60575cc48591390914b8196add1abd52d039acc49b2fd613f",
+    "running-right": {
+      "running-right-01.png": "861deb3a6d5c693a56ca07c831078b5defe960cd72450d4dc96a124ad0cf7d42",
+      "running-right-02.png": "88b516a44fc4ab6a9a5498eb724a86a71192fff4fbf5e4e72b87ff8967e6dc71",
+      "running-right-03.png": "775e4cb5d17c1ba75192d5455afd67b8faab07cd9b682d6a7c9b45e82e04415a",
+      "running-right-04.png": "f17c83affdbece6b846dce16e5cc4868f45435d76d4f401ef25d43eebe88d500",
+      "running-right-05.png": "5c3b0384f81351778292bbebc3e11b355106d71df404a01e9c5e3926ec088d78",
+      "running-right-06.png": "5f6c8fc44b30e1db36865eee653279bb534c33534e64a6c1e2cf9fa01901a464",
+      "running-right-07.png": "3701c843f261ff80d81eff592bdf6ea1e81476828f773d8e061df5f11602562e",
+      "running-right-08.png": "4c19d2715d46c0e9687ade0001912364fc98b324305d86b072de91982f35c91b"
+    }
   },
   "toolchain": {
     "pillow": "12.3.0",

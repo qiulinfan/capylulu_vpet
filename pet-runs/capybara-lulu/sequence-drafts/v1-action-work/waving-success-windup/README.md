@@ -16,10 +16,13 @@ already too close to the peak and the generated face drifted from V1.
 `imagegen-selected-early-anticipation-magenta.png` supplied only the early
 limb/body pose. `anticipation-body-alpha.png` is the normalized transparent
 candidate from which only the body and limbs were used.
-`anticipation-gold-face-preview.png` replaces the generated head and face with
-the exact upper-head pixels from formal V1 `running/running-05.png` and reduces
-the final alpha edge to the same binary hard edge as V1. This preview is the
-lineage source for formal `waving-02.png`.
+`gold-normal-stand.png` and `gold-open-face.png` preserve the two approved V1
+lineage donors that originally lived at `running/running-04.png` and
+`running/running-05.png`. They are stable here because the runtime-required
+generic `running` row now aliases focused listening. `anticipation-gold-face-preview.png`
+replaces the generated head and face with the exact upper-head pixels from
+`gold-open-face.png` and reduces the final alpha edge to the same binary hard
+edge as V1. This preview is the lineage source for formal `waving-02.png`.
 
 The formal action remains four frames because the Codex V1 pet runtime reads
 exactly four cells from atlas row 3.

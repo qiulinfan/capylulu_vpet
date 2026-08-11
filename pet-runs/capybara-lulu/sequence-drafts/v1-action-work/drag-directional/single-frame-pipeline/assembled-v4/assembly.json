@@ -1,0 +1,41 @@
+{
+  "status": "draft-candidate",
+  "workflow": [
+    "one canonical gold sprite",
+    "individual action keyframes",
+    "individual in-between frames",
+    "deterministic alpha, normalization, mirror, and assembly"
+  ],
+  "gold_sprite": "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/gold/gold-neutral-open-192x208.png",
+  "selected_sources": [
+    "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/gold/gold-neutral-open-192x208.png",
+    "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/inbetweens/f02/normalized-rotated-selected-192x208.png",
+    "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/keyframes/f03/normalized-corrected-192x208.png",
+    "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/inbetweens/f04/normalized-192x208.png",
+    "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/keyframes/f05/normalized-corrected-192x208.png",
+    "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/inbetweens/f06/normalized-poseguided-v3-selected-192x208.png",
+    "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/keyframes/f07/normalized-gold-blink-selected-192x208.png",
+    "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/keyframes/f08/normalized-gold-settle-selected-192x208.png"
+  ],
+  "frame_durations_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    220
+  ],
+  "blink_frame": 7,
+  "sha256": {
+    "running-right-01.png": "e8cf9a7ce677531a7841321689823dd26652164517d2ea85d1b55a1bf9d5c49b",
+    "running-right-02.png": "79063717d4110d4964047e845d86054d1e84b95aa075f6f17aa73950b474c070",
+    "running-right-03.png": "eba9fea14bce88335705cb8656153329d49274ed5566bdcb87710638de5d2bc3",
+    "running-right-04.png": "e0d2c2ae9d633f888177ada89007949ee9256fed252c13391a790088bc7b08bc",
+    "running-right-05.png": "9bb0ae449ff05fc5d5ac736119dfcccc32da1f4a4cac6e955de6073c5a6c5915",
+    "running-right-06.png": "75862c3254915ba30c982180aabc5d6e4c0a0a40568b2e22adbdeb919ab959b9",
+    "running-right-07.png": "14d92856a7c6873ad33403768c7d081ef0564db5fe81042456721907c7ee109e",
+    "running-right-08.png": "7aaaba13f54191192434f9a0f43053fff1d6ca00e19fbacb0690554bef4f24de"
+  }
+}

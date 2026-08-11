@@ -19,7 +19,8 @@
     "review"
   ],
   "state_aliases": {
-    "idle": "review"
+    "idle": "review",
+    "running": "review"
   },
   "draft_roots": [
     "sequence-drafts/"

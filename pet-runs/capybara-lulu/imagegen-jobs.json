@@ -1,7 +1,9 @@
 {
   "schema_version": 1,
   "created_at": "2026-05-03T17:42:22.594061+00:00",
-  "run_dir": "C:\\Users\\rynne\\Documents\\New project\\pet-runs\\capybara-lulu",
+  "updated_at": "2026-08-11",
+  "run_dir": ".",
+  "status_note": "All V1 states are resolved in official-frames-v1/. Directional running names are pointer-drag reactions; idle and generic running are deterministic review aliases.",
   "primary_generation_skill": "$imagegen",
   "jobs": [
     {
@@ -11,19 +13,19 @@
       "prompt_file": "prompts/base-pet.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         }
       ],
@@ -33,7 +35,7 @@
       "requires_grounded_generation": true,
       "allow_prompt_only_generation": false,
       "recording_owner": "parent",
-      "source_path": "C:\\Users\\rynne\\.codex\\generated_images\\019deee8-0770-7370-b438-04f3d3066142\\ig_0f69409990806a440169f78913a85081978f3e5ed5f2b5cc00.png",
+      "source_path": "C:/Users/rynne/.codex/generated_images/019deee8-0770-7370-b438-04f3d3066142/ig_0f69409990806a440169f78913a85081978f3e5ed5f2b5cc00.png",
       "source_provenance": "built-in-imagegen",
       "source_sha256": "a1b96e3bbf17b53337170d816dac85eb61ce8fa724bf5c1007adb6a6db8c887e",
       "output_sha256": "a1b96e3bbf17b53337170d816dac85eb61ce8fa724bf5c1007adb6a6db8c887e",
@@ -44,28 +46,30 @@
         "mode": "RGB",
         "format": "PNG"
       },
-      "canonical_reference_path": "references\\canonical-base.png"
+      "canonical_reference_path": "references/canonical-base.png"
     },
     {
       "id": "idle",
-      "kind": "row-strip",
-      "status": "pending",
+      "kind": "state-alias",
+      "status": "complete",
+      "alias_of": "review",
+      "derivation": "exact-frame-copy",
       "prompt_file": "prompts/rows/idle.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         },
         {
@@ -81,19 +85,19 @@
           "role": "approved base pet"
         }
       ],
-      "output_path": "decoded/idle.png",
+      "output_path": "official-frames-v1/idle/",
       "depends_on": [
-        "base"
+        "review"
       ],
-      "generation_skill": "$imagegen",
-      "requires_grounded_generation": true,
+      "generation_skill": "deterministic-frame-copy",
+      "requires_grounded_generation": false,
       "allow_prompt_only_generation": false,
       "identity_reference_paths": [
         "references/canonical-base.png",
         "decoded/base.png"
       ],
       "parallelizable_after": [
-        "base"
+        "review"
       ],
       "mirror_policy": {},
       "recording_owner": "parent"
@@ -101,23 +105,23 @@
     {
       "id": "running-right",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/running-right.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         },
         {
@@ -133,7 +137,9 @@
           "role": "approved base pet"
         }
       ],
-      "output_path": "decoded/running-right.png",
+      "output_path": "official-frames-v1/running-right/",
+      "selected_source_path": "sequence-drafts/v1-action-work/drag-directional/right-drag-motion-v4-selected-alpha-hard.png",
+      "source_provenance": "built-in-imagegen with V1 gold-face correction and deterministic normalization",
       "depends_on": [
         "base"
       ],
@@ -152,24 +158,24 @@
     },
     {
       "id": "running-left",
-      "kind": "row-strip",
-      "status": "pending",
+      "kind": "derived-row-strip",
+      "status": "complete",
       "prompt_file": "prompts/rows/running-left.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         },
         {
@@ -185,17 +191,17 @@
           "role": "approved base pet"
         },
         {
-          "path": "decoded/running-right.png",
-          "role": "rightward gait reference for leftward row decision"
+          "path": "official-frames-v1/running-right/",
+          "role": "approved rightward drag mother sequence"
         }
       ],
-      "output_path": "decoded/running-left.png",
+      "output_path": "official-frames-v1/running-left/",
       "depends_on": [
         "base",
         "running-right"
       ],
-      "generation_skill": "$imagegen",
-      "requires_grounded_generation": true,
+      "generation_skill": "deterministic-horizontal-mirror",
+      "requires_grounded_generation": false,
       "allow_prompt_only_generation": false,
       "identity_reference_paths": [
         "references/canonical-base.png",
@@ -206,33 +212,34 @@
         "running-right"
       ],
       "mirror_policy": {
-        "may_derive_from": "running-right",
+        "derived_from": "running-right",
         "derivation": "horizontal-mirror",
-        "requires_explicit_approval": true,
-        "fallback_generation_skill": "$imagegen"
+        "approved": true,
+        "requires_explicit_approval": false,
+        "fallback_generation_skill": null
       },
       "recording_owner": "parent"
     },
     {
       "id": "waving",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/waving.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         },
         {
@@ -248,7 +255,7 @@
           "role": "approved base pet"
         }
       ],
-      "output_path": "decoded/waving.png",
+      "output_path": "official-frames-v1/waving/",
       "depends_on": [
         "base"
       ],
@@ -268,23 +275,23 @@
     {
       "id": "jumping",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/jumping.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         },
         {
@@ -300,7 +307,7 @@
           "role": "approved base pet"
         }
       ],
-      "output_path": "decoded/jumping.png",
+      "output_path": "official-frames-v1/jumping/",
       "depends_on": [
         "base"
       ],
@@ -320,23 +327,23 @@
     {
       "id": "failed",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/failed.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         },
         {
@@ -352,7 +359,7 @@
           "role": "approved base pet"
         }
       ],
-      "output_path": "decoded/failed.png",
+      "output_path": "official-frames-v1/failed/",
       "depends_on": [
         "base"
       ],
@@ -372,23 +379,23 @@
     {
       "id": "waiting",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/waiting.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         },
         {
@@ -404,7 +411,7 @@
           "role": "approved base pet"
         }
       ],
-      "output_path": "decoded/waiting.png",
+      "output_path": "official-frames-v1/waiting/",
       "depends_on": [
         "base"
       ],
@@ -423,24 +430,26 @@
     },
     {
       "id": "running",
-      "kind": "row-strip",
-      "status": "pending",
+      "kind": "state-alias",
+      "status": "complete",
+      "alias_of": "review",
+      "derivation": "exact-frame-copy",
       "prompt_file": "prompts/rows/running.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         },
         {
@@ -456,19 +465,19 @@
           "role": "approved base pet"
         }
       ],
-      "output_path": "decoded/running.png",
+      "output_path": "official-frames-v1/running/",
       "depends_on": [
-        "base"
+        "review"
       ],
-      "generation_skill": "$imagegen",
-      "requires_grounded_generation": true,
+      "generation_skill": "deterministic-frame-copy",
+      "requires_grounded_generation": false,
       "allow_prompt_only_generation": false,
       "identity_reference_paths": [
         "references/canonical-base.png",
         "decoded/base.png"
       ],
       "parallelizable_after": [
-        "base"
+        "review"
       ],
       "mirror_policy": {},
       "recording_owner": "parent"
@@ -476,23 +485,23 @@
     {
       "id": "review",
       "kind": "row-strip",
-      "status": "pending",
+      "status": "complete",
       "prompt_file": "prompts/rows/review.md",
       "input_images": [
         {
-          "path": "references\\reference-01.jpg",
+          "path": "references/reference-01.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-02.jpg",
+          "path": "references/reference-02.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-03.jpg",
+          "path": "references/reference-03.jpg",
           "role": "pet reference"
         },
         {
-          "path": "references\\reference-04.jpg",
+          "path": "references/reference-04.jpg",
           "role": "pet reference"
         },
         {
@@ -508,7 +517,7 @@
           "role": "approved base pet"
         }
       ],
-      "output_path": "decoded/review.png",
+      "output_path": "official-frames-v1/review/",
       "depends_on": [
         "base"
       ],
@@ -527,7 +536,7 @@
     }
   ],
   "canonical_identity_reference": {
-    "path": "references\\canonical-base.png",
+    "path": "references/canonical-base.png",
     "source_job": "base",
     "sha256": "a1b96e3bbf17b53337170d816dac85eb61ce8fa724bf5c1007adb6a6db8c887e",
     "metadata": {
