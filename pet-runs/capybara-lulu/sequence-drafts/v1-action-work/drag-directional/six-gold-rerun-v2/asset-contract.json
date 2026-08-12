@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0",
+  "job": "sprite_animation_full_rerun",
+  "asset_name": "capybara-lulu-directional-drag-six-gold-rerun-v2",
+  "intent": "Fully redraw the right and left passive-drag actions from the other six actions as identity gold, removing mouth/skin mixing, orange muzzle spill into the eyes, and the crotch protrusion.",
+  "target": {
+    "engine": "platform-neutral desktop-pet runtime",
+    "render_pipeline": "2D RGBA sprite",
+    "platform": "desktop",
+    "delivery_formats": [
+      "png",
+      "gif"
+    ]
+  },
+  "space": {
+    "semantic_dimensions_px": {
+      "width": 192,
+      "height": 208
+    },
+    "pivot": "canvas_center",
+    "authoring": {
+      "application": "built-in ImageGen plus deterministic Pillow pipeline",
+      "dimensions_px_xy": [
+        192,
+        208
+      ],
+      "right": "+X",
+      "down": "+Y"
+    },
+    "target_axes": {
+      "right": "+X",
+      "down": "+Y"
+    }
+  },
+  "art": {
+    "style": "compact low-texture pixel-art CapyLulu",
+    "references": [
+      "idle",
+      "waving",
+      "failed",
+      "waiting",
+      "running",
+      "review"
+    ],
+    "must_read_as": [
+      "passive directional drag",
+      "small closed smile",
+      "orange muzzle separated from both eyes by yellow skin",
+      "flat two-opening shorts without a crotch bulge"
+    ]
+  },
+  "geometry": {
+    "frame_count_per_direction": 8,
+    "binary_alpha_required": true,
+    "canvas_edge_contact_allowed": false,
+    "left_exact_horizontal_mirror_required": true
+  },
+  "textures": {
+    "workflow": "indexed gold-derived sprite palette",
+    "max_resolution": 208,
+    "sets": 1,
+    "required_maps": [
+      "rgba_base_color_alpha"
+    ]
+  },
+  "lookdev": {
+    "critical_regions": [
+      "eyes",
+      "orange muzzle",
+      "mouth",
+      "shorts center gap",
+      "green fruit leaf"
+    ],
+    "alpha_surfaces": [
+      "sprite background",
+      "shorts center notch"
+    ],
+    "target_camera_distances_px": [
+      192,
+      768
+    ]
+  },
+  "rig": null,
+  "animation": [
+    {
+      "name": "running-right",
+      "frame_durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ]
+    },
+    {
+      "name": "running-left",
+      "derivation": "exact horizontal mirror of running-right"
+    }
+  ],
+  "integration": {
+    "authorized_project_root": "/Users/qiulinfan/Desktop/capylulu_vpet",
+    "official_frame_promotion_required": true,
+    "qa_gallery_rebuild_required": true,
+    "desktop_pet_runtime_adapter_test_required": false
+  },
+  "acceptance": [
+    "F1-F6 come from one newly generated contact sheet with no prior directional frame as a production input",
+    "yellow skin and orange muzzle remain visibly separated",
+    "zero orange muzzle contact or overlap with either eye and at least 7 intervening yellow skin pixels after normalization",
+    "small closed dark smile with no open cavity, tongue, or teeth",
+    "flat shorts front with two leg openings and an upward transparent center gap; no seam, pouch, third lobe, or crotch bulge",
+    "motion enters the peak monotonically, recovers without a jump, and returns exactly to F1",
+    "all left frames exactly mirror the right frames",
+    "all six identity-authority actions remain manifest hash locked"
+  ],
+  "assumptions": [
+    "Directional actions remain candidate quality until the user visually accepts them.",
+    "PNG is authoritative for color; GIF is an indexed-color review artifact."
+  ],
+  "authorization": {
+    "may_modify_existing_source": true,
+    "may_mutate_target_project": true,
+    "paid_provider": null,
+    "upload_allowed": false
+  },
+  "provenance": {
+    "generation_tool": "built-in ImageGen",
+    "selected_source": "sources/six-frame-contact-sheet-magenta.png",
+    "prompt_record": "prompts.md",
+    "chroma_key_receipt": "alpha/chroma-removal-receipt.json",
+    "prior_directional_frames_used_as_inputs": false,
+    "external_third_party_assets_acquired": false
+  },
+  "license": {
+    "status": "project-internal",
+    "project_authored_or_generated_assets_only": true,
+    "external_third_party_asset_license_required": false
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "status": "prototype",
+  "asset_contract": {
+    "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/asset-contract.json",
+    "sha256": "8e79e947b60eb4aaed0ae7aaf88d42858fa943e7e7e5f3823398ee12a7afe65e"
+  },
+  "started_at": "2026-08-12T09:05:00Z",
+  "finished_at": "2026-08-12T10:05:00Z",
+  "assumptions": [
+    "Directional actions remain candidate quality until the user visually accepts them.",
+    "PNG is authoritative for color; GIF is an indexed-color review artifact."
+  ],
+  "inputs": [
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/sources/six-frame-contact-sheet-magenta.png",
+      "sha256": "fe581be5679d420b98c84fac10e338d81f2a96cb461bf94e8db775c1790d4e2d",
+      "license": "project-internal generated source"
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/alpha/six-frame-contact-sheet-alpha.png",
+      "sha256": "b210555785027396b6f0b9d7d814d2d02ff7944310b33b66699dce967bede1bc",
+      "license": "project-internal generated derivative"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/validation.json",
+      "sha256": "056ea25beed3b325ddfe81584527f4a8221eb0dbc3a8d55de6633368783a2993",
+      "role": "machine_validation"
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/visual-review.json",
+      "sha256": "cf929c7543c17d947fd5d74e9f9959a520e052a1a011d12b1ace74ad056830b3",
+      "role": "visual_review"
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/promotion-receipt.json",
+      "sha256": "4201aaaedb004dcdcc5d3d755f5768e92dd239508a0e0465b59baaf218def0ea",
+      "role": "promotion_receipt"
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right-contact-sheet.png",
+      "sha256": "5f76d96398bea69db46aeb207d04d50aecc886fba7eac8032c64a6cc433bec9d",
+      "role": "visual_contact_sheet"
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/qa/action-gifs/02-running-right.gif",
+      "sha256": "95e62a47beb76bcab2ebb4b75eba6a4185bd08510b6049ece06f6c7a0d2e25b3",
+      "role": "right_animation_delivery"
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/qa/action-gifs/03-running-left.gif",
+      "sha256": "2a5fa97e03d51bc1a6d3fd684372fe940904bc00ea1271e246e3ff8118acb413",
+      "role": "left_animation_delivery"
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/qa/action-gifs/validation.json",
+      "sha256": "a436276a145917d19190ff3acc6be7dfc6020cf6eacd3213b89f8a9f7ac2d5db",
+      "role": "active_action_gallery_validation"
+    }
+  ],
+  "runtime": [
+    {
+      "name": "built-in ImageGen",
+      "version": "service-managed",
+      "mode": "full six-frame contact-sheet generation"
+    },
+    {
+      "name": "Python",
+      "version": "3.11.15",
+      "mode": "uv frozen environment"
+    },
+    {
+      "name": "Pillow",
+      "version": "12.3.0",
+      "mode": "deterministic sprite extraction, normalization, mirror, and GIF build"
+    }
+  ],
+  "actions": [
+    {
+      "surface": "built-in ImageGen",
+      "summary": "Generated one new complete six-cell source sheet from the six gold identity actions; no old directional frame was used.",
+      "evidence": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/prompts.md"
+    },
+    {
+      "surface": "local deterministic pipeline",
+      "summary": "Built and validated the full right sequence, derived the exact left mirror, promoted 16 reviewed PNGs, and rebuilt all eight review GIFs.",
+      "evidence": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/promotion-receipt.json"
+    }
+  ],
+  "gates": [
+    {
+      "id": "contract.asset_contract",
+      "required": true,
+      "verdict": "pass",
+      "evidence_status": "current",
+      "evidence": {
+        "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/asset-contract.json",
+        "sha256": "8e79e947b60eb4aaed0ae7aaf88d42858fa943e7e7e5f3823398ee12a7afe65e"
+      }
+    },
+    {
+      "id": "artifact.directional_animation",
+      "required": true,
+      "verdict": "pass",
+      "evidence_status": "current",
+      "evidence": {
+        "artifacts": [
+          {
+            "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/qa/action-gifs/02-running-right.gif",
+            "sha256": "95e62a47beb76bcab2ebb4b75eba6a4185bd08510b6049ece06f6c7a0d2e25b3",
+            "role": "right_animation_delivery"
+          },
+          {
+            "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/qa/action-gifs/03-running-left.gif",
+            "sha256": "2a5fa97e03d51bc1a6d3fd684372fe940904bc00ea1271e246e3ff8118acb413",
+            "role": "left_animation_delivery"
+          }
+        ]
+      }
+    },
+    {
+      "id": "visual.face_mouth_shorts",
+      "required": true,
+      "verdict": "pass",
+      "evidence_status": "current",
+      "evidence": {
+        "images": [
+          "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right-contact-sheet.png"
+        ],
+        "review": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/visual-review.json",
+        "minimum_eye_muzzle_clearance_px": 7.0,
+        "minimum_intervening_skin_pixels": 7,
+        "orange_eye_touch_or_spill_count": 0,
+        "shorts_center_upward_notch_px_range": [
+          8.47,
+          9.98
+        ]
+      }
+    },
+    {
+      "id": "source.technical_audit",
+      "required": true,
+      "verdict": "pass",
+      "evidence_status": "current",
+      "evidence": {
+        "validation": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/validation.json",
+        "full_rerun": true,
+        "six_gold_manifest_hash_lock": true,
+        "binary_alpha": true,
+        "orange_eye_touch_or_spill_count": 0
+      }
+    },
+    {
+      "id": "integration.official_and_qa",
+      "required": true,
+      "verdict": "pass",
+      "evidence_status": "current",
+      "evidence": {
+        "promotion_receipt": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/promotion-receipt.json",
+        "candidate_official_byte_equality": true,
+        "active_action_count": 8,
+        "qa_errors": []
+      }
+    },
+    {
+      "id": "engine.desktop_pet_runtime",
+      "required": false,
+      "verdict": "not_tested",
+      "evidence_status": "pending",
+      "reason": "This iteration was scoped to platform-neutral sprite masters and QA GIFs; the desktop-pet runtime adapter was not exercised."
+    }
+  ],
+  "round_trip": {
+    "format": "png/gif sprite masters",
+    "import_surface": "desktop-pet runtime adapter",
+    "verdict": "not_tested",
+    "reason": "No runtime import or live desktop-pet playback was part of this asset-only iteration."
+  },
+  "limitations": [
+    "Top-level status is prototype because desktop-pet runtime round-trip is not tested.",
+    "Directional actions retain candidate quality labels until user visual acceptance.",
+    "PNG files are authoritative for color; review GIFs use indexed-color quantization."
+  ],
+  "next_step": "User visually reviews the complete eight-action gallery; after acceptance, run the desktop-pet runtime integration check."
+}

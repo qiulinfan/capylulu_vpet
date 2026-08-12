@@ -72,11 +72,11 @@
       ],
       "eye_policy": null,
       "reversible_transition_pairs": [],
-      "quality": "candidate"
+      "quality": "gold"
     },
     "running-right": {
       "gif": "pet-runs/capybara-lulu/qa/action-gifs/02-running-right.gif",
-      "gif_sha256": "bc22f9f6e09416993d73dc10aa949d870742f66d5d4fbcd8d3d70e73b3bda82d",
+      "gif_sha256": "95e62a47beb76bcab2ebb4b75eba6a4185bd08510b6049ece06f6c7a0d2e25b3",
       "source_frames": [
         "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-01.png",
         "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-02.png",
@@ -88,14 +88,14 @@
         "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-08.png"
       ],
       "source_frame_sha256": [
-        "26e2405c50c2d771c85e44b115808a6c5bcd911f0a5cbadd68e8a99a2bc19ede",
-        "f50e11a02d2a71d0dddfef9333062c30289a7f7d28da3c91af3d45bb692effab",
-        "4ead8146f522a703f4a32d6769bae0b5382b8155c12c155cbfaac091d06f8869",
-        "94e80f42f9217167e6716690e96da84a1a93a5121dfe31e596a0cb8f991b4f1a",
-        "e743820db941d6fa1da220b1d7ff9bd622c2bd921221841e653bce67746bae1a",
-        "e031e7bc6308348c8854a33b6e9c5e0c952463c7c0fe1b63e74c003ada972975",
-        "7dcf4f54ab9e51a9bc404197e60d1ac366f7f2ae5b607572693463d33f8c1fd8",
-        "26e2405c50c2d771c85e44b115808a6c5bcd911f0a5cbadd68e8a99a2bc19ede"
+        "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376",
+        "059d06921f01b251b858ea15c0759e9ab1d2c7d1d871fd90997ffbb7045d036f",
+        "e00787139c5540627a40dd263318d2c1e5b03e8327d744b91a418aae7a074244",
+        "a3da4e3ce168ce5cbaa33507a86018073319fb65a40d2fbca72bcfe06da4fd88",
+        "cbb047177ce02283103ee687acc180eba42991aa74eddba18c31ab1abc114c1f",
+        "ec8663dbdb54e34b2b8594d1415f68dba6093e51ac1e7051493c8b34e9831a59",
+        "307a802b9e542f26ef275210d97e0a793066076157afc9fc14595b3b5b44d70b",
+        "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376"
       ],
       "frame_count": 8,
       "frame_durations_ms": [
@@ -111,24 +111,24 @@
       "cycle_duration_ms": 1060,
       "loop": 0,
       "transition_rmse": [
-        0.31501452909095323,
-        0.10479674525640305,
-        0.2798969384527127,
-        0.17504163194214645,
-        0.3174509030663285,
-        0.31504737059578475,
-        0.08970968241675782
+        0.24560731031740207,
+        0.20693811473550122,
+        0.22172640753477646,
+        0.18821657732465888,
+        0.27840343238962206,
+        0.2756867335458352,
+        0.07832766143579517
       ],
       "loop_seam_rmse": 0.0,
       "alpha_areas": [
-        17581.0,
-        17143.0,
-        17251.0,
-        17124.0,
-        17204.0,
-        17246.0,
-        17581.0,
-        17581.0
+        17650.0,
+        17610.0,
+        17603.0,
+        17567.0,
+        17564.0,
+        17618.0,
+        17650.0,
+        17650.0
       ],
       "eye_policy": "closed-all",
       "reversible_transition_pairs": [],
@@ -136,7 +136,7 @@
     },
     "running-left": {
       "gif": "pet-runs/capybara-lulu/qa/action-gifs/03-running-left.gif",
-      "gif_sha256": "4a3506d1a84176c7533315829375a248e0779f20457c16e5f3010e7950f15d18",
+      "gif_sha256": "2a5fa97e03d51bc1a6d3fd684372fe940904bc00ea1271e246e3ff8118acb413",
       "source_frames": [
         "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-01.png",
         "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-02.png",
@@ -148,14 +148,14 @@
         "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-08.png"
       ],
       "source_frame_sha256": [
-        "850173c5d9768fe75e0680db1dd5346a922dbffe72d9d83ad4e4198c35b8a1d6",
-        "012a5591d9c0122dd37e2053d08c0a2fa63fac55a5f5ac7e291a55821287e952",
-        "24493cee396dc2c51f47a2d6a12c88f96de6660bd39bd6d84a02179ef2e7c704",
-        "992ce81ac6c6e1004ee814e0baed77d4db3f9f621d02a151886c1f6564fc2c35",
-        "4a44894bb65d8df5cf6e534086b952b255b6d23de1a8c328d2bb1ed476839dee",
-        "218003f454a3bf02b0c1764b51a9a682b957f8e1a4e4fef2666089c3c9a9daa2",
-        "5ff33d1f5baa56c3383e30ec1c6ab86f5ddddec730fd0dfb6a0f5948ad1706bc",
-        "850173c5d9768fe75e0680db1dd5346a922dbffe72d9d83ad4e4198c35b8a1d6"
+        "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f",
+        "441e77388336e301ddaaacb6926d3c01d35c419ebaefa958fb0606fcea331732",
+        "d255b5ab0d453c7aa2ee1b57b16a927a300b8b9117f295f05fafdd78eb8947bd",
+        "1b382203e32adfc167ffd83814e7fd415912e323fbf9fa1e793389e55456a7fc",
+        "8a41fe98f3a20c7c4ec2f905ba8696f393015c0b404f56e9ea40ad554d72e90b",
+        "3a9b9bddd1a0c3f6b9ebd64e12d89420256e39d936dd14aa5f88674add41182e",
+        "3300a8ca73b86a4bb8c26eef17f56786f6c63d79721dc087fdd2940126eace0e",
+        "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f"
       ],
       "frame_count": 8,
       "frame_durations_ms": [
@@ -171,24 +171,24 @@
       "cycle_duration_ms": 1060,
       "loop": 0,
       "transition_rmse": [
-        0.31501452909095323,
-        0.10479674525640305,
-        0.2798969384527127,
-        0.17504163194214645,
-        0.3174509030663285,
-        0.31504737059578475,
-        0.08970968241675782
+        0.24560731031740207,
+        0.20693811473550122,
+        0.22172640753477646,
+        0.18821657732465888,
+        0.27840343238962206,
+        0.2756867335458352,
+        0.07832766143579517
       ],
       "loop_seam_rmse": 0.0,
       "alpha_areas": [
-        17581.0,
-        17143.0,
-        17251.0,
-        17124.0,
-        17204.0,
-        17246.0,
-        17581.0,
-        17581.0
+        17650.0,
+        17610.0,
+        17603.0,
+        17567.0,
+        17564.0,
+        17618.0,
+        17650.0,
+        17650.0
       ],
       "eye_policy": "closed-all",
       "reversible_transition_pairs": [],
@@ -321,7 +321,7 @@
           9
         ]
       ],
-      "quality": "candidate"
+      "quality": "gold"
     },
     "waiting": {
       "gif": "pet-runs/capybara-lulu/qa/action-gifs/06-waiting.gif",
@@ -421,7 +421,7 @@
       ],
       "eye_policy": null,
       "reversible_transition_pairs": [],
-      "quality": "candidate"
+      "quality": "gold"
     },
     "review": {
       "gif": "pet-runs/capybara-lulu/qa/action-gifs/08-review.gif",
@@ -471,7 +471,7 @@
       ],
       "eye_policy": null,
       "reversible_transition_pairs": [],
-      "quality": "candidate"
+      "quality": "gold"
     }
   },
   "toolchain": {

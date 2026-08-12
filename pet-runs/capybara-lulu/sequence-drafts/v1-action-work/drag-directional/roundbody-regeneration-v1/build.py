@@ -359,7 +359,8 @@ def build() -> dict[str, object]:
 
     validation = {
         "ok": not errors,
-        "status": "active-master-source",
+        "status": "superseded-source",
+        "superseded_by": "../six-gold-rerun-v2/",
         "identity_frame": str(GOLD_OPEN.relative_to(PET)),
         "identity_frame_sha256": gold_hash,
         "frame_durations_ms": FRAME_DURATIONS_MS,

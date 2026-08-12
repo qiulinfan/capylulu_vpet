@@ -1,6 +1,10 @@
 # Round-body directional regeneration v1
 
-Status: active source lineage for the directional animation-master actions.
+Status: superseded directional lineage. It was retired after visual review
+found mouth/muzzle mixing, an orange muzzle edge entering the eye region, and a
+pouch-like crotch shape. Active source work moved to
+`../six-gold-rerun-v2/` as a full redraw from the six non-directional gold
+actions.
 
 This pass preserves the existing neutral F1 body, face geometry, palette, and
 outline and regenerates only F2-F6 with the built-in ImageGen tool. Every

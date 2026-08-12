@@ -3,7 +3,7 @@
   "created_at": "2026-05-03T17:42:22.594061+00:00",
   "updated_at": "2026-08-12",
   "run_dir": ".",
-  "status_note": "The active action set is reviewed as independent GIFs before atlas assembly. Jumping is retired because it overlaps waving; directional running names are pointer-drag reactions; idle and generic running are deterministic review aliases.",
+  "status_note": "The active action set is reviewed as independent GIFs before atlas assembly. Jumping is retired because it overlaps waving; directional running names are pointer-drag reactions; all six non-directional actions are hash-locked gold identity authorities for the full directional rerun.",
   "primary_generation_skill": "$imagegen",
   "jobs": [
     {
@@ -104,111 +104,106 @@
     },
     {
       "id": "running-right",
-      "kind": "row-strip",
+      "kind": "six-gold-contact-sheet-derived-sequence",
       "status": "complete",
-      "prompt_file": "prompts/rows/running-right.md",
+      "prompt_file": "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/prompts.md",
       "input_images": [
         {
-          "path": "references/reference-01.jpg",
-          "role": "pet reference"
+          "path": "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/references/six-gold-reference-board.png",
+          "role": "representative board assembled from all six official gold actions"
         },
         {
-          "path": "references/reference-02.jpg",
-          "role": "pet reference"
+          "path": "official-frames-v1/idle/",
+          "role": "hash-locked gold identity action"
         },
         {
-          "path": "references/reference-03.jpg",
-          "role": "pet reference"
+          "path": "official-frames-v1/waving/",
+          "role": "hash-locked gold identity action"
         },
         {
-          "path": "references/reference-04.jpg",
-          "role": "pet reference"
+          "path": "official-frames-v1/failed/",
+          "role": "hash-locked gold identity action"
         },
         {
-          "path": "references/layout-guides/running-right.png",
-          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+          "path": "official-frames-v1/waiting/",
+          "role": "hash-locked gold identity action"
         },
         {
-          "path": "references/canonical-base.png",
-          "role": "canonical identity reference"
+          "path": "official-frames-v1/running/",
+          "role": "hash-locked gold identity action"
         },
         {
-          "path": "decoded/base.png",
-          "role": "approved base pet"
+          "path": "official-frames-v1/review/",
+          "role": "hash-locked gold identity action"
         }
       ],
       "output_path": "official-frames-v1/running-right/",
-      "selected_source_path": "sequence-drafts/v1-action-work/drag-directional/right-drag-motion-v4-selected-alpha-hard.png",
-      "source_provenance": "built-in-imagegen with V1 gold-face correction and deterministic normalization",
+      "selected_source_path": "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/sources/six-frame-contact-sheet-magenta.png",
+      "source_path": "/Users/qiulinfan/.codex/generated_images/019ff507-b66a-7582-987f-5691221b20ee/exec-ccbe0e42-df31-4153-bc91-c43e02fd86e8.png",
+      "source_sha256": "fe581be5679d420b98c84fac10e338d81f2a96cb461bf94e8db775c1790d4e2d",
+      "alpha_source_path": "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/alpha/six-frame-contact-sheet-alpha.png",
+      "alpha_source_sha256": "b210555785027396b6f0b9d7d814d2d02ff7944310b33b66699dce967bede1bc",
+      "source_provenance": "built-in-imagegen full six-frame rerun from six official gold actions, then deterministic chroma removal, uniform normalization, whole-sprite pose alignment, palette mapping, loop derivation, and mirroring",
       "depends_on": [
-        "base"
+        "idle",
+        "waving",
+        "failed",
+        "waiting",
+        "running",
+        "review"
       ],
       "generation_skill": "$imagegen",
       "requires_grounded_generation": true,
       "allow_prompt_only_generation": false,
       "identity_reference_paths": [
-        "references/canonical-base.png",
-        "decoded/base.png"
+        "official-frames-v1/idle/",
+        "official-frames-v1/waving/",
+        "official-frames-v1/failed/",
+        "official-frames-v1/waiting/",
+        "official-frames-v1/running/",
+        "official-frames-v1/review/"
       ],
       "parallelizable_after": [
-        "base"
+        "idle",
+        "waving",
+        "failed",
+        "waiting",
+        "running",
+        "review"
       ],
       "mirror_policy": {},
-      "recording_owner": "parent"
+      "recording_owner": "parent",
+      "completed_at": "2026-08-12",
+      "metadata": {
+        "width": 1476,
+        "height": 1066,
+        "mode": "RGB",
+        "format": "PNG",
+        "contact_sheet_layout": "3x2"
+      }
     },
     {
       "id": "running-left",
-      "kind": "derived-row-strip",
+      "kind": "exact-mirror-derived-sequence",
       "status": "complete",
-      "prompt_file": "prompts/rows/running-left.md",
+      "prompt_file": "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/prompts.md",
       "input_images": [
         {
-          "path": "references/reference-01.jpg",
-          "role": "pet reference"
-        },
-        {
-          "path": "references/reference-02.jpg",
-          "role": "pet reference"
-        },
-        {
-          "path": "references/reference-03.jpg",
-          "role": "pet reference"
-        },
-        {
-          "path": "references/reference-04.jpg",
-          "role": "pet reference"
-        },
-        {
-          "path": "references/layout-guides/running-left.png",
-          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
-        },
-        {
-          "path": "references/canonical-base.png",
-          "role": "canonical identity reference"
-        },
-        {
-          "path": "decoded/base.png",
-          "role": "approved base pet"
-        },
-        {
           "path": "official-frames-v1/running-right/",
-          "role": "approved rightward drag mother sequence"
+          "role": "six-gold full-rerun rightward mother sequence"
         }
       ],
       "output_path": "official-frames-v1/running-left/",
       "depends_on": [
-        "base",
         "running-right"
       ],
       "generation_skill": "deterministic-horizontal-mirror",
       "requires_grounded_generation": false,
       "allow_prompt_only_generation": false,
       "identity_reference_paths": [
-        "references/canonical-base.png",
-        "decoded/base.png"
+        "official-frames-v1/running-right/"
       ],
       "parallelizable_after": [
-        "base",
         "running-right"
       ],
       "mirror_policy": {
@@ -218,7 +213,8 @@
         "requires_explicit_approval": false,
         "fallback_generation_skill": null
       },
-      "recording_owner": "parent"
+      "recording_owner": "parent",
+      "completed_at": "2026-08-12"
     },
     {
       "id": "waving",

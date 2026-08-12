@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "status": "promoted",
+  "visual_review_sha256": "cf929c7543c17d947fd5d74e9f9959a520e052a1a011d12b1ace74ad056830b3",
+  "machine_validation_sha256": "056ea25beed3b325ddfe81584527f4a8221eb0dbc3a8d55de6633368783a2993",
+  "build_sha256": "6ea051b26f9dcb0709b09f41b83dc4e9adf1e26622238971a8e2c0a3281bf31a",
+  "promoted_frame_sha256": {
+    "running-right": {
+      "running-right-01.png": "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376",
+      "running-right-02.png": "059d06921f01b251b858ea15c0759e9ab1d2c7d1d871fd90997ffbb7045d036f",
+      "running-right-03.png": "e00787139c5540627a40dd263318d2c1e5b03e8327d744b91a418aae7a074244",
+      "running-right-04.png": "a3da4e3ce168ce5cbaa33507a86018073319fb65a40d2fbca72bcfe06da4fd88",
+      "running-right-05.png": "cbb047177ce02283103ee687acc180eba42991aa74eddba18c31ab1abc114c1f",
+      "running-right-06.png": "ec8663dbdb54e34b2b8594d1415f68dba6093e51ac1e7051493c8b34e9831a59",
+      "running-right-07.png": "307a802b9e542f26ef275210d97e0a793066076157afc9fc14595b3b5b44d70b",
+      "running-right-08.png": "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376"
+    },
+    "running-left": {
+      "running-left-01.png": "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f",
+      "running-left-02.png": "441e77388336e301ddaaacb6926d3c01d35c419ebaefa958fb0606fcea331732",
+      "running-left-03.png": "d255b5ab0d453c7aa2ee1b57b16a927a300b8b9117f295f05fafdd78eb8947bd",
+      "running-left-04.png": "1b382203e32adfc167ffd83814e7fd415912e323fbf9fa1e793389e55456a7fc",
+      "running-left-05.png": "8a41fe98f3a20c7c4ec2f905ba8696f393015c0b404f56e9ea40ad554d72e90b",
+      "running-left-06.png": "3a9b9bddd1a0c3f6b9ebd64e12d89420256e39d936dd14aa5f88674add41182e",
+      "running-left-07.png": "3300a8ca73b86a4bb8c26eef17f56786f6c63d79721dc087fdd2940126eace0e",
+      "running-left-08.png": "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f"
+    }
+  },
+  "qa_validation_sha256": "a436276a145917d19190ff3acc6be7dfc6020cf6eacd3213b89f8a9f7ac2d5db",
+  "qa_gif_sha256": {
+    "01-idle.gif": "4e8521bf9587c1ced53ecb91ba71e431e756cbe7dfac321f3b267cd88def9405",
+    "02-running-right.gif": "95e62a47beb76bcab2ebb4b75eba6a4185bd08510b6049ece06f6c7a0d2e25b3",
+    "03-running-left.gif": "2a5fa97e03d51bc1a6d3fd684372fe940904bc00ea1271e246e3ff8118acb413",
+    "04-waving.gif": "6f17cbfab3dd0886ffdc64af78f17a2c25b2722073ce6fbd792839c506e710ea",
+    "05-failed.gif": "da303a1d1f68a70f1663238d214d2ff7955c37603dfb2a1f9330260b9de4a59a",
+    "06-waiting.gif": "74e569b46d8d6fc625169200355d11c60fe8378b553b0d177c736abade72e91e",
+    "07-running.gif": "8ba448575aeeb36f99198e0f361e52da1f7daa174b7e696593ef40e3c090ac03",
+    "08-review.gif": "4e8521bf9587c1ced53ecb91ba71e431e756cbe7dfac321f3b267cd88def9405"
+  },
+  "review_status": "pass",
+  "errors": []
+}

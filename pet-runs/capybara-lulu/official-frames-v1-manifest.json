@@ -60,21 +60,30 @@
         "official-frames-v1/idle/idle-06.png"
       ],
       "frame_durations_ms": [180, 180, 180, 180, 180, 180],
+      "quality": "gold",
+      "frame_sha256": {
+        "idle-01.png": "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
+        "idle-02.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
+        "idle-03.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+        "idle-04.png": "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
+        "idle-05.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+        "idle-06.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651"
+      },
       "note": "each idle frame is pixel-identical to the corresponding focused-listening review frame"
     },
     "running-right": {
       "meaning": "pointer/window dragged toward screen-right; head leads while body and limbs trail left",
-      "generation_lineage": "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/",
-      "identity_anchor": "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/gold/gold-neutral-open-192x208.png",
+      "generation_lineage": "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/",
+      "identity_anchor": "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right/running-right-01.png",
       "source_frames": [
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-01.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-02.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-03.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-04.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-05.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-06.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-07.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-08.png"
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right/running-right-01.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right/running-right-02.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right/running-right-03.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right/running-right-04.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right/running-right-05.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right/running-right-06.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right/running-right-07.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/right/running-right-08.png"
       ],
       "order": [
         1,
@@ -98,24 +107,24 @@
       ],
       "frame_durations_ms": [120, 120, 120, 120, 120, 120, 120, 220],
       "eye_policy": "closed-all",
-      "alpha_area_target": 17200,
+      "alpha_area_target": 17600,
       "alpha_area_tolerance_ratio": 0.05,
-      "palette_policy": "one shared palette derived from F1",
-      "note": "F1 body identity is preserved; F2-F6 are individually regenerated full-volume carried poses with uniform scaling only; both eyes stay closed; F7 is a one-pixel recovery bob and F8 returns exactly to F1"
+      "palette_policy": "one shared 128-color palette derived from all six gold actions",
+      "note": "F1-F6 are complete reruns from the six non-directional gold actions, not patches of former drag frames; every frame uses a small closed smile, clean eye-to-muzzle separation, and flat two-leg shorts; F7 is a one-pixel recovery bob and F8 returns exactly to F1"
     },
     "running-left": {
       "meaning": "pointer/window dragged toward screen-left",
       "derivation": "exact horizontal pixel mirror of running-right",
       "mirror_of": "running-right",
       "source_frames": [
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-01.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-02.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-03.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-04.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-05.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-06.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-07.png",
-        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-08.png"
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/left/running-left-01.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/left/running-left-02.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/left/running-left-03.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/left/running-left-04.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/left/running-left-05.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/left/running-left-06.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/left/running-left-07.png",
+        "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/left/running-left-08.png"
       ],
       "order": [
         1,
@@ -139,10 +148,10 @@
       ],
       "frame_durations_ms": [120, 120, 120, 120, 120, 120, 120, 220],
       "eye_policy": "closed-all",
-      "alpha_area_target": 17200,
+      "alpha_area_target": 17600,
       "alpha_area_tolerance_ratio": 0.05,
-      "palette_policy": "one shared palette derived from rightward F1",
-      "note": "exact horizontal pixel mirror of the full-volume closed-eye rightward mother sequence"
+      "palette_policy": "exact mirror of the rightward sequence's six-gold palette",
+      "note": "exact horizontal pixel mirror of the six-gold full-rerun rightward mother sequence"
     },
     "waving": {
       "identity_gold": "sequence-drafts/v1-action-work/waving-success-windup/gold-open-face.png",
@@ -216,6 +225,19 @@
       "frame_durations_ms": [180, 180, 180, 180, 180, 120, 120, 360, 120, 120, 180, 180],
       "held_pose_frame": 8,
       "reversible_transition_pairs": [[6, 10], [7, 9]],
+      "quality": "gold",
+      "frame_sha256": {
+        "failed-01.png": "87bc58bf2bc9b44d3f6d1eb7ec34055f4250d00df06d50393d419b22a002c6d1",
+        "failed-02.png": "7bc0ea08f6d2e9b690730c5ae5948dfce370ed7a276216c6ada4476bc0f36117",
+        "failed-03.png": "2667f436701a0286f8b57a07f90f17d65bd2006dba6ec32caf77dd41c325c826",
+        "failed-04.png": "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a",
+        "failed-05.png": "f0a02f142f26f3978649afad79a55c413d0e922a83eedbc465828b17894f5486",
+        "failed-roll-transition-01.png": "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+        "failed-roll-transition-02.png": "310a895d4fe468548588dc376d7c6eed787010b92424eadbce2a208702c91d92",
+        "failed-06.png": "e473009083526caad274c686a7c09187583fbe234813b9881df7a7e9594a73ea",
+        "failed-07.png": "f0a02f142f26f3978649afad79a55c413d0e922a83eedbc465828b17894f5486",
+        "failed-08.png": "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a"
+      },
       "note": "soft sleeping-with-zzz loop for gentle failure/rest state; frames 6-7 roll from prone sleep into the side-turned frame 8, which holds for two beats, then the exact same transition art plays in reverse at frames 9-10"
     },
     "waiting": {
@@ -283,6 +305,15 @@
         "official-frames-v1/running/running-06.png"
       ],
       "frame_durations_ms": [120, 120, 120, 120, 120, 220],
+      "quality": "gold",
+      "frame_sha256": {
+        "running-01.png": "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
+        "running-02.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
+        "running-03.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+        "running-04.png": "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
+        "running-05.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+        "running-06.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651"
+      },
       "note": "each current running frame is pixel-identical to the corresponding focused-listening review frame; the retired dance placeholder is preserved under sequence-drafts/v1-retired-variants/running-dance-placeholders/"
     },
     "review": {
@@ -309,6 +340,15 @@
         "official-frames-v1/review/review-06.png"
       ],
       "frame_durations_ms": [180, 180, 180, 180, 180, 180],
+      "quality": "gold",
+      "frame_sha256": {
+        "review-01.png": "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
+        "review-02.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
+        "review-03.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+        "review-04.png": "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
+        "review-05.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+        "review-06.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651"
+      },
       "note": "approved headphones listening loop for focused/review state"
     }
   }

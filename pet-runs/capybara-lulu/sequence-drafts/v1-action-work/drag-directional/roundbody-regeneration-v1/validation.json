@@ -1,6 +1,7 @@
 {
   "ok": true,
-  "status": "active-master-source",
+  "status": "superseded-source",
+  "superseded_by": "../six-gold-rerun-v2/",
   "identity_frame": "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/gold/gold-neutral-open-192x208.png",
   "identity_frame_sha256": "e8cf9a7ce677531a7841321689823dd26652164517d2ea85d1b55a1bf9d5c49b",
   "frame_durations_ms": [

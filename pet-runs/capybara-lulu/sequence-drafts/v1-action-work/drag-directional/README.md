@@ -66,7 +66,7 @@ gold body, mouth, and silhouette rather than a separately regenerated
 character. They were retired after visual review found pose-dependent body
 stretching/thinning, visible color drift, and too many open-eye frames.
 
-## Selected round-body regeneration
+## Superseded round-body regeneration
 
 `roundbody-regeneration-v1/` preserves F1's body, face geometry, palette, and
 outline; regenerates F2-F6 one isolated pose at a time; and applies deterministic
@@ -74,9 +74,20 @@ shape, palette, eye, mirror, and loop constraints. Every frame keeps both eyes
 closed. Generated frames target the same effective visual mass, use uniform
 scaling only, and share one palette derived from F1. F7 is a one-pixel recovery
 bob, F8 returns exactly to the closed-eye F1, and the left sequence is an exact
-pixel mirror.
+pixel mirror. This lineage was retired after review found the open-mouth colors
+mixing with the muzzle, an M-shaped muzzle edge rising into the eyes, and a
+pouch-like shorts front.
+
+## Selected six-gold full rerun
+
+`six-gold-rerun-v2/` redraws all six mother frames as complete sprites rather
+than repairing the former directional art. The official `idle`, `waving`,
+`failed`, `waiting`, `running`, and `review` actions jointly define identity,
+palette, face construction, closed-smile language, and clean shorts geometry.
+No old directional frame is a generation input. F7 is a one-pixel recovery
+bob, F8 is an exact return to F1, and the left sequence remains an exact pixel
+mirror.
 
 Timing remains `120 ms` for frames 1-7 and `220 ms` for frame 8.
-The exact frame map, deterministic build command, rejected intermediates, and
-ImageGen invariants are documented in the regeneration's `README.md` and
-validated by its `build.py`.
+The exact full-rerun contract, deterministic build command, prompt record, and
+visual acceptance evidence are documented inside `six-gold-rerun-v2/`.

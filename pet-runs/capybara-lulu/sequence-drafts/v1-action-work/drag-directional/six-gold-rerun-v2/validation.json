@@ -1,0 +1,590 @@
+{
+  "ok": true,
+  "status": "active-master-candidate-source",
+  "build_sha256": "6ea051b26f9dcb0709b09f41b83dc4e9adf1e26622238971a8e2c0a3281bf31a",
+  "face_geometry_sha256": "56c7901b56a766a309ebb4447dccfa2be8adb60a53552a39285ef14e3e569c37",
+  "manifest_sha256": "c59bc4d61a5d14d59b19ae985e9aa25a064fe514ba9f9446f2394f1d565938ba",
+  "generation_policy": "F1-F6 are one full six-frame rerun; no old drag frame or local pixel patch is used",
+  "source_sheet": "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/sources/six-frame-contact-sheet-magenta.png",
+  "source_sheet_sha256": "fe581be5679d420b98c84fac10e338d81f2a96cb461bf94e8db775c1790d4e2d",
+  "alpha_sheet": "sequence-drafts/v1-action-work/drag-directional/six-gold-rerun-v2/alpha/six-frame-contact-sheet-alpha.png",
+  "alpha_sheet_sha256": "b210555785027396b6f0b9d7d814d2d02ff7944310b33b66699dce967bede1bc",
+  "chroma_removal_receipt": {
+    "tool": "imagegen/remove_chroma_key.py",
+    "tool_path": "$CODEX_HOME/skills/.system/imagegen/scripts/remove_chroma_key.py",
+    "command": "uv run --frozen python $CODEX_HOME/skills/.system/imagegen/scripts/remove_chroma_key.py --input sources/six-frame-contact-sheet-magenta.png --out alpha/six-frame-contact-sheet-alpha.png --auto-key border --soft-matte --transparent-threshold 12 --opaque-threshold 220 --despill",
+    "source_sha256": "fe581be5679d420b98c84fac10e338d81f2a96cb461bf94e8db775c1790d4e2d",
+    "alpha_sha256": "b210555785027396b6f0b9d7d814d2d02ff7944310b33b66699dce967bede1bc",
+    "detected_key_color": "#f405f1",
+    "transparent_pixels": 1074705,
+    "partially_transparent_pixels": 11555,
+    "total_pixels": 1573416,
+    "recorded_at": "2026-08-12"
+  },
+  "identity_authority_actions": [
+    "idle",
+    "waving",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "identity_authority_sha256": {
+    "official-frames-v1/idle/idle-01.png": "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
+    "official-frames-v1/idle/idle-02.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
+    "official-frames-v1/idle/idle-03.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+    "official-frames-v1/idle/idle-04.png": "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
+    "official-frames-v1/idle/idle-05.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+    "official-frames-v1/idle/idle-06.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
+    "official-frames-v1/waving/waving-01.png": "4927bb779a107d6a357f0ae7fdfa73817a1bc350a45e9720e34bece0e04a11c6",
+    "official-frames-v1/waving/waving-02.png": "844c6bb342b2f4c0544da18d86154cd416a0fde9e85878a3d5811bfa284c5f70",
+    "official-frames-v1/waving/waving-03.png": "ad1ae7b765b28fd8f66009d0ea14fd288f0a6d1e076dd8006367dff29d701829",
+    "official-frames-v1/waving/waving-04.png": "7592d49c57b6bc6b4010d39fad51ccd6b087808e22e0a34bd6e25e151110a476",
+    "official-frames-v1/failed/failed-01.png": "87bc58bf2bc9b44d3f6d1eb7ec34055f4250d00df06d50393d419b22a002c6d1",
+    "official-frames-v1/failed/failed-02.png": "7bc0ea08f6d2e9b690730c5ae5948dfce370ed7a276216c6ada4476bc0f36117",
+    "official-frames-v1/failed/failed-03.png": "2667f436701a0286f8b57a07f90f17d65bd2006dba6ec32caf77dd41c325c826",
+    "official-frames-v1/failed/failed-04.png": "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a",
+    "official-frames-v1/failed/failed-05.png": "f0a02f142f26f3978649afad79a55c413d0e922a83eedbc465828b17894f5486",
+    "official-frames-v1/failed/failed-roll-transition-01.png": "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+    "official-frames-v1/failed/failed-roll-transition-02.png": "310a895d4fe468548588dc376d7c6eed787010b92424eadbce2a208702c91d92",
+    "official-frames-v1/failed/failed-06.png": "e473009083526caad274c686a7c09187583fbe234813b9881df7a7e9594a73ea",
+    "official-frames-v1/failed/failed-07.png": "f0a02f142f26f3978649afad79a55c413d0e922a83eedbc465828b17894f5486",
+    "official-frames-v1/failed/failed-08.png": "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a",
+    "official-frames-v1/waiting/waiting-01.png": "cd9bbb52d19b12798ac63436da697ae5d611509f0d9454a3c7567fe6245b1898",
+    "official-frames-v1/waiting/waiting-02.png": "81315a4ccc2cd0c5203f24253ae7687ab3981685bd8f7f7ed1bb062f0b789632",
+    "official-frames-v1/waiting/waiting-03.png": "24c14a55c1b64ca83f6304a24c126e3e2beda9c5bc034b7d81c2fe7c7bd90719",
+    "official-frames-v1/waiting/waiting-04.png": "29b76618921c6b9565a3848512fb308cbefb6c86ad4fa161c22aa0c6499acbc2",
+    "official-frames-v1/waiting/waiting-05.png": "065363b9a40c59087266ed1d1e5fd2f0576d4a8a67d181916020179b9367ce51",
+    "official-frames-v1/waiting/waiting-06.png": "766e85dbd8682eee0712debba3b4ccffd474a80b49a694ef7c7b2cd985a9c1e1",
+    "official-frames-v1/running/running-01.png": "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
+    "official-frames-v1/running/running-02.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
+    "official-frames-v1/running/running-03.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+    "official-frames-v1/running/running-04.png": "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
+    "official-frames-v1/running/running-05.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+    "official-frames-v1/running/running-06.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
+    "official-frames-v1/review/review-01.png": "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
+    "official-frames-v1/review/review-02.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
+    "official-frames-v1/review/review-03.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+    "official-frames-v1/review/review-04.png": "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
+    "official-frames-v1/review/review-05.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+    "official-frames-v1/review/review-06.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651"
+  },
+  "frame_durations_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    220
+  ],
+  "target_alpha_area": 17600,
+  "alpha_area_tolerance_ratio": 0.05,
+  "generated_frame_alpha_areas": {
+    "f01": 17650,
+    "f02": 17610,
+    "f03": 17603,
+    "f04": 17567,
+    "f05": 17564,
+    "f06": 17618
+  },
+  "pose_target_angles_deg": [
+    0,
+    8,
+    16,
+    22,
+    26,
+    13
+  ],
+  "source_sheet_frame_map": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    2
+  ],
+  "face_geometry": {
+    "f01": {
+      "file": "f01.png",
+      "muzzle": {
+        "area_px": 3194,
+        "head_local_angle_deg": -0.22,
+        "span_u_98_px": 89.99,
+        "second_orange_area_px": 608,
+        "dominance_ratio": 5.25
+      },
+      "eyes": [
+        {
+          "center_xy": [
+            71.6,
+            90.4
+          ],
+          "center_uv": [
+            -23.67,
+            -31.43
+          ],
+          "area_px": 57,
+          "span_uv_px": [
+            17.01,
+            6.05
+          ],
+          "arc_sag_px": 2.75,
+          "skin_clearance_px": 8.94,
+          "signed_local_clearance_px": 8.99,
+          "gap_path_pixels": {
+            "skin": 8,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        },
+        {
+          "center_xy": [
+            121.7,
+            90.49
+          ],
+          "center_uv": [
+            26.43,
+            -31.14
+          ],
+          "area_px": 57,
+          "span_uv_px": [
+            17.01,
+            6.05
+          ],
+          "arc_sag_px": 2.5,
+          "skin_clearance_px": 9.0,
+          "signed_local_clearance_px": 8.99,
+          "gap_path_pixels": {
+            "skin": 9,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        }
+      ],
+      "eye_separation_u_px": 50.1,
+      "top_arch": {
+        "quadratic_curvature": 0.00378,
+        "quadratic_apex_u_px": 0.3,
+        "fit_rmse_px": 0.41,
+        "m_notch_px": -0.03,
+        "single_arch": true
+      }
+    },
+    "f02": {
+      "file": "f02.png",
+      "muzzle": {
+        "area_px": 3043,
+        "head_local_angle_deg": 8.0,
+        "span_u_98_px": 89.25,
+        "second_orange_area_px": 629,
+        "dominance_ratio": 4.84
+      },
+      "eyes": [
+        {
+          "center_xy": [
+            74.59,
+            85.86
+          ],
+          "center_uv": [
+            -25.66,
+            -32.28
+          ],
+          "area_px": 66,
+          "span_uv_px": [
+            18.38,
+            7.19
+          ],
+          "arc_sag_px": 2.61,
+          "skin_clearance_px": 11.0,
+          "signed_local_clearance_px": 11.01,
+          "gap_path_pixels": {
+            "skin": 11,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        },
+        {
+          "center_xy": [
+            127.4,
+            94.2
+          ],
+          "center_uv": [
+            27.8,
+            -31.38
+          ],
+          "area_px": 65,
+          "span_uv_px": [
+            18.38,
+            6.62
+          ],
+          "arc_sag_px": 3.01,
+          "skin_clearance_px": 9.06,
+          "signed_local_clearance_px": 9.74,
+          "gap_path_pixels": {
+            "skin": 9,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        }
+      ],
+      "eye_separation_u_px": 53.46,
+      "top_arch": {
+        "quadratic_curvature": 0.00358,
+        "quadratic_apex_u_px": 0.64,
+        "fit_rmse_px": 0.31,
+        "m_notch_px": -0.84,
+        "single_arch": true
+      }
+    },
+    "f03": {
+      "file": "f03.png",
+      "muzzle": {
+        "area_px": 3078,
+        "head_local_angle_deg": 15.97,
+        "span_u_98_px": 89.56,
+        "second_orange_area_px": 656,
+        "dominance_ratio": 4.69
+      },
+      "eyes": [
+        {
+          "center_xy": [
+            77.26,
+            82.31
+          ],
+          "center_uv": [
+            -27.12,
+            -29.98
+          ],
+          "area_px": 68,
+          "span_uv_px": [
+            18.41,
+            8.25
+          ],
+          "arc_sag_px": 2.68,
+          "skin_clearance_px": 7.0,
+          "signed_local_clearance_px": 7.11,
+          "gap_path_pixels": {
+            "skin": 7,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        },
+        {
+          "center_xy": [
+            128.59,
+            94.89
+          ],
+          "center_uv": [
+            25.69,
+            -32.02
+          ],
+          "area_px": 61,
+          "span_uv_px": [
+            17.86,
+            7.42
+          ],
+          "arc_sag_px": 2.13,
+          "skin_clearance_px": 9.22,
+          "signed_local_clearance_px": 10.21,
+          "gap_path_pixels": {
+            "skin": 7,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        }
+      ],
+      "eye_separation_u_px": 52.8,
+      "top_arch": {
+        "quadratic_curvature": 0.00309,
+        "quadratic_apex_u_px": -1.92,
+        "fit_rmse_px": 0.54,
+        "m_notch_px": -0.01,
+        "single_arch": true
+      }
+    },
+    "f04": {
+      "file": "f04.png",
+      "muzzle": {
+        "area_px": 3017,
+        "head_local_angle_deg": 21.99,
+        "span_u_98_px": 87.44,
+        "second_orange_area_px": 627,
+        "dominance_ratio": 4.81
+      },
+      "eyes": [
+        {
+          "center_xy": [
+            84.62,
+            74.06
+          ],
+          "center_uv": [
+            -26.54,
+            -31.89
+          ],
+          "area_px": 64,
+          "span_uv_px": [
+            18.38,
+            6.72
+          ],
+          "arc_sag_px": 2.37,
+          "skin_clearance_px": 9.06,
+          "signed_local_clearance_px": 9.39,
+          "gap_path_pixels": {
+            "skin": 9,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        },
+        {
+          "center_xy": [
+            133.82,
+            92.65
+          ],
+          "center_uv": [
+            26.03,
+            -33.08
+          ],
+          "area_px": 60,
+          "span_uv_px": [
+            18.94,
+            7.83
+          ],
+          "arc_sag_px": 2.69,
+          "skin_clearance_px": 10.0,
+          "signed_local_clearance_px": 11.63,
+          "gap_path_pixels": {
+            "skin": 8,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        }
+      ],
+      "eye_separation_u_px": 52.57,
+      "top_arch": {
+        "quadratic_curvature": 0.00322,
+        "quadratic_apex_u_px": -2.48,
+        "fit_rmse_px": 0.34,
+        "m_notch_px": 0.21,
+        "single_arch": true
+      }
+    },
+    "f05": {
+      "file": "f05.png",
+      "muzzle": {
+        "area_px": 3112,
+        "head_local_angle_deg": 25.94,
+        "span_u_98_px": 88.12,
+        "second_orange_area_px": 624,
+        "dominance_ratio": 4.99
+      },
+      "eyes": [
+        {
+          "center_xy": [
+            88.62,
+            72.54
+          ],
+          "center_uv": [
+            -25.71,
+            -32.22
+          ],
+          "area_px": 72,
+          "span_uv_px": [
+            19.22,
+            7.48
+          ],
+          "arc_sag_px": 2.89,
+          "skin_clearance_px": 9.22,
+          "signed_local_clearance_px": 9.72,
+          "gap_path_pixels": {
+            "skin": 9,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        },
+        {
+          "center_xy": [
+            136.61,
+            95.8
+          ],
+          "center_uv": [
+            27.61,
+            -32.29
+          ],
+          "area_px": 59,
+          "span_uv_px": [
+            17.45,
+            6.2
+          ],
+          "arc_sag_px": 1.82,
+          "skin_clearance_px": 10.3,
+          "signed_local_clearance_px": 10.69,
+          "gap_path_pixels": {
+            "skin": 9,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        }
+      ],
+      "eye_separation_u_px": 53.32,
+      "top_arch": {
+        "quadratic_curvature": 0.00363,
+        "quadratic_apex_u_px": -1.79,
+        "fit_rmse_px": 0.29,
+        "m_notch_px": -0.51,
+        "single_arch": true
+      }
+    },
+    "f06": {
+      "file": "f06.png",
+      "muzzle": {
+        "area_px": 3045,
+        "head_local_angle_deg": 13.07,
+        "span_u_98_px": 89.2,
+        "second_orange_area_px": 633,
+        "dominance_ratio": 4.81
+      },
+      "eyes": [
+        {
+          "center_xy": [
+            75.94,
+            82.06
+          ],
+          "center_uv": [
+            -25.99,
+            -32.27
+          ],
+          "area_px": 67,
+          "span_uv_px": [
+            18.66,
+            7.43
+          ],
+          "arc_sag_px": 2.64,
+          "skin_clearance_px": 10.0,
+          "signed_local_clearance_px": 9.99,
+          "gap_path_pixels": {
+            "skin": 10,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        },
+        {
+          "center_xy": [
+            128.02,
+            95.05
+          ],
+          "center_uv": [
+            27.67,
+            -31.4
+          ],
+          "area_px": 63,
+          "span_uv_px": [
+            18.44,
+            6.14
+          ],
+          "arc_sag_px": 2.34,
+          "skin_clearance_px": 9.43,
+          "signed_local_clearance_px": 10.15,
+          "gap_path_pixels": {
+            "skin": 8,
+            "transparent_background": 0,
+            "other": 0
+          },
+          "overlap_depth_px": 0,
+          "touch_or_spill": false
+        }
+      ],
+      "eye_separation_u_px": 53.66,
+      "top_arch": {
+        "quadratic_curvature": 0.00349,
+        "quadratic_apex_u_px": 0.64,
+        "fit_rmse_px": 0.28,
+        "m_notch_px": -0.54,
+        "single_arch": true
+      }
+    }
+  },
+  "transition_alpha_iou": [
+    0.7935805483493565,
+    0.8547800895443771,
+    0.8355949895615866,
+    0.8770570634751015,
+    0.740563004007322,
+    0.7373399014778325,
+    0.9822551662174304
+  ],
+  "eye_policy": "both eyes synchronized closed in all eight frames",
+  "face_geometry_contract": {
+    "muzzle_eye_clearance_px": ">= 7 in head-local coordinates, with at least 7 intervening yellow skin pixels",
+    "muzzle_topology": "single central arch; no M-shaped peaks or orange incursion into either eye",
+    "mouth": "small closed dark smile; no tongue or teeth",
+    "review": "machine geometry only; manual mouth/shorts review is separately hash-bound in visual-review.json"
+  },
+  "shorts_geometry_contract": {
+    "front": "flat with exactly two leg openings and an upward background gap",
+    "forbidden": [
+      "center seam",
+      "oval pouch",
+      "third lobe",
+      "crotch bulge"
+    ],
+    "review": "manual review is separately hash-bound in visual-review.json"
+  },
+  "recovery_bob_frame": 7,
+  "exact_return_frames": [
+    8
+  ],
+  "palette_policy": "one hue-stratified 128-color palette derived from all six gold actions, with explicit green/neutral/dark/warm quotas",
+  "left_policy": "exact pixel mirror of right",
+  "output_sha256": {
+    "right_frames": {
+      "running-right-01.png": "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376",
+      "running-right-02.png": "059d06921f01b251b858ea15c0759e9ab1d2c7d1d871fd90997ffbb7045d036f",
+      "running-right-03.png": "e00787139c5540627a40dd263318d2c1e5b03e8327d744b91a418aae7a074244",
+      "running-right-04.png": "a3da4e3ce168ce5cbaa33507a86018073319fb65a40d2fbca72bcfe06da4fd88",
+      "running-right-05.png": "cbb047177ce02283103ee687acc180eba42991aa74eddba18c31ab1abc114c1f",
+      "running-right-06.png": "ec8663dbdb54e34b2b8594d1415f68dba6093e51ac1e7051493c8b34e9831a59",
+      "running-right-07.png": "307a802b9e542f26ef275210d97e0a793066076157afc9fc14595b3b5b44d70b",
+      "running-right-08.png": "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376"
+    },
+    "left_frames": {
+      "running-left-01.png": "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f",
+      "running-left-02.png": "441e77388336e301ddaaacb6926d3c01d35c419ebaefa958fb0606fcea331732",
+      "running-left-03.png": "d255b5ab0d453c7aa2ee1b57b16a927a300b8b9117f295f05fafdd78eb8947bd",
+      "running-left-04.png": "1b382203e32adfc167ffd83814e7fd415912e323fbf9fa1e793389e55456a7fc",
+      "running-left-05.png": "8a41fe98f3a20c7c4ec2f905ba8696f393015c0b404f56e9ea40ad554d72e90b",
+      "running-left-06.png": "3a9b9bddd1a0c3f6b9ebd64e12d89420256e39d936dd14aa5f88674add41182e",
+      "running-left-07.png": "3300a8ca73b86a4bb8c26eef17f56786f6c63d79721dc087fdd2940126eace0e",
+      "running-left-08.png": "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f"
+    },
+    "artifacts": {
+      "right-preview.gif": "95e62a47beb76bcab2ebb4b75eba6a4185bd08510b6049ece06f6c7a0d2e25b3",
+      "left-preview.gif": "2a5fa97e03d51bc1a6d3fd684372fe940904bc00ea1271e246e3ff8118acb413",
+      "right-contact-sheet.png": "5f76d96398bea69db46aeb207d04d50aecc886fba7eac8032c64a6cc433bec9d"
+    }
+  },
+  "errors": []
+}

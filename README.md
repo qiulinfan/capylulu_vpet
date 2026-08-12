@@ -21,14 +21,14 @@ master.
 
 The current eight actions are:
 
-1. `idle`
-2. `running-right`
-3. `running-left`
+1. `idle` — approved gold action
+2. `running-right` — six-gold full-rerun candidate
+3. `running-left` — exact-mirror six-gold full-rerun candidate
 4. `waving` — approved gold action
-5. `failed` — reversible prone-to-side sleeping roll candidate
+5. `failed` — approved gold action with a reversible prone-to-side sleeping roll
 6. `waiting` — approved gold action
-7. `running`
-8. `review`
+7. `running` — approved gold action
+8. `review` — approved gold action
 
 `jumping` was retired because its cheer overlapped `waving`. Its former source
 frames are preserved only as draft lineage under
@@ -53,9 +53,9 @@ validation report:
 - `pet-runs/capybara-lulu/qa/action-gifs/gallery.md`
 - `pet-runs/capybara-lulu/qa/action-gifs/validation.json`
 
-They intentionally do not rebuild a spritesheet. `waiting` and `waving` are
-hash-locked so an unrelated animation edit cannot silently change either gold
-action.
+They intentionally do not rebuild a spritesheet. `idle`, `waving`, `failed`,
+`waiting`, `running`, and `review` are hash-locked so an unrelated animation
+edit cannot silently change any of the six gold actions.
 
 ## Iteration review rule
 

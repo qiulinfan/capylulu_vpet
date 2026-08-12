@@ -2,7 +2,7 @@
 
 Status: superseded directional-drag lineage. It was retired after visual review
 found pose-dependent body stretching/thinning, color drift, and too many
-open-eye frames. Active source work moved to `../roundbody-regeneration-v1/`.
+open-eye frames. The current source lineage is `../six-gold-rerun-v2/`.
 
 ## Production order
 

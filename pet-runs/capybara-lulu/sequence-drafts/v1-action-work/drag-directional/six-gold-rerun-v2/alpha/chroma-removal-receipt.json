@@ -1,0 +1,12 @@
+{
+  "tool": "imagegen/remove_chroma_key.py",
+  "tool_path": "$CODEX_HOME/skills/.system/imagegen/scripts/remove_chroma_key.py",
+  "command": "uv run --frozen python $CODEX_HOME/skills/.system/imagegen/scripts/remove_chroma_key.py --input sources/six-frame-contact-sheet-magenta.png --out alpha/six-frame-contact-sheet-alpha.png --auto-key border --soft-matte --transparent-threshold 12 --opaque-threshold 220 --despill",
+  "source_sha256": "fe581be5679d420b98c84fac10e338d81f2a96cb461bf94e8db775c1790d4e2d",
+  "alpha_sha256": "b210555785027396b6f0b9d7d814d2d02ff7944310b33b66699dce967bede1bc",
+  "detected_key_color": "#f405f1",
+  "transparent_pixels": 1074705,
+  "partially_transparent_pixels": 11555,
+  "total_pixels": 1573416,
+  "recorded_at": "2026-08-12"
+}

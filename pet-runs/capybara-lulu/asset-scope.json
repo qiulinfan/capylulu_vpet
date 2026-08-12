@@ -27,8 +27,12 @@
     "review"
   ],
   "gold_actions": [
+    "idle",
+    "waving",
+    "failed",
     "waiting",
-    "waving"
+    "running",
+    "review"
   ],
   "retired_actions": {
     "jumping": {
