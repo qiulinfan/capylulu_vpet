@@ -1,63 +1,58 @@
 # CapyLulu VPet
 
-Desktop pet asset workspace for the healing pixel-style character `水豚噜噜`.
+Animation-first asset workspace for the healing pixel-style character `水豚噜噜`.
 
-Current assets live under `pet-runs/capybara-lulu/`, including:
+## Current production stage
 
-- canonical base sprite and references
-- draft sequence sheets
-- normalized `192x208` sprite frames
-- transparent and chroma-key preview exports
-- one Codex-compatible formal V1 `8x9` atlas
-- expansion work kept explicitly under `sequence-drafts/`
+Each action is tuned and accepted as an independent looping GIF before any
+whole-pet atlas is assembled. The active action contract is
+`pet-runs/capybara-lulu/official-frames-v1-manifest.json`; its frame sources
+remain normalized `192x208` transparent PNGs under
+`pet-runs/capybara-lulu/official-frames-v1/`.
 
-The current expanded normalized frames are in:
+The current eight actions are:
 
-- `pet-runs/capybara-lulu/sequence-drafts/expanded-frames-v2-alpha-192x208/`
-- `pet-runs/capybara-lulu/sequence-drafts/expanded-frames-v2-blue-192x208/`
+1. `idle`
+2. `running-right`
+3. `running-left`
+4. `waving` — approved gold action
+5. `failed` — reversible prone-to-side sleeping roll candidate
+6. `waiting` — approved gold action
+7. `running`
+8. `review`
 
-The only installable pet package is V1:
+`jumping` was retired because its cheer overlapped `waving`. Its former source
+frames are preserved only as draft lineage under
+`pet-runs/capybara-lulu/sequence-drafts/v1-retired-variants/jumping-overlaps-waving/`.
 
-- `pet-runs/capybara-lulu/final/pet.json`
-- `pet-runs/capybara-lulu/final/spritesheet.webp`
-- `pet-runs/capybara-lulu/final/spritesheet.png`
+## Build and inspect the action GIFs
 
-The V1 frames under `pet-runs/capybara-lulu/official-frames-v1/` are the
-character-identity and runtime-scale gold standard.
+```bash
+uv run --frozen python tools/build_action_gifs.py
+```
 
-Its nine formal states are declared in
-`pet-runs/capybara-lulu/asset-scope.json`. Idle deliberately reuses the six
-focused-listening `review` frames. The runtime-required generic `running` row
-also reuses `review`; it has no independent running artwork. `running-right`
-and `running-left` are directional pointer-drag reactions, not locomotion. The
-selected authoring lineage locks one neutral gold sprite, creates individual
-keyframes, fills individual in-betweens, and only then assembles the rightward
-row; the leftward sequence is its exact mirror. Waving is a four-frame,
-runtime-compatible success
-celebration with a standing wind-up and synchronized two-eye blinking.
-
-Rebuild the formal package and QA with:
+The compatibility entry point below performs the same action-only build:
 
 ```bash
 uv run --frozen python tools/build_vpet_v1.py
 ```
 
-Expansion assets are preserved but excluded from releases:
+Both commands write only the independent previews and their validation report:
 
-- `pet-runs/capybara-lulu/sequence-drafts/v2-coherent/` contains the V2 source,
-  generated build, package preview, QA, and draft-only replay tool.
-- `pet-runs/capybara-lulu/sequence-drafts/idle-sequence-experiment/` preserves
-  the retired multi-action idle atlas and its QA.
-- `pet-runs/capybara-lulu/sequence-drafts/v1-retired-variants/` preserves
-  superseded formal-frame variants.
+- `pet-runs/capybara-lulu/qa/action-gifs/*.gif`
+- `pet-runs/capybara-lulu/qa/action-gifs/validation.json`
 
-The V2 draft may be replayed in place with
-`uv run --frozen python pet-runs/capybara-lulu/sequence-drafts/v2-coherent/build_draft.py`.
-It writes only inside that draft directory and emits `pet.draft.json`, never an
-installable `pet.json`.
+They intentionally do not rebuild a spritesheet. `waiting` and `waving` are
+hash-locked so an unrelated animation edit cannot silently change either gold
+action.
 
-QA artifacts:
+## Whole-pet package
 
-- `pet-runs/capybara-lulu/final/validation.json`
-- `pet-runs/capybara-lulu/qa/contact-sheet.png`
-- `pet-runs/capybara-lulu/qa/action-gifs/`
+`pet-runs/capybara-lulu/final/` is the last assembled V1 snapshot. It may lag
+behind the active action GIFs during animation review and is not the acceptance
+source for the current stage. A new spritesheet and pet package will be built
+only after every small animation has been reviewed.
+
+Experimental and historical assets remain under
+`pet-runs/capybara-lulu/sequence-drafts/` and are excluded from the active
+action set.

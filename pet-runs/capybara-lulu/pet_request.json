@@ -3,66 +3,50 @@
   "display_name": "\u6c34\u8c5a\u565c\u565c",
   "description": "A cute orange-yellow capybara-like desktop pet with a tiny orange fruit on its head.",
   "created_at": "2026-05-03T17:42:22.579060+00:00",
-  "atlas": {
-    "columns": 8,
-    "rows": 9,
+  "production_stage": "independent-action-gif-review",
+  "assembly": "deferred-until-actions-are-approved",
+  "frame_contract": {
     "cell_width": 192,
-    "cell_height": 208,
-    "width": 1536,
-    "height": 1872
+    "cell_height": 208
   },
-  "rows": [
+  "actions": [
     {
       "state": "idle",
-      "row": 0,
       "frames": 6,
       "purpose": "focused-listening loop; exact visual alias of review"
     },
     {
       "state": "running-right",
-      "row": 1,
       "frames": 8,
       "purpose": "pointer/window drag response toward screen-right; head leads while body and limbs trail left"
     },
     {
       "state": "running-left",
-      "row": 2,
       "frames": 8,
       "purpose": "pointer/window drag response toward screen-left; exact horizontal mirror of running-right"
     },
     {
       "state": "waving",
-      "row": 3,
       "frames": 4,
       "purpose": "runtime-compatible success celebration: normal stand, early kick-and-wave anticipation, open-eye peak, held closed-eye cheer"
     },
     {
-      "state": "jumping",
-      "row": 4,
-      "frames": 5,
-      "purpose": "anticipation, lift, peak, descent, settle"
-    },
-    {
       "state": "failed",
-      "row": 5,
-      "frames": 8,
-      "purpose": "sad, failed, or deflated reaction"
+      "frames": 12,
+      "purpose": "sad, failed, or deflated reaction; use two reversible roll frames between prone and side sleep, then hold the side-turned eighth pose for two beats"
     },
     {
       "state": "waiting",
-      "row": 6,
       "frames": 6,
       "purpose": "patient waiting loop with small motion"
     },
     {
       "state": "running",
-      "row": 7,
       "frames": 6,
       "purpose": "runtime-required task-active state; exact visual alias of review with no independent running artwork"
     },
     {
       "state": "review",
-      "row": 8,
       "frames": 6,
       "purpose": "focused inspecting or review loop"
     }
@@ -110,18 +94,6 @@
       "width": 768,
       "height": 208,
       "frames": 4,
-      "cell_width": 192,
-      "cell_height": 208,
-      "safe_margin_x": 18,
-      "safe_margin_y": 16,
-      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
-    },
-    {
-      "state": "jumping",
-      "path": "references/layout-guides/jumping.png",
-      "width": 960,
-      "height": 208,
-      "frames": 5,
       "cell_width": 192,
       "cell_height": 208,
       "safe_margin_x": 18,

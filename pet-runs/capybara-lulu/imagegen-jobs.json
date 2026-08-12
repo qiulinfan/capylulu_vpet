@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "created_at": "2026-05-03T17:42:22.594061+00:00",
-  "updated_at": "2026-08-11",
+  "updated_at": "2026-08-12",
   "run_dir": ".",
-  "status_note": "All V1 states are resolved in official-frames-v1/. Directional running names are pointer-drag reactions; idle and generic running are deterministic review aliases.",
+  "status_note": "The active action set is reviewed as independent GIFs before atlas assembly. Jumping is retired because it overlaps waving; directional running names are pointer-drag reactions; idle and generic running are deterministic review aliases.",
   "primary_generation_skill": "$imagegen",
   "jobs": [
     {
@@ -275,8 +275,9 @@
     {
       "id": "jumping",
       "kind": "row-strip",
-      "status": "complete",
-      "prompt_file": "prompts/rows/jumping.md",
+      "status": "retired",
+      "status_note": "Retired from the active action set because its cheer overlaps the approved waving success celebration.",
+      "prompt_file": "sequence-drafts/v1-retired-variants/jumping-overlaps-waving/prompt.md",
       "input_images": [
         {
           "path": "references/reference-01.jpg",
@@ -295,7 +296,7 @@
           "role": "pet reference"
         },
         {
-          "path": "references/layout-guides/jumping.png",
+          "path": "sequence-drafts/v1-retired-variants/jumping-overlaps-waving/layout-guide.png",
           "role": "layout guide for 5 frame slots; use for spacing only, do not copy guide lines"
         },
         {
@@ -307,7 +308,7 @@
           "role": "approved base pet"
         }
       ],
-      "output_path": "official-frames-v1/jumping/",
+      "output_path": "sequence-drafts/v1-retired-variants/jumping-overlaps-waving/frames/",
       "depends_on": [
         "base"
       ],

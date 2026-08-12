@@ -1,26 +1,32 @@
 {
-  "formal_version": "v1",
-  "installable_package": "final/",
-  "formal_frames": "official-frames-v1/",
-  "atlas": {
-    "columns": 8,
-    "rows": 9,
-    "cell_size": [192, 208]
-  },
-  "runtime_states": [
+  "production_stage": "independent-action-gif-review",
+  "active_frames": "official-frames-v1/",
+  "active_action_manifest": "official-frames-v1-manifest.json",
+  "action_gif_output": "qa/action-gifs/",
+  "active_actions": [
     "idle",
     "running-right",
     "running-left",
     "waving",
-    "jumping",
     "failed",
     "waiting",
     "running",
     "review"
   ],
-  "state_aliases": {
-    "idle": "review",
-    "running": "review"
+  "gold_actions": [
+    "waiting",
+    "waving"
+  ],
+  "retired_actions": {
+    "jumping": {
+      "reason": "overlaps the approved waving success celebration",
+      "archive": "sequence-drafts/v1-retired-variants/jumping-overlaps-waving/"
+    }
+  },
+  "assembly": {
+    "status": "deferred-until-actions-are-approved",
+    "last_snapshot": "final/",
+    "last_snapshot_note": "Historical assembled V1 package; it may lag behind the active action GIFs."
   },
   "draft_roots": [
     "sequence-drafts/"

@@ -3,8 +3,25 @@
     192,
     208
   ],
+  "action_order": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "retired_actions": {
+    "jumping": {
+      "reason": "The jumping cheer overlaps the approved waving success celebration.",
+      "replacement": "waving",
+      "archived_frames": "sequence-drafts/v1-retired-variants/jumping-overlaps-waving/frames/"
+    }
+  },
   "idle_sequence": {
-    "format": "six formal atlas cells in a single-frame lossless WebP",
+    "format": "six normalized PNG frames rendered as an independent looping GIF",
     "frames": 6,
     "alias_of": "review",
     "meaning": "focused listening",
@@ -29,6 +46,7 @@
         "official-frames-v1/idle/idle-05.png",
         "official-frames-v1/idle/idle-06.png"
       ],
+      "frame_durations_ms": [180, 180, 180, 180, 180, 180],
       "note": "each idle frame is pixel-identical to the corresponding focused-listening review frame"
     },
     "running-right": {
@@ -70,6 +88,7 @@
     "running-left": {
       "meaning": "pointer/window dragged toward screen-left",
       "derivation": "exact horizontal pixel mirror of running-right",
+      "mirror_of": "running-right",
       "source_frames": [
         "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-01.png",
         "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-02.png",
@@ -123,31 +142,15 @@
         "official-frames-v1/waving/waving-03.png",
         "official-frames-v1/waving/waving-04.png"
       ],
+      "frame_durations_ms": [140, 140, 140, 280],
+      "quality": "gold",
+      "frame_sha256": {
+        "waving-01.png": "4927bb779a107d6a357f0ae7fdfa73817a1bc350a45e9720e34bece0e04a11c6",
+        "waving-02.png": "844c6bb342b2f4c0544da18d86154cd416a0fde9e85878a3d5811bfa284c5f70",
+        "waving-03.png": "ad1ae7b765b28fd8f66009d0ea14fd288f0a6d1e076dd8006367dff29d701829",
+        "waving-04.png": "7592d49c57b6bc6b4010d39fad51ccd6b087808e22e0a34bd6e25e151110a476"
+      },
       "note": "four-frame runtime-compatible success celebration with a normal-stand wind-up; frame 2 uses a new early limb pose but retains the exact formal V1 upper head and face; eye states are closed/closed, open/open, open/open, closed/closed so both eyes always change together"
-    },
-    "jumping": {
-      "source_frames": [
-        "sequence-drafts/expanded-frames-v2-alpha-192x208/proud-cheer/proud-cheer-01.png",
-        "sequence-drafts/expanded-frames-v2-alpha-192x208/proud-cheer/proud-cheer-02.png",
-        "sequence-drafts/expanded-frames-v2-alpha-192x208/proud-cheer/proud-cheer-03.png",
-        "sequence-drafts/expanded-frames-v2-alpha-192x208/dance/dance-02.png",
-        "sequence-drafts/expanded-frames-v2-alpha-192x208/proud-cheer/proud-cheer-06.png"
-      ],
-      "order": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "frames": [
-        "official-frames-v1/jumping/jumping-01.png",
-        "official-frames-v1/jumping/jumping-02.png",
-        "official-frames-v1/jumping/jumping-03.png",
-        "official-frames-v1/jumping/jumping-04.png",
-        "official-frames-v1/jumping/jumping-05.png"
-      ],
-      "note": "cheer bounce used as jump-like joyful lift; frame 04 replaced with second-row open-eye dance frame to avoid odd side glance"
     },
     "failed": {
       "source_frames": [
@@ -156,7 +159,9 @@
         "sequence-drafts/expanded-frames-v2-alpha-192x208/sleep-prone-zzz/sleep-prone-zzz-03.png",
         "sequence-drafts/expanded-frames-v2-alpha-192x208/sleep-prone-zzz/sleep-prone-zzz-04.png",
         "sequence-drafts/expanded-frames-v2-alpha-192x208/sleep-prone-zzz/sleep-prone-zzz-05.png",
-        "sequence-drafts/expanded-frames-v2-alpha-192x208/sleep-prone-zzz/sleep-prone-zzz-06.png"
+        "sequence-drafts/expanded-frames-v2-alpha-192x208/sleep-prone-zzz/sleep-prone-zzz-06.png",
+        "sequence-drafts/v1-action-work/failed-roll-transition/normalized/failed-roll-transition-01.png",
+        "sequence-drafts/v1-action-work/failed-roll-transition/normalized/failed-roll-transition-02.png"
       ],
       "order": [
         1,
@@ -164,7 +169,11 @@
         3,
         4,
         5,
+        7,
+        8,
         6,
+        8,
+        7,
         5,
         4
       ],
@@ -174,11 +183,18 @@
         "official-frames-v1/failed/failed-03.png",
         "official-frames-v1/failed/failed-04.png",
         "official-frames-v1/failed/failed-05.png",
+        "official-frames-v1/failed/failed-roll-transition-01.png",
+        "official-frames-v1/failed/failed-roll-transition-02.png",
         "official-frames-v1/failed/failed-06.png",
+        "official-frames-v1/failed/failed-roll-transition-02.png",
+        "official-frames-v1/failed/failed-roll-transition-01.png",
         "official-frames-v1/failed/failed-07.png",
         "official-frames-v1/failed/failed-08.png"
       ],
-      "note": "soft sleeping-with-zzz loop for gentle failure/rest state"
+      "frame_durations_ms": [180, 180, 180, 180, 180, 120, 120, 360, 120, 120, 180, 180],
+      "held_pose_frame": 8,
+      "reversible_transition_pairs": [[6, 10], [7, 9]],
+      "note": "soft sleeping-with-zzz loop for gentle failure/rest state; frames 6-7 roll from prone sleep into the side-turned frame 8, which holds for two beats, then the exact same transition art plays in reverse at frames 9-10"
     },
     "waiting": {
       "source_frames": [
@@ -205,6 +221,16 @@
         "official-frames-v1/waiting/waiting-05.png",
         "official-frames-v1/waiting/waiting-06.png"
       ],
+      "frame_durations_ms": [180, 180, 180, 180, 180, 180],
+      "quality": "gold",
+      "frame_sha256": {
+        "waiting-01.png": "cd9bbb52d19b12798ac63436da697ae5d611509f0d9454a3c7567fe6245b1898",
+        "waiting-02.png": "81315a4ccc2cd0c5203f24253ae7687ab3981685bd8f7f7ed1bb062f0b789632",
+        "waiting-03.png": "24c14a55c1b64ca83f6304a24c126e3e2beda9c5bc034b7d81c2fe7c7bd90719",
+        "waiting-04.png": "29b76618921c6b9565a3848512fb308cbefb6c86ad4fa161c22aa0c6499acbc2",
+        "waiting-05.png": "065363b9a40c59087266ed1d1e5fd2f0576d4a8a67d181916020179b9367ce51",
+        "waiting-06.png": "766e85dbd8682eee0712debba3b4ccffd474a80b49a694ef7c7b2cd985a9c1e1"
+      },
       "note": "healing unicorn-hug waiting loop"
     },
     "running": {
@@ -260,6 +286,7 @@
         "official-frames-v1/review/review-05.png",
         "official-frames-v1/review/review-06.png"
       ],
+      "frame_durations_ms": [180, 180, 180, 180, 180, 180],
       "note": "approved headphones listening loop for focused/review state"
     }
   }

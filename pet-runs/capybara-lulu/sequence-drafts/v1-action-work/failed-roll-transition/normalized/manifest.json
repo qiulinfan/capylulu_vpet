@@ -1,0 +1,50 @@
+{
+  "source_strip": {
+    "path": "imagegen-two-inbetweens-alpha.png",
+    "sha256": "32a5fb61adf7c3746bed70c1d6229c272f9cede8a13500c5bffa86fb76cf7275"
+  },
+  "normalizer": {
+    "plugin": "game-studio@openai-curated",
+    "version": "3fdeeb49",
+    "shared_square_size": [
+      176,
+      176
+    ],
+    "pet_frame_size": [
+      192,
+      208
+    ],
+    "pet_frame_offset": [
+      8,
+      24
+    ],
+    "alpha_threshold": 128,
+    "anchor": "bottom-center at x=96, ground y=200"
+  },
+  "frames": [
+    {
+      "source": "pipeline-normalized-square/01.png",
+      "source_sha256": "c81afab3546d7316109fe5b36a5891ef2394292c507054512531de2864d47f56",
+      "output": "normalized/failed-roll-transition-01.png",
+      "output_sha256": "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+      "alpha_bbox": [
+        8,
+        78,
+        184,
+        200
+      ]
+    },
+    {
+      "source": "pipeline-normalized-square/02.png",
+      "source_sha256": "69d8a16f8a4e5f345d55ee41d00ee598c6c3c84b42e8f621bc7008d42ec2d808",
+      "output": "normalized/failed-roll-transition-02.png",
+      "output_sha256": "310a895d4fe468548588dc376d7c6eed787010b92424eadbce2a208702c91d92",
+      "alpha_bbox": [
+        9,
+        71,
+        183,
+        200
+      ]
+    }
+  ]
+}
