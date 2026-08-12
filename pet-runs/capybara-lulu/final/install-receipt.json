@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "status": "installed",
+  "directory": "/Users/qiulinfan/.codex/pets/capybara-lulu",
+  "avatar_id": "custom:capybara-lulu",
+  "files": {
+    "pet.json": "e2ba79c508bbd45b26701b527afd5dbcd6a481028c37085dc941809b0bcdd556",
+    "spritesheet.webp": "2164865da7e5d5f2195159018ad5cf08998a3f3870c8011794133f0196ab017e"
+  },
+  "validation_sha256": "7f8f9d45ade7829bc82ecc425e002a0ec21dbd3d17c1691ec89f56f231f4739b"
+}

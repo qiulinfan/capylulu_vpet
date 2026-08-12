@@ -3,7 +3,7 @@
   "created_at": "2026-05-03T17:42:22.594061+00:00",
   "updated_at": "2026-08-12",
   "run_dir": ".",
-  "status_note": "The active action set is reviewed as independent GIFs before atlas assembly. Jumping is retired because it overlaps waving; directional running names are pointer-drag reactions; all six non-directional actions are hash-locked gold identity authorities for the full directional rerun.",
+  "status_note": "The active action set is reviewed as independent GIFs before atlas assembly. Jumping is retired because it overlaps waving; directional running names are pointer-drag reactions; the approved working action is a hash-locked 15-frame ink-painting and page-change sequence.",
   "primary_generation_skill": "$imagegen",
   "jobs": [
     {
@@ -52,7 +52,7 @@
       "id": "idle",
       "kind": "state-alias",
       "status": "complete",
-      "alias_of": "review",
+      "alias_of": "failed",
       "derivation": "exact-frame-copy",
       "prompt_file": "prompts/rows/idle.md",
       "input_images": [
@@ -87,7 +87,7 @@
       ],
       "output_path": "official-frames-v1/idle/",
       "depends_on": [
-        "review"
+        "failed"
       ],
       "generation_skill": "deterministic-frame-copy",
       "requires_grounded_generation": false,
@@ -97,7 +97,7 @@
         "decoded/base.png"
       ],
       "parallelizable_after": [
-        "review"
+        "failed"
       ],
       "mirror_policy": {},
       "recording_owner": "parent"
@@ -424,6 +424,74 @@
       ],
       "mirror_policy": {},
       "recording_owner": "parent"
+    },
+    {
+      "id": "working",
+      "kind": "multi-contact-sheet-derived-sequence",
+      "status": "complete",
+      "prompt_file": "sequence-drafts/new-state-candidates/prompts/working.md",
+      "continuation_prompt_files": [
+        "sequence-drafts/new-state-candidates/prompts/working-continuation.md",
+        "sequence-drafts/new-state-candidates/prompts/working-page-transition.md"
+      ],
+      "input_images": [
+        {
+          "path": "sequence-drafts/new-state-candidates/working/source-contact-sheet-magenta.png",
+          "role": "approved six-frame working prefix"
+        },
+        {
+          "path": "sequence-drafts/new-state-candidates/working/source-continuation-contact-sheet-magenta.png",
+          "role": "painting-completion continuation"
+        },
+        {
+          "path": "sequence-drafts/new-state-candidates/working/source-page-transition-contact-sheet-magenta.png",
+          "role": "accepted page-change in-betweens"
+        }
+      ],
+      "output_path": "official-frames-v1/working/",
+      "selected_frame_path": "sequence-drafts/new-state-candidates/working/frames/",
+      "build_script": "sequence-drafts/new-state-candidates/build_candidates.py",
+      "source_sha256": {
+        "source-contact-sheet-magenta.png": "3532b7e5dfdf2c82cbab681c601695285c7722989ebd50633bf216d321aab164",
+        "source-continuation-contact-sheet-magenta.png": "0bfe17c4e7e4c42fb5be31b9f2d2b04f76e5a115cab1d717eedfe57f190c2ea3",
+        "source-page-transition-contact-sheet-magenta.png": "c78d848f3e4094faad546039d203bfd12bd57f8d2689f6e3b2ba45d8e7213185",
+        "contact-sheet-alpha.png": "c2595a14eb145485fec349485f12e2e5f1ddbe1a4a9f1407e098e9844a7e67ac",
+        "continuation-contact-sheet-alpha.png": "985362558d80d3c06f89880430fcdbbafc9ed69975fb8a748bb71895658694bf",
+        "page-transition-contact-sheet-alpha.png": "46a21f8796c3eb1d60e0b6cb5068c6f1f127063b5c262fb6b87f0ab5718f8a0d"
+      },
+      "build_sha256": "809bfcb5406fc377e477b9b748f56485ed9f428418749681085c7b26b36e700d",
+      "source_provenance": "built-in image generation, deterministic chroma removal, connected-component extraction, per-contact-sheet normalization, accepted frame assembly, and hash-locked promotion",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "official-frames-v1/idle/",
+        "official-frames-v1/waving/",
+        "official-frames-v1/failed/",
+        "official-frames-v1/waiting/",
+        "official-frames-v1/running/",
+        "official-frames-v1/review/"
+      ],
+      "parallelizable_after": [
+        "base"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "completed_at": "2026-08-12",
+      "metadata": {
+        "frame_count": 15,
+        "frame_width": 192,
+        "frame_height": 208,
+        "contact_sheet_layouts": [
+          "3x2",
+          "3x2",
+          "2x2"
+        ]
+      }
     },
     {
       "id": "running",

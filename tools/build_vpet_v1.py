@@ -1,12 +1,7 @@
-"""Legacy-named compatibility entry point for the animation-master workflow.
+"""Compatibility entry point for the installable Codex V1 pet adapter."""
 
-Platform packaging is intentionally deferred until every independent master
-action GIF has been reviewed.
-"""
-
-from build_action_gifs import build
+from build_codex_pet import main
 
 
 if __name__ == "__main__":
-    print("Legacy V1 entry point: building platform-neutral animation-master GIFs.")
-    build()
+    main()

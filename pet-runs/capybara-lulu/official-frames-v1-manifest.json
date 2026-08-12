@@ -12,8 +12,11 @@
   },
   "platform_adapters": {
     "codex": {
-      "status": "deferred",
-      "authority": false
+      "status": "installed",
+      "authority": false,
+      "package": "final/",
+      "installation": "~/.codex/pets/capybara-lulu/",
+      "sprite_version_number": 1
     }
   },
   "action_order": [
@@ -23,6 +26,7 @@
     "waving",
     "failed",
     "waiting",
+    "working",
     "running",
     "review"
   ],
@@ -33,23 +37,35 @@
       "archived_frames": "sequence-drafts/v1-retired-variants/jumping-overlaps-waving/frames/"
     }
   },
+  "deferred_actions": {
+    "looking-around": {
+      "reason": "The current sofa-based direction-looking candidate needs more refinement before promotion.",
+      "draft": "sequence-drafts/new-state-candidates/looking-around/"
+    }
+  },
   "idle_sequence": {
-    "format": "six normalized PNG frames rendered as an independent looping GIF",
-    "frames": 6,
-    "alias_of": "review",
-    "meaning": "focused listening",
-    "note": "Idle directly reuses the approved focused-listening review loop. The retired 184-frame composite-idle experiment is preserved under sequence-drafts/idle-sequence-experiment/."
+    "format": "twelve normalized PNG frames rendered as an independent looping GIF",
+    "frames": 12,
+    "alias_of": "failed",
+    "meaning": "soft sleeping rest",
+    "note": "Idle directly reuses the complete approved sleeping failed loop. The Codex adapter selects six key poses from this master action for its fixed V1 idle row."
   },
   "states": {
     "idle": {
-      "alias_of": "review",
+      "alias_of": "failed",
       "order": [
         1,
         2,
         3,
         4,
         5,
-        6
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
       ],
       "frames": [
         "official-frames-v1/idle/idle-01.png",
@@ -57,19 +73,42 @@
         "official-frames-v1/idle/idle-03.png",
         "official-frames-v1/idle/idle-04.png",
         "official-frames-v1/idle/idle-05.png",
-        "official-frames-v1/idle/idle-06.png"
+        "official-frames-v1/idle/idle-06.png",
+        "official-frames-v1/idle/idle-07.png",
+        "official-frames-v1/idle/idle-08.png",
+        "official-frames-v1/idle/idle-09.png",
+        "official-frames-v1/idle/idle-10.png",
+        "official-frames-v1/idle/idle-11.png",
+        "official-frames-v1/idle/idle-12.png"
       ],
-      "frame_durations_ms": [180, 180, 180, 180, 180, 180],
+      "frame_durations_ms": [180, 180, 180, 180, 180, 120, 120, 360, 120, 120, 180, 180],
+      "held_pose_frame": 8,
+      "reversible_transition_pairs": [
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          9
+        ]
+      ],
       "quality": "gold",
       "frame_sha256": {
-        "idle-01.png": "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
-        "idle-02.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
-        "idle-03.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
-        "idle-04.png": "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
-        "idle-05.png": "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
-        "idle-06.png": "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651"
+        "idle-01.png": "87bc58bf2bc9b44d3f6d1eb7ec34055f4250d00df06d50393d419b22a002c6d1",
+        "idle-02.png": "7bc0ea08f6d2e9b690730c5ae5948dfce370ed7a276216c6ada4476bc0f36117",
+        "idle-03.png": "2667f436701a0286f8b57a07f90f17d65bd2006dba6ec32caf77dd41c325c826",
+        "idle-04.png": "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a",
+        "idle-05.png": "f0a02f142f26f3978649afad79a55c413d0e922a83eedbc465828b17894f5486",
+        "idle-06.png": "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+        "idle-07.png": "310a895d4fe468548588dc376d7c6eed787010b92424eadbce2a208702c91d92",
+        "idle-08.png": "e473009083526caad274c686a7c09187583fbe234813b9881df7a7e9594a73ea",
+        "idle-09.png": "310a895d4fe468548588dc376d7c6eed787010b92424eadbce2a208702c91d92",
+        "idle-10.png": "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+        "idle-11.png": "f0a02f142f26f3978649afad79a55c413d0e922a83eedbc465828b17894f5486",
+        "idle-12.png": "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a"
       },
-      "note": "each idle frame is pixel-identical to the corresponding focused-listening review frame"
+      "note": "each idle frame is pixel-identical to the corresponding frame in the approved twelve-frame failed sleeping sequence"
     },
     "running-right": {
       "meaning": "pointer/window dragged toward screen-right; head leads while body and limbs trail left",
@@ -276,6 +315,81 @@
         "waiting-06.png": "766e85dbd8682eee0712debba3b4ccffd474a80b49a694ef7c7b2cd985a9c1e1"
       },
       "note": "healing unicorn-hug waiting loop"
+    },
+    "working": {
+      "meaning": "focused work loop: Lulu paints and completes a tiny ink shrimp, changes the finished page, and settles with a fresh sheet",
+      "generation_lineage": "sequence-drafts/new-state-candidates/",
+      "source_frames": [
+        "sequence-drafts/new-state-candidates/working/frames/working-01.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-02.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-03.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-04.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-05.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-06.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-07.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-08.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-09.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-10.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-11.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-12.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-13.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-14.png",
+        "sequence-drafts/new-state-candidates/working/frames/working-15.png"
+      ],
+      "order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "frames": [
+        "official-frames-v1/working/working-01.png",
+        "official-frames-v1/working/working-02.png",
+        "official-frames-v1/working/working-03.png",
+        "official-frames-v1/working/working-04.png",
+        "official-frames-v1/working/working-05.png",
+        "official-frames-v1/working/working-06.png",
+        "official-frames-v1/working/working-07.png",
+        "official-frames-v1/working/working-08.png",
+        "official-frames-v1/working/working-09.png",
+        "official-frames-v1/working/working-10.png",
+        "official-frames-v1/working/working-11.png",
+        "official-frames-v1/working/working-12.png",
+        "official-frames-v1/working/working-13.png",
+        "official-frames-v1/working/working-14.png",
+        "official-frames-v1/working/working-15.png"
+      ],
+      "frame_durations_ms": [180, 180, 180, 180, 180, 300, 180, 180, 180, 500, 180, 180, 180, 220, 300],
+      "quality": "gold",
+      "frame_sha256": {
+        "working-01.png": "f018a39570742a3b165d1bae4a4c235fce2d1edc4a7ffc06bae778966f5095e9",
+        "working-02.png": "21079fb6a49181d6850d2d3db2180f84c51dc9176aa5ab75627bdcc2a31d6a72",
+        "working-03.png": "a25db3896eb79d9fc7d3fa5c04179b40c201b5cfe0a4c2a02da47d12f56386aa",
+        "working-04.png": "21026a717333ae7809896b6eb94db25dc0155029fa30b48b181ea1a1ec135dfe",
+        "working-05.png": "78af68a42acdfe77152c81e37a8bd0789f6a2f7251c51eaf9bf6a1e46b7faa54",
+        "working-06.png": "30d18d6d1e85c4e528bcc60111a08aedd332019cfbd0630ea194d3bb8ea48ca0",
+        "working-07.png": "c73effcae92871349d21254354f1f0593ccbd566125cb1b762469f65d5d4ec45",
+        "working-08.png": "5283c723e86ae6eb60e0bfc22b02a03994d38aeb5c3c33314e422cce4320b668",
+        "working-09.png": "8a0ab1b8a3230e9888db8a0aea9e65dab13ab4a572fba9599806e05bdd2e39b0",
+        "working-10.png": "2d0c6fb3d11d182b7053e586e97a78c5f2b4c8b14ea7fc078b70d1568621368d",
+        "working-11.png": "462df4c0cca2b5fe37c201e7ae2b28f33e5d84a1ef2e9791acc5ebb72799b208",
+        "working-12.png": "873339a1fc023941412e3587f088db9c47e5a5db48a69dead063e7ad721a760d",
+        "working-13.png": "3ad6ef70623a1fa5985dd062cec5fe6f8929e587b57837bca52611df5403cc00",
+        "working-14.png": "01a5648753e1904e79e76932cf2f6ef2e8a8943cd3fd8bf14f98f872693c914a",
+        "working-15.png": "20ca08ec9798a6398f26b61b6d1aceb1fd4da4bc21356747f919db0a30dc892f"
+      },
+      "note": "approved complete ink-painting sequence; frames 1-6 preserve the originally approved work prefix, frames 7-10 finish the shrimp painting, and frames 11-15 form the accepted page-change transition into a fresh sheet"
     },
     "running": {
       "alias_of": "review",

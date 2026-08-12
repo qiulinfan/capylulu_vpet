@@ -1,6 +1,7 @@
 {
   "id": "capybara-lulu",
-  "displayName": "\u6c34\u8c5a\u565c\u565c",
-  "description": "A warm healing capybara-like desktop pet with cozy music, sleep, drag reactions, celebration, and plush-hug animations.",
+  "displayName": "水豚噜噜",
+  "description": "会画水墨小虾、休息时香香睡觉的橙子水豚桌面伙伴。",
+  "spriteVersionNumber": 1,
   "spritesheetPath": "spritesheet.webp"
 }

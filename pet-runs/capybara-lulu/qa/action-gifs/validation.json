@@ -12,6 +12,7 @@
     "waving",
     "failed",
     "waiting",
+    "working",
     "running",
     "review"
   ],
@@ -26,52 +27,91 @@
   "actions": {
     "idle": {
       "gif": "pet-runs/capybara-lulu/qa/action-gifs/01-idle.gif",
-      "gif_sha256": "4e8521bf9587c1ced53ecb91ba71e431e756cbe7dfac321f3b267cd88def9405",
+      "gif_sha256": "da303a1d1f68a70f1663238d214d2ff7955c37603dfb2a1f9330260b9de4a59a",
       "source_frames": [
         "pet-runs/capybara-lulu/official-frames-v1/idle/idle-01.png",
         "pet-runs/capybara-lulu/official-frames-v1/idle/idle-02.png",
         "pet-runs/capybara-lulu/official-frames-v1/idle/idle-03.png",
         "pet-runs/capybara-lulu/official-frames-v1/idle/idle-04.png",
         "pet-runs/capybara-lulu/official-frames-v1/idle/idle-05.png",
-        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-06.png"
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-06.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-07.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-08.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-09.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-10.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-11.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-12.png"
       ],
       "source_frame_sha256": [
-        "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
-        "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
-        "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
-        "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
-        "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
-        "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651"
+        "87bc58bf2bc9b44d3f6d1eb7ec34055f4250d00df06d50393d419b22a002c6d1",
+        "7bc0ea08f6d2e9b690730c5ae5948dfce370ed7a276216c6ada4476bc0f36117",
+        "2667f436701a0286f8b57a07f90f17d65bd2006dba6ec32caf77dd41c325c826",
+        "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a",
+        "f0a02f142f26f3978649afad79a55c413d0e922a83eedbc465828b17894f5486",
+        "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+        "310a895d4fe468548588dc376d7c6eed787010b92424eadbce2a208702c91d92",
+        "e473009083526caad274c686a7c09187583fbe234813b9881df7a7e9594a73ea",
+        "310a895d4fe468548588dc376d7c6eed787010b92424eadbce2a208702c91d92",
+        "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+        "f0a02f142f26f3978649afad79a55c413d0e922a83eedbc465828b17894f5486",
+        "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a"
       ],
-      "frame_count": 6,
+      "frame_count": 12,
       "frame_durations_ms": [
         180,
         180,
         180,
         180,
         180,
+        120,
+        120,
+        360,
+        120,
+        120,
+        180,
         180
       ],
-      "cycle_duration_ms": 1080,
+      "cycle_duration_ms": 2100,
       "loop": 0,
       "transition_rmse": [
-        0.21443278474838567,
-        0.2711690551657948,
-        0.24332680762890982,
-        0.24332680762890982,
-        0.2711690551657948
+        0.12689645700404395,
+        0.17237998640131383,
+        0.17262896776973918,
+        0.17312112931278736,
+        0.17553612565283816,
+        0.22195790983177122,
+        0.18145448888275334,
+        0.18145448888275334,
+        0.22195790983177122,
+        0.17553612565283816,
+        0.17312112931278736
       ],
-      "loop_seam_rmse": 0.21443278474838567,
+      "loop_seam_rmse": 0.14318398166597548,
       "alpha_areas": [
-        22223.0,
-        22102.0,
-        21685.0,
-        21919.0,
-        21685.0,
-        22102.0
+        15680.0,
+        15556.0,
+        14647.0,
+        15220.0,
+        14063.0,
+        14907.0,
+        13864.0,
+        13015.0,
+        13864.0,
+        14907.0,
+        14063.0,
+        15220.0
       ],
       "eye_policy": null,
-      "reversible_transition_pairs": [],
+      "reversible_transition_pairs": [
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          9
+        ]
+      ],
       "quality": "gold"
     },
     "running-right": {
@@ -373,8 +413,103 @@
       "reversible_transition_pairs": [],
       "quality": "gold"
     },
+    "working": {
+      "gif": "pet-runs/capybara-lulu/qa/action-gifs/07-working.gif",
+      "gif_sha256": "859bfaf85b64184c4363865f455ac7d62c45c952ed2f599d0d6494e3d525954e",
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-03.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-04.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-05.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-06.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-07.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-08.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-09.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-10.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-11.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-12.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-13.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-14.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-15.png"
+      ],
+      "source_frame_sha256": [
+        "f018a39570742a3b165d1bae4a4c235fce2d1edc4a7ffc06bae778966f5095e9",
+        "21079fb6a49181d6850d2d3db2180f84c51dc9176aa5ab75627bdcc2a31d6a72",
+        "a25db3896eb79d9fc7d3fa5c04179b40c201b5cfe0a4c2a02da47d12f56386aa",
+        "21026a717333ae7809896b6eb94db25dc0155029fa30b48b181ea1a1ec135dfe",
+        "78af68a42acdfe77152c81e37a8bd0789f6a2f7251c51eaf9bf6a1e46b7faa54",
+        "30d18d6d1e85c4e528bcc60111a08aedd332019cfbd0630ea194d3bb8ea48ca0",
+        "c73effcae92871349d21254354f1f0593ccbd566125cb1b762469f65d5d4ec45",
+        "5283c723e86ae6eb60e0bfc22b02a03994d38aeb5c3c33314e422cce4320b668",
+        "8a0ab1b8a3230e9888db8a0aea9e65dab13ab4a572fba9599806e05bdd2e39b0",
+        "2d0c6fb3d11d182b7053e586e97a78c5f2b4c8b14ea7fc078b70d1568621368d",
+        "462df4c0cca2b5fe37c201e7ae2b28f33e5d84a1ef2e9791acc5ebb72799b208",
+        "873339a1fc023941412e3587f088db9c47e5a5db48a69dead063e7ad721a760d",
+        "3ad6ef70623a1fa5985dd062cec5fe6f8929e587b57837bca52611df5403cc00",
+        "01a5648753e1904e79e76932cf2f6ef2e8a8943cd3fd8bf14f98f872693c914a",
+        "20ca08ec9798a6398f26b61b6d1aceb1fd4da4bc21356747f919db0a30dc892f"
+      ],
+      "frame_count": 15,
+      "frame_durations_ms": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        300,
+        180,
+        180,
+        180,
+        500,
+        180,
+        180,
+        180,
+        220,
+        300
+      ],
+      "cycle_duration_ms": 3300,
+      "loop": 0,
+      "transition_rmse": [
+        0.16380182240069163,
+        0.15999495016201526,
+        0.1191255473583345,
+        0.1488725146686718,
+        0.16990025699862035,
+        0.1594954494226413,
+        0.1362018823888131,
+        0.1493955756612762,
+        0.1448197642975002,
+        0.24870119558592862,
+        0.1437972563946476,
+        0.2289569609373568,
+        0.23729710923789132,
+        0.24012350779555242
+      ],
+      "loop_seam_rmse": 0.13941872232920086,
+      "alpha_areas": [
+        14840.98431372549,
+        15062.243137254902,
+        14983.509803921568,
+        14877.478431372549,
+        14912.141176470588,
+        15249.439215686274,
+        15005.098039215687,
+        14939.556862745098,
+        15056.454901960784,
+        15036.329411764706,
+        13391.686274509804,
+        13031.26274509804,
+        15006.172549019608,
+        13521.027450980393,
+        14956.650980392156
+      ],
+      "eye_policy": null,
+      "reversible_transition_pairs": [],
+      "quality": "gold"
+    },
     "running": {
-      "gif": "pet-runs/capybara-lulu/qa/action-gifs/07-running.gif",
+      "gif": "pet-runs/capybara-lulu/qa/action-gifs/08-running.gif",
       "gif_sha256": "8ba448575aeeb36f99198e0f361e52da1f7daa174b7e696593ef40e3c090ac03",
       "source_frames": [
         "pet-runs/capybara-lulu/official-frames-v1/running/running-01.png",
@@ -424,7 +559,7 @@
       "quality": "gold"
     },
     "review": {
-      "gif": "pet-runs/capybara-lulu/qa/action-gifs/08-review.gif",
+      "gif": "pet-runs/capybara-lulu/qa/action-gifs/09-review.gif",
       "gif_sha256": "4e8521bf9587c1ced53ecb91ba71e431e756cbe7dfac321f3b267cd88def9405",
       "source_frames": [
         "pet-runs/capybara-lulu/official-frames-v1/review/review-01.png",

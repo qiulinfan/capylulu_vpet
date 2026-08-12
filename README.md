@@ -19,16 +19,21 @@ Platform adapters are downstream derivatives: they may select, resample, or
 retime approved master actions, but they must not redefine or constrain the
 master.
 
-The current eight actions are:
+The current nine actions are:
 
-1. `idle` — approved gold action
+1. `idle` — approved gold sleeping action; exact master alias of `failed`
 2. `running-right` — six-gold full-rerun candidate
 3. `running-left` — exact-mirror six-gold full-rerun candidate
 4. `waving` — approved gold action
 5. `failed` — approved gold action with a reversible prone-to-side sleeping roll
 6. `waiting` — approved gold action
-7. `running` — approved gold action
-8. `review` — approved gold action
+7. `working` — approved gold ink-painting action with a completed page change
+8. `running` — approved gold action
+9. `review` — approved gold action
+
+This nine-action set is the current milestone. The sofa-based `looking-around`
+candidate remains under `sequence-drafts/new-state-candidates/looking-around/`
+and is deliberately excluded until its motion is refined and approved.
 
 `jumping` was retired because its cheer overlapped `waving`. Its former source
 frames are preserved only as draft lineage under
@@ -40,22 +45,28 @@ frames are preserved only as draft lineage under
 uv run --frozen python tools/build_action_gifs.py
 ```
 
-The compatibility entry point below performs the same action-only build:
+Build the current Codex V1 adapter without installing it:
 
 ```bash
 uv run --frozen python tools/build_vpet_v1.py
 ```
 
-Both commands write the independent previews, a complete gallery, and their
-validation report:
+Build and install it into the local Codex custom-pet directory:
+
+```bash
+uv run --frozen python tools/build_vpet_v1.py --install
+```
+
+The action-only command writes the independent previews, a complete gallery,
+and their validation report:
 
 - `pet-runs/capybara-lulu/qa/action-gifs/*.gif`
 - `pet-runs/capybara-lulu/qa/action-gifs/gallery.md`
 - `pet-runs/capybara-lulu/qa/action-gifs/validation.json`
 
-They intentionally do not rebuild a spritesheet. `idle`, `waving`, `failed`,
-`waiting`, `running`, and `review` are hash-locked so an unrelated animation
-edit cannot silently change any of the six gold actions.
+It intentionally does not rebuild a spritesheet. `idle`, `waving`, `failed`,
+`waiting`, `working`, `running`, and `review` are hash-locked so an unrelated
+animation edit cannot silently change any of the seven gold actions.
 
 ## Iteration review rule
 
@@ -64,12 +75,17 @@ manifest `action_order`, even when only one action changed. The generated
 `gallery.md` is the canonical full-review index; a review is incomplete if it
 shows only the edited action.
 
-## Downstream packages
+## Codex adapter
 
-`pet-runs/capybara-lulu/final/` is the last assembled Codex V1 adapter snapshot.
-It may lag behind the animation master and is not an acceptance source. A new
-Codex spritesheet—or an adapter for another platform—will be derived only from
-approved master actions, without discarding master frames or timing.
+`pet-runs/capybara-lulu/final/` is the current installable Codex V1 adapter.
+It maps the complete animation master into Codex's fixed 8-column by 9-row,
+`1536x1872` custom-pet spritesheet contract. The adapter uses the sleeping
+`failed` artwork for both `idle` and `failed`, uses `waving` for Codex's required
+hover/`jumping` row, and maps the approved `working` action to Codex's task-active
+`running` row. Selection in the adapter never removes or redefines master frames.
+
+The installed local package is `~/.codex/pets/capybara-lulu/`. Its app-facing
+identity is `custom:capybara-lulu`.
 
 Experimental and historical assets remain under
 `pet-runs/capybara-lulu/sequence-drafts/` and are excluded from the active

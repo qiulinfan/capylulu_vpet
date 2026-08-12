@@ -1,783 +1,318 @@
 {
   "ok": true,
-  "scope": "formal-v1",
-  "format": "RGBA PNG + single-frame lossless WebP",
-  "width": 1536,
-  "height": 1872,
-  "cell_size": [
-    192,
-    208
-  ],
+  "scope": "codex-custom-pet-adapter",
   "errors": [],
   "warnings": [],
-  "state_aliases": {
-    "idle": "review",
-    "running": "review"
+  "application_contract": {
+    "source": "locally installed Codex app bundle",
+    "bundle_id": "com.openai.codex",
+    "app_version": "26.803.41515",
+    "sprite_version_number": 1,
+    "width": 1536,
+    "height": 1872,
+    "cell_size": [
+      192,
+      208
+    ],
+    "columns": 8,
+    "rows": 9,
+    "required_frames_by_row": [
+      6,
+      8,
+      8,
+      4,
+      5,
+      8,
+      6,
+      6,
+      6
+    ]
   },
-  "directional_drag": {
-    "semantics": {
-      "running-right": "pointer/window dragged right; body and limbs trail left",
-      "running-left": "exact horizontal mirror of running-right"
-    },
-    "source": "sequence-drafts/v1-action-work/drag-directional/right-drag-motion-v4-selected-alpha-hard.png",
-    "frame_durations_ms": [
-      120,
-      120,
-      120,
-      120,
-      120,
-      120,
-      120,
-      220
-    ],
-    "gold_eye_spacing": 51.715083798882674,
-    "eye_spacings": {
-      "running-right": [
-        52.475639269406386,
-        52.290280050918355,
-        52.775198938992034,
-        52.489273508984695,
-        52.10976282404853,
-        53.45167173252278,
-        52.69413094871004,
-        52.9021513002364
+  "runtime_state_mapping": {
+    "idle": {
+      "row_index": 0,
+      "master_state": "idle",
+      "master_frame_numbers": [
+        1,
+        4,
+        6,
+        8,
+        10,
+        12
       ],
-      "running-left": [
-        52.475639269406386,
-        52.29028005091835,
-        52.77519893899205,
-        52.48927350898468,
-        52.10976282404854,
-        53.45167173252279,
-        52.69413094871005,
-        52.9021513002364
-      ]
-    },
-    "eye_spacing_drifts": {
-      "running-right": [
-        0.7605554705237125,
-        0.5751962520356813,
-        1.0601151401093603,
-        0.7741897101020214,
-        0.39467902516585696,
-        1.7365879336401093,
-        0.9790471498273661,
-        1.1870675013537237
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-04.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-06.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-08.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-10.png",
+        "pet-runs/capybara-lulu/official-frames-v1/idle/idle-12.png"
       ],
-      "running-left": [
-        0.7605554705237125,
-        0.5751962520356741,
-        1.0601151401093745,
-        0.7741897101020072,
-        0.39467902516586406,
-        1.7365879336401164,
-        0.9790471498273732,
-        1.1870675013537237
-      ]
-    },
-    "max_eye_spacing_drift": 2.5,
-    "eye_states": {
-      "running-right": [
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ]
+      "source_frame_sha256": [
+        "87bc58bf2bc9b44d3f6d1eb7ec34055f4250d00df06d50393d419b22a002c6d1",
+        "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a",
+        "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+        "e473009083526caad274c686a7c09187583fbe234813b9881df7a7e9594a73ea",
+        "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+        "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a"
       ],
-      "running-left": [
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ],
-        [
-          true,
-          true
-        ]
-      ]
+      "note": "six key poses selected from the complete twelve-frame sleeping loop"
     },
-    "bboxes": {
-      "running-right": [
-        [
-          35,
-          10,
-          157,
-          200
-        ],
-        [
-          27,
-          8,
-          165,
-          198
-        ],
-        [
-          22,
-          6,
-          169,
-          196
-        ],
-        [
-          22,
-          5,
-          169,
-          195
-        ],
-        [
-          22,
-          4,
-          169,
-          194
-        ],
-        [
-          23,
-          6,
-          168,
-          196
-        ],
-        [
-          28,
-          8,
-          163,
-          198
-        ],
-        [
-          36,
-          9,
-          155,
-          199
-        ]
+    "running-right": {
+      "row_index": 1,
+      "master_state": "running-right",
+      "master_frame_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
       ],
-      "running-left": [
-        [
-          35,
-          10,
-          157,
-          200
-        ],
-        [
-          27,
-          8,
-          165,
-          198
-        ],
-        [
-          23,
-          6,
-          170,
-          196
-        ],
-        [
-          23,
-          5,
-          170,
-          195
-        ],
-        [
-          23,
-          4,
-          170,
-          194
-        ],
-        [
-          24,
-          6,
-          169,
-          196
-        ],
-        [
-          29,
-          8,
-          164,
-          198
-        ],
-        [
-          37,
-          9,
-          156,
-          199
-        ]
-      ]
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-03.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-04.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-05.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-06.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-07.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-08.png"
+      ],
+      "source_frame_sha256": [
+        "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376",
+        "059d06921f01b251b858ea15c0759e9ab1d2c7d1d871fd90997ffbb7045d036f",
+        "e00787139c5540627a40dd263318d2c1e5b03e8327d744b91a418aae7a074244",
+        "a3da4e3ce168ce5cbaa33507a86018073319fb65a40d2fbca72bcfe06da4fd88",
+        "cbb047177ce02283103ee687acc180eba42991aa74eddba18c31ab1abc114c1f",
+        "ec8663dbdb54e34b2b8594d1415f68dba6093e51ac1e7051493c8b34e9831a59",
+        "307a802b9e542f26ef275210d97e0a793066076157afc9fc14595b3b5b44d70b",
+        "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376"
+      ],
+      "note": "exact master action"
     },
-    "alpha_is_binary": true,
-    "left_is_exact_mirror": true
+    "running-left": {
+      "row_index": 2,
+      "master_state": "running-left",
+      "master_frame_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-03.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-04.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-05.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-06.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-07.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-08.png"
+      ],
+      "source_frame_sha256": [
+        "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f",
+        "441e77388336e301ddaaacb6926d3c01d35c419ebaefa958fb0606fcea331732",
+        "d255b5ab0d453c7aa2ee1b57b16a927a300b8b9117f295f05fafdd78eb8947bd",
+        "1b382203e32adfc167ffd83814e7fd415912e323fbf9fa1e793389e55456a7fc",
+        "8a41fe98f3a20c7c4ec2f905ba8696f393015c0b404f56e9ea40ad554d72e90b",
+        "3a9b9bddd1a0c3f6b9ebd64e12d89420256e39d936dd14aa5f88674add41182e",
+        "3300a8ca73b86a4bb8c26eef17f56786f6c63d79721dc087fdd2940126eace0e",
+        "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f"
+      ],
+      "note": "exact master action"
+    },
+    "waving": {
+      "row_index": 3,
+      "master_state": "waving",
+      "master_frame_numbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/waving/waving-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waving/waving-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waving/waving-03.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waving/waving-04.png"
+      ],
+      "source_frame_sha256": [
+        "4927bb779a107d6a357f0ae7fdfa73817a1bc350a45e9720e34bece0e04a11c6",
+        "844c6bb342b2f4c0544da18d86154cd416a0fde9e85878a3d5811bfa284c5f70",
+        "ad1ae7b765b28fd8f66009d0ea14fd288f0a6d1e076dd8006367dff29d701829",
+        "7592d49c57b6bc6b4010d39fad51ccd6b087808e22e0a34bd6e25e151110a476"
+      ],
+      "note": "exact master action"
+    },
+    "jumping": {
+      "row_index": 4,
+      "master_state": "waving",
+      "master_frame_numbers": [
+        1,
+        2,
+        3,
+        4,
+        1
+      ],
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/waving/waving-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waving/waving-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waving/waving-03.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waving/waving-04.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waving/waving-01.png"
+      ],
+      "source_frame_sha256": [
+        "4927bb779a107d6a357f0ae7fdfa73817a1bc350a45e9720e34bece0e04a11c6",
+        "844c6bb342b2f4c0544da18d86154cd416a0fde9e85878a3d5811bfa284c5f70",
+        "ad1ae7b765b28fd8f66009d0ea14fd288f0a6d1e076dd8006367dff29d701829",
+        "7592d49c57b6bc6b4010d39fad51ccd6b087808e22e0a34bd6e25e151110a476",
+        "4927bb779a107d6a357f0ae7fdfa73817a1bc350a45e9720e34bece0e04a11c6"
+      ],
+      "note": "Codex-required hover row derived from the approved waving replacement"
+    },
+    "failed": {
+      "row_index": 5,
+      "master_state": "failed",
+      "master_frame_numbers": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/failed/failed-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/failed/failed-04.png",
+        "pet-runs/capybara-lulu/official-frames-v1/failed/failed-roll-transition-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/failed/failed-roll-transition-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/failed/failed-06.png",
+        "pet-runs/capybara-lulu/official-frames-v1/failed/failed-roll-transition-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/failed/failed-roll-transition-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/failed/failed-08.png"
+      ],
+      "source_frame_sha256": [
+        "87bc58bf2bc9b44d3f6d1eb7ec34055f4250d00df06d50393d419b22a002c6d1",
+        "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a",
+        "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+        "310a895d4fe468548588dc376d7c6eed787010b92424eadbce2a208702c91d92",
+        "e473009083526caad274c686a7c09187583fbe234813b9881df7a7e9594a73ea",
+        "310a895d4fe468548588dc376d7c6eed787010b92424eadbce2a208702c91d92",
+        "f63355e478f100d81dc909921a6c9285caeeec4687a59110fbdb59d31f86eae4",
+        "ec30c184f150fe2f0d7428d859b6a7524075940fca4e78078f88caaf8c82a58a"
+      ],
+      "note": "symmetric eight-pose selection from the same sleeping loop used by idle"
+    },
+    "waiting": {
+      "row_index": 6,
+      "master_state": "waiting",
+      "master_frame_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/waiting/waiting-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waiting/waiting-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waiting/waiting-03.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waiting/waiting-04.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waiting/waiting-05.png",
+        "pet-runs/capybara-lulu/official-frames-v1/waiting/waiting-06.png"
+      ],
+      "source_frame_sha256": [
+        "cd9bbb52d19b12798ac63436da697ae5d611509f0d9454a3c7567fe6245b1898",
+        "81315a4ccc2cd0c5203f24253ae7687ab3981685bd8f7f7ed1bb062f0b789632",
+        "24c14a55c1b64ca83f6304a24c126e3e2beda9c5bc034b7d81c2fe7c7bd90719",
+        "29b76618921c6b9565a3848512fb308cbefb6c86ad4fa161c22aa0c6499acbc2",
+        "065363b9a40c59087266ed1d1e5fd2f0576d4a8a67d181916020179b9367ce51",
+        "766e85dbd8682eee0712debba3b4ccffd474a80b49a694ef7c7b2cd985a9c1e1"
+      ],
+      "note": "exact master action"
+    },
+    "running": {
+      "row_index": 7,
+      "master_state": "working",
+      "master_frame_numbers": [
+        1,
+        6,
+        8,
+        10,
+        13,
+        15
+      ],
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-06.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-08.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-10.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-13.png",
+        "pet-runs/capybara-lulu/official-frames-v1/working/working-15.png"
+      ],
+      "source_frame_sha256": [
+        "f018a39570742a3b165d1bae4a4c235fce2d1edc4a7ffc06bae778966f5095e9",
+        "30d18d6d1e85c4e528bcc60111a08aedd332019cfbd0630ea194d3bb8ea48ca0",
+        "5283c723e86ae6eb60e0bfc22b02a03994d38aeb5c3c33314e422cce4320b668",
+        "2d0c6fb3d11d182b7053e586e97a78c5f2b4c8b14ea7fc078b70d1568621368d",
+        "3ad6ef70623a1fa5985dd062cec5fe6f8929e587b57837bca52611df5403cc00",
+        "20ca08ec9798a6398f26b61b6d1aceb1fd4da4bc21356747f919db0a30dc892f"
+      ],
+      "note": "Codex task-running state mapped to the approved work cycle: blank page, marks, finished shrimp, page change, reset"
+    },
+    "review": {
+      "row_index": 8,
+      "master_state": "review",
+      "master_frame_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_frames": [
+        "pet-runs/capybara-lulu/official-frames-v1/review/review-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/review/review-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/review/review-03.png",
+        "pet-runs/capybara-lulu/official-frames-v1/review/review-04.png",
+        "pet-runs/capybara-lulu/official-frames-v1/review/review-05.png",
+        "pet-runs/capybara-lulu/official-frames-v1/review/review-06.png"
+      ],
+      "source_frame_sha256": [
+        "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
+        "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
+        "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+        "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
+        "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
+        "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651"
+      ],
+      "note": "exact master action"
+    }
   },
-  "waving_eye_states": [
-    [
-      false,
-      false
-    ],
-    [
-      true,
-      true
-    ],
-    [
-      true,
-      true
-    ],
-    [
-      false,
-      false
-    ]
-  ],
-  "waving_bboxes": [
-    [
-      34,
-      10,
-      158,
-      200
-    ],
-    [
-      26,
-      10,
-      166,
-      200
-    ],
-    [
-      22,
-      10,
-      169,
-      200
-    ],
-    [
-      25,
-      10,
-      167,
-      200
-    ]
-  ],
-  "waving_alpha_is_binary": true,
-  "waving_frame_durations_ms": [
-    140,
-    140,
-    140,
-    280
-  ],
-  "action_gif_durations_ms": {
-    "02-running-right.gif": [
-      120,
-      120,
-      120,
-      120,
-      120,
-      120,
-      120,
-      220
-    ],
-    "03-running-left.gif": [
-      120,
-      120,
-      120,
-      120,
-      120,
-      120,
-      120,
-      220
-    ],
-    "04-waving.gif": [
-      140,
-      140,
-      140,
-      280
-    ],
-    "08-running.gif": [
-      120,
-      120,
-      120,
-      120,
-      120,
-      220
-    ]
+  "master_aliases": {
+    "idle": "failed"
+  },
+  "adapter_aliases": {
+    "idle": "failed sleeping artwork",
+    "jumping": "waving",
+    "running": "working"
   },
   "cells": [
     {
-      "state": "idle",
       "row": 0,
       "column": 0,
-      "used": true,
-      "bbox": [
-        17,
-        10,
-        175,
-        200
-      ]
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 1,
-      "used": true,
-      "bbox": [
-        17,
-        10,
-        175,
-        200
-      ]
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 2,
-      "used": true,
-      "bbox": [
-        18,
-        10,
-        174,
-        200
-      ]
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 3,
-      "used": true,
-      "bbox": [
-        17,
-        10,
-        175,
-        200
-      ]
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 4,
-      "used": true,
-      "bbox": [
-        18,
-        10,
-        174,
-        200
-      ]
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 5,
-      "used": true,
-      "bbox": [
-        17,
-        10,
-        175,
-        200
-      ]
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 6,
-      "used": false,
-      "bbox": null
-    },
-    {
-      "state": "idle",
-      "row": 0,
-      "column": 7,
-      "used": false,
-      "bbox": null
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 0,
-      "used": true,
-      "bbox": [
-        35,
-        10,
-        157,
-        200
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 1,
-      "used": true,
-      "bbox": [
-        27,
-        8,
-        165,
-        198
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 2,
-      "used": true,
-      "bbox": [
-        22,
-        6,
-        169,
-        196
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 3,
-      "used": true,
-      "bbox": [
-        22,
-        5,
-        169,
-        195
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 4,
-      "used": true,
-      "bbox": [
-        22,
-        4,
-        169,
-        194
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 5,
-      "used": true,
-      "bbox": [
-        23,
-        6,
-        168,
-        196
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 6,
-      "used": true,
-      "bbox": [
-        28,
-        8,
-        163,
-        198
-      ]
-    },
-    {
-      "state": "running-right",
-      "row": 1,
-      "column": 7,
-      "used": true,
-      "bbox": [
-        36,
-        9,
-        155,
-        199
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 0,
-      "used": true,
-      "bbox": [
-        35,
-        10,
-        157,
-        200
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 1,
-      "used": true,
-      "bbox": [
-        27,
-        8,
-        165,
-        198
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 2,
-      "used": true,
-      "bbox": [
-        23,
-        6,
-        170,
-        196
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 3,
-      "used": true,
-      "bbox": [
-        23,
-        5,
-        170,
-        195
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 4,
-      "used": true,
-      "bbox": [
-        23,
-        4,
-        170,
-        194
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 5,
-      "used": true,
-      "bbox": [
-        24,
-        6,
-        169,
-        196
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 6,
-      "used": true,
-      "bbox": [
-        29,
-        8,
-        164,
-        198
-      ]
-    },
-    {
-      "state": "running-left",
-      "row": 2,
-      "column": 7,
-      "used": true,
-      "bbox": [
-        37,
-        9,
-        156,
-        199
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 0,
-      "used": true,
-      "bbox": [
-        34,
-        10,
-        158,
-        200
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 1,
-      "used": true,
-      "bbox": [
-        26,
-        10,
-        166,
-        200
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 2,
-      "used": true,
-      "bbox": [
-        22,
-        10,
-        169,
-        200
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 3,
-      "used": true,
-      "bbox": [
-        25,
-        10,
-        167,
-        200
-      ]
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 4,
-      "used": false,
-      "bbox": null
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 5,
-      "used": false,
-      "bbox": null
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 6,
-      "used": false,
-      "bbox": null
-    },
-    {
-      "state": "waving",
-      "row": 3,
-      "column": 7,
-      "used": false,
-      "bbox": null
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 0,
-      "used": true,
-      "bbox": [
-        19,
-        10,
-        173,
-        200
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 1,
-      "used": true,
-      "bbox": [
-        19,
-        10,
-        173,
-        200
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 2,
-      "used": true,
-      "bbox": [
-        18,
-        10,
-        174,
-        200
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 3,
-      "used": true,
-      "bbox": [
-        26,
-        10,
-        166,
-        200
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 4,
-      "used": true,
-      "bbox": [
-        17,
-        10,
-        174,
-        200
-      ]
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 5,
-      "used": false,
-      "bbox": null
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 6,
-      "used": false,
-      "bbox": null
-    },
-    {
-      "state": "jumping",
-      "row": 4,
-      "column": 7,
-      "used": false,
-      "bbox": null
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 0,
+      "runtime_state": "idle",
       "used": true,
       "bbox": [
         8,
@@ -787,33 +322,9 @@
       ]
     },
     {
-      "state": "failed",
-      "row": 5,
+      "row": 0,
       "column": 1,
-      "used": true,
-      "bbox": [
-        8,
-        54,
-        184,
-        200
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 2,
-      "used": true,
-      "bbox": [
-        8,
-        57,
-        184,
-        200
-      ]
-    },
-    {
-      "state": "failed",
-      "row": 5,
-      "column": 3,
+      "runtime_state": "idle",
       "used": true,
       "bbox": [
         8,
@@ -823,21 +334,21 @@
       ]
     },
     {
-      "state": "failed",
-      "row": 5,
-      "column": 4,
+      "row": 0,
+      "column": 2,
+      "runtime_state": "idle",
       "used": true,
       "bbox": [
         8,
-        83,
+        78,
         184,
         200
       ]
     },
     {
-      "state": "failed",
-      "row": 5,
-      "column": 5,
+      "row": 0,
+      "column": 3,
+      "runtime_state": "idle",
       "used": true,
       "bbox": [
         8,
@@ -847,21 +358,21 @@
       ]
     },
     {
-      "state": "failed",
-      "row": 5,
-      "column": 6,
+      "row": 0,
+      "column": 4,
+      "runtime_state": "idle",
       "used": true,
       "bbox": [
         8,
-        83,
+        78,
         184,
         200
       ]
     },
     {
-      "state": "failed",
-      "row": 5,
-      "column": 7,
+      "row": 0,
+      "column": 5,
+      "runtime_state": "idle",
       "used": true,
       "bbox": [
         8,
@@ -871,21 +382,239 @@
       ]
     },
     {
-      "state": "waiting",
-      "row": 6,
+      "row": 0,
+      "column": 6,
+      "runtime_state": "idle",
+      "used": false,
+      "bbox": null
+    },
+    {
+      "row": 0,
+      "column": 7,
+      "runtime_state": "idle",
+      "used": false,
+      "bbox": null
+    },
+    {
+      "row": 1,
       "column": 0,
+      "runtime_state": "running-right",
       "used": true,
       "bbox": [
-        23,
+        35,
+        11,
+        157,
+        197
+      ]
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "runtime_state": "running-right",
+      "used": true,
+      "bbox": [
+        28,
+        12,
+        164,
+        197
+      ]
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "runtime_state": "running-right",
+      "used": true,
+      "bbox": [
+        22,
+        13,
+        171,
+        195
+      ]
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "runtime_state": "running-right",
+      "used": true,
+      "bbox": [
+        16,
+        13,
+        177,
+        195
+      ]
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "runtime_state": "running-right",
+      "used": true,
+      "bbox": [
         10,
-        169,
+        17,
+        182,
+        191
+      ]
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "runtime_state": "running-right",
+      "used": true,
+      "bbox": [
+        24,
+        12,
+        168,
+        197
+      ]
+    },
+    {
+      "row": 1,
+      "column": 6,
+      "runtime_state": "running-right",
+      "used": true,
+      "bbox": [
+        35,
+        10,
+        157,
+        196
+      ]
+    },
+    {
+      "row": 1,
+      "column": 7,
+      "runtime_state": "running-right",
+      "used": true,
+      "bbox": [
+        35,
+        11,
+        157,
+        197
+      ]
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "runtime_state": "running-left",
+      "used": true,
+      "bbox": [
+        35,
+        11,
+        157,
+        197
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "runtime_state": "running-left",
+      "used": true,
+      "bbox": [
+        28,
+        12,
+        164,
+        197
+      ]
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "runtime_state": "running-left",
+      "used": true,
+      "bbox": [
+        21,
+        13,
+        170,
+        195
+      ]
+    },
+    {
+      "row": 2,
+      "column": 3,
+      "runtime_state": "running-left",
+      "used": true,
+      "bbox": [
+        15,
+        13,
+        176,
+        195
+      ]
+    },
+    {
+      "row": 2,
+      "column": 4,
+      "runtime_state": "running-left",
+      "used": true,
+      "bbox": [
+        10,
+        17,
+        182,
+        191
+      ]
+    },
+    {
+      "row": 2,
+      "column": 5,
+      "runtime_state": "running-left",
+      "used": true,
+      "bbox": [
+        24,
+        12,
+        168,
+        197
+      ]
+    },
+    {
+      "row": 2,
+      "column": 6,
+      "runtime_state": "running-left",
+      "used": true,
+      "bbox": [
+        35,
+        10,
+        157,
+        196
+      ]
+    },
+    {
+      "row": 2,
+      "column": 7,
+      "runtime_state": "running-left",
+      "used": true,
+      "bbox": [
+        35,
+        11,
+        157,
+        197
+      ]
+    },
+    {
+      "row": 3,
+      "column": 0,
+      "runtime_state": "waving",
+      "used": true,
+      "bbox": [
+        34,
+        10,
+        158,
         200
       ]
     },
     {
-      "state": "waiting",
-      "row": 6,
+      "row": 3,
       "column": 1,
+      "runtime_state": "waving",
+      "used": true,
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
+    },
+    {
+      "row": 3,
+      "column": 2,
+      "runtime_state": "waving",
       "used": true,
       "bbox": [
         22,
@@ -895,45 +624,9 @@
       ]
     },
     {
-      "state": "waiting",
-      "row": 6,
-      "column": 2,
-      "used": true,
-      "bbox": [
-        23,
-        10,
-        168,
-        200
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
+      "row": 3,
       "column": 3,
-      "used": true,
-      "bbox": [
-        24,
-        10,
-        168,
-        200
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
-      "column": 4,
-      "used": true,
-      "bbox": [
-        25,
-        10,
-        166,
-        200
-      ]
-    },
-    {
-      "state": "waiting",
-      "row": 6,
-      "column": 5,
+      "runtime_state": "waving",
       "used": true,
       "bbox": [
         25,
@@ -943,109 +636,386 @@
       ]
     },
     {
-      "state": "waiting",
+      "row": 3,
+      "column": 4,
+      "runtime_state": "waving",
+      "used": false,
+      "bbox": null
+    },
+    {
+      "row": 3,
+      "column": 5,
+      "runtime_state": "waving",
+      "used": false,
+      "bbox": null
+    },
+    {
+      "row": 3,
+      "column": 6,
+      "runtime_state": "waving",
+      "used": false,
+      "bbox": null
+    },
+    {
+      "row": 3,
+      "column": 7,
+      "runtime_state": "waving",
+      "used": false,
+      "bbox": null
+    },
+    {
+      "row": 4,
+      "column": 0,
+      "runtime_state": "jumping",
+      "used": true,
+      "bbox": [
+        34,
+        10,
+        158,
+        200
+      ]
+    },
+    {
+      "row": 4,
+      "column": 1,
+      "runtime_state": "jumping",
+      "used": true,
+      "bbox": [
+        26,
+        10,
+        166,
+        200
+      ]
+    },
+    {
+      "row": 4,
+      "column": 2,
+      "runtime_state": "jumping",
+      "used": true,
+      "bbox": [
+        22,
+        10,
+        169,
+        200
+      ]
+    },
+    {
+      "row": 4,
+      "column": 3,
+      "runtime_state": "jumping",
+      "used": true,
+      "bbox": [
+        25,
+        10,
+        167,
+        200
+      ]
+    },
+    {
+      "row": 4,
+      "column": 4,
+      "runtime_state": "jumping",
+      "used": true,
+      "bbox": [
+        34,
+        10,
+        158,
+        200
+      ]
+    },
+    {
+      "row": 4,
+      "column": 5,
+      "runtime_state": "jumping",
+      "used": false,
+      "bbox": null
+    },
+    {
+      "row": 4,
+      "column": 6,
+      "runtime_state": "jumping",
+      "used": false,
+      "bbox": null
+    },
+    {
+      "row": 4,
+      "column": 7,
+      "runtime_state": "jumping",
+      "used": false,
+      "bbox": null
+    },
+    {
+      "row": 5,
+      "column": 0,
+      "runtime_state": "failed",
+      "used": true,
+      "bbox": [
+        8,
+        60,
+        184,
+        200
+      ]
+    },
+    {
+      "row": 5,
+      "column": 1,
+      "runtime_state": "failed",
+      "used": true,
+      "bbox": [
+        8,
+        77,
+        184,
+        200
+      ]
+    },
+    {
+      "row": 5,
+      "column": 2,
+      "runtime_state": "failed",
+      "used": true,
+      "bbox": [
+        8,
+        78,
+        184,
+        200
+      ]
+    },
+    {
+      "row": 5,
+      "column": 3,
+      "runtime_state": "failed",
+      "used": true,
+      "bbox": [
+        9,
+        71,
+        183,
+        200
+      ]
+    },
+    {
+      "row": 5,
+      "column": 4,
+      "runtime_state": "failed",
+      "used": true,
+      "bbox": [
+        8,
+        64,
+        184,
+        200
+      ]
+    },
+    {
+      "row": 5,
+      "column": 5,
+      "runtime_state": "failed",
+      "used": true,
+      "bbox": [
+        9,
+        71,
+        183,
+        200
+      ]
+    },
+    {
+      "row": 5,
+      "column": 6,
+      "runtime_state": "failed",
+      "used": true,
+      "bbox": [
+        8,
+        78,
+        184,
+        200
+      ]
+    },
+    {
+      "row": 5,
+      "column": 7,
+      "runtime_state": "failed",
+      "used": true,
+      "bbox": [
+        8,
+        77,
+        184,
+        200
+      ]
+    },
+    {
+      "row": 6,
+      "column": 0,
+      "runtime_state": "waiting",
+      "used": true,
+      "bbox": [
+        23,
+        10,
+        169,
+        200
+      ]
+    },
+    {
+      "row": 6,
+      "column": 1,
+      "runtime_state": "waiting",
+      "used": true,
+      "bbox": [
+        22,
+        10,
+        169,
+        200
+      ]
+    },
+    {
+      "row": 6,
+      "column": 2,
+      "runtime_state": "waiting",
+      "used": true,
+      "bbox": [
+        23,
+        10,
+        168,
+        200
+      ]
+    },
+    {
+      "row": 6,
+      "column": 3,
+      "runtime_state": "waiting",
+      "used": true,
+      "bbox": [
+        24,
+        10,
+        168,
+        200
+      ]
+    },
+    {
+      "row": 6,
+      "column": 4,
+      "runtime_state": "waiting",
+      "used": true,
+      "bbox": [
+        25,
+        10,
+        166,
+        200
+      ]
+    },
+    {
+      "row": 6,
+      "column": 5,
+      "runtime_state": "waiting",
+      "used": true,
+      "bbox": [
+        25,
+        10,
+        167,
+        200
+      ]
+    },
+    {
       "row": 6,
       "column": 6,
+      "runtime_state": "waiting",
       "used": false,
       "bbox": null
     },
     {
-      "state": "waiting",
       "row": 6,
       "column": 7,
+      "runtime_state": "waiting",
       "used": false,
       "bbox": null
     },
     {
-      "state": "running",
       "row": 7,
       "column": 0,
+      "runtime_state": "running",
       "used": true,
       "bbox": [
-        17,
-        10,
-        175,
-        200
+        6,
+        48,
+        186,
+        198
       ]
     },
     {
-      "state": "running",
       "row": 7,
       "column": 1,
+      "runtime_state": "running",
       "used": true,
       "bbox": [
-        17,
-        10,
-        175,
-        200
+        6,
+        42,
+        185,
+        198
       ]
     },
     {
-      "state": "running",
       "row": 7,
       "column": 2,
+      "runtime_state": "running",
       "used": true,
       "bbox": [
-        18,
-        10,
-        174,
-        200
+        8,
+        46,
+        183,
+        198
       ]
     },
     {
-      "state": "running",
       "row": 7,
       "column": 3,
+      "runtime_state": "running",
       "used": true,
       "bbox": [
-        17,
-        10,
-        175,
-        200
+        6,
+        45,
+        186,
+        198
       ]
     },
     {
-      "state": "running",
       "row": 7,
       "column": 4,
+      "runtime_state": "running",
       "used": true,
       "bbox": [
-        18,
-        10,
-        174,
-        200
+        6,
+        58,
+        186,
+        198
       ]
     },
     {
-      "state": "running",
       "row": 7,
       "column": 5,
+      "runtime_state": "running",
       "used": true,
       "bbox": [
-        17,
-        10,
-        175,
-        200
+        6,
+        45,
+        185,
+        198
       ]
     },
     {
-      "state": "running",
       "row": 7,
       "column": 6,
+      "runtime_state": "running",
       "used": false,
       "bbox": null
     },
     {
-      "state": "running",
       "row": 7,
       "column": 7,
+      "runtime_state": "running",
       "used": false,
       "bbox": null
     },
     {
-      "state": "review",
       "row": 8,
       "column": 0,
+      "runtime_state": "review",
       "used": true,
       "bbox": [
         17,
@@ -1055,9 +1025,9 @@
       ]
     },
     {
-      "state": "review",
       "row": 8,
       "column": 1,
+      "runtime_state": "review",
       "used": true,
       "bbox": [
         17,
@@ -1067,9 +1037,9 @@
       ]
     },
     {
-      "state": "review",
       "row": 8,
       "column": 2,
+      "runtime_state": "review",
       "used": true,
       "bbox": [
         18,
@@ -1079,9 +1049,9 @@
       ]
     },
     {
-      "state": "review",
       "row": 8,
       "column": 3,
+      "runtime_state": "review",
       "used": true,
       "bbox": [
         17,
@@ -1091,9 +1061,9 @@
       ]
     },
     {
-      "state": "review",
       "row": 8,
       "column": 4,
+      "runtime_state": "review",
       "used": true,
       "bbox": [
         18,
@@ -1103,9 +1073,9 @@
       ]
     },
     {
-      "state": "review",
       "row": 8,
       "column": 5,
+      "runtime_state": "review",
       "used": true,
       "bbox": [
         17,
@@ -1115,33 +1085,35 @@
       ]
     },
     {
-      "state": "review",
       "row": 8,
       "column": 6,
+      "runtime_state": "review",
       "used": false,
       "bbox": null
     },
     {
-      "state": "review",
       "row": 8,
       "column": 7,
+      "runtime_state": "review",
       "used": false,
       "bbox": null
     }
   ],
-  "sha256": {
-    "spritesheet.png": "b091d2db1d343213a39dc0e4d3e0fdf6036204bfda305fc3c4de44b9c3e9480f",
-    "spritesheet.webp": "af904406f71ef9a60575cc48591390914b8196add1abd52d039acc49b2fd613f",
-    "running-right": {
-      "running-right-01.png": "861deb3a6d5c693a56ca07c831078b5defe960cd72450d4dc96a124ad0cf7d42",
-      "running-right-02.png": "88b516a44fc4ab6a9a5498eb724a86a71192fff4fbf5e4e72b87ff8967e6dc71",
-      "running-right-03.png": "775e4cb5d17c1ba75192d5455afd67b8faab07cd9b682d6a7c9b45e82e04415a",
-      "running-right-04.png": "f17c83affdbece6b846dce16e5cc4868f45435d76d4f401ef25d43eebe88d500",
-      "running-right-05.png": "5c3b0384f81351778292bbebc3e11b355106d71df404a01e9c5e3926ec088d78",
-      "running-right-06.png": "5f6c8fc44b30e1db36865eee653279bb534c33534e64a6c1e2cf9fa01901a464",
-      "running-right-07.png": "3701c843f261ff80d81eff592bdf6ea1e81476828f773d8e061df5f11602562e",
-      "running-right-08.png": "4c19d2715d46c0e9687ade0001912364fc98b324305d86b072de91982f35c91b"
+  "installation": {
+    "status": "installed",
+    "directory": "/Users/qiulinfan/.codex/pets/capybara-lulu",
+    "avatar_id": "custom:capybara-lulu",
+    "files": {
+      "pet.json": "e2ba79c508bbd45b26701b527afd5dbcd6a481028c37085dc941809b0bcdd556",
+      "spritesheet.webp": "2164865da7e5d5f2195159018ad5cf08998a3f3870c8011794133f0196ab017e"
     }
+  },
+  "artifacts": {
+    "pet.json": "e2ba79c508bbd45b26701b527afd5dbcd6a481028c37085dc941809b0bcdd556",
+    "spritesheet.png": "26b628ff81131cf9b398d6e763a12c2aa07b928c6821ae3731924e0d5af1adbd",
+    "spritesheet.webp": "2164865da7e5d5f2195159018ad5cf08998a3f3870c8011794133f0196ab017e",
+    "contact_sheet": "78f022e31152250eca59256ba3ee04c702fca23b28bbd5bfc8537248eaa4d454",
+    "source_manifest": "41cd58066e056210b353014d2f599a7893b3875c58d62389a280c08a4e13c4e8"
   },
   "toolchain": {
     "pillow": "12.3.0",

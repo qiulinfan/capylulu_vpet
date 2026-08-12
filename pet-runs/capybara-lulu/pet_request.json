@@ -3,18 +3,28 @@
   "display_name": "\u6c34\u8c5a\u565c\u565c",
   "description": "A cute orange-yellow capybara-like desktop pet with a tiny orange fruit on its head.",
   "created_at": "2026-05-03T17:42:22.579060+00:00",
-  "production_stage": "platform-neutral-animation-master-review",
+  "production_stage": "codex-adapter-installed",
   "project_scope": "platform-neutral complete Lulu animation master",
-  "assembly": "deferred-until-actions-are-approved",
+  "assembly": "final/",
   "review_contract": {
     "display_all_active_gifs_every_iteration": true,
     "order_source": "official-frames-v1-manifest.json#action_order"
   },
+  "milestone": {
+    "status": "frozen",
+    "active_actions": 9,
+    "deferred_actions": [
+      "looking-around"
+    ]
+  },
   "platform_adapters": {
     "policy": "derive platform-specific selections, resampling, and timing from the approved master without constraining it",
     "codex": {
-      "status": "deferred",
-      "authority": false
+      "status": "installed",
+      "authority": false,
+      "package": "final/",
+      "installation": "~/.codex/pets/capybara-lulu/",
+      "sprite_version_number": 1
     }
   },
   "frame_contract": {
@@ -26,8 +36,8 @@
   "actions": [
     {
       "state": "idle",
-      "frames": 6,
-      "purpose": "focused-listening loop; exact visual alias of review"
+      "frames": 12,
+      "purpose": "soft sleeping rest loop; exact visual alias of failed"
     },
     {
       "state": "running-right",
@@ -55,9 +65,14 @@
       "purpose": "patient waiting loop with small motion"
     },
     {
+      "state": "working",
+      "frames": 15,
+      "purpose": "focused work loop: paint and complete a tiny ink shrimp, change the finished page, and settle with a fresh sheet"
+    },
+    {
       "state": "running",
       "frames": 6,
-      "purpose": "task-active focused-listening loop; current visual alias of review with no independent running artwork yet"
+      "purpose": "master focused-listening action retained for lineage; the Codex adapter maps its runtime running row to working"
     },
     {
       "state": "review",
@@ -76,7 +91,8 @@
       "cell_height": 208,
       "safe_margin_x": 18,
       "safe_margin_y": 16,
-      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+      "status": "retired",
+      "usage": "historical layout guide only; current idle exactly aliases the approved failed sleeping loop"
     },
     {
       "state": "running-right",

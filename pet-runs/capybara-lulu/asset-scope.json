@@ -1,5 +1,5 @@
 {
-  "production_stage": "platform-neutral-animation-master-review",
+  "production_stage": "codex-adapter-installed",
   "authority": "platform-neutral-animation-master",
   "active_frames": "official-frames-v1/",
   "active_action_manifest": "official-frames-v1-manifest.json",
@@ -9,11 +9,21 @@
     "display_order": "official-frames-v1-manifest.json#action_order",
     "gallery": "qa/action-gifs/gallery.md"
   },
+  "milestone": {
+    "status": "frozen",
+    "scope": "the current nine active actions",
+    "deferred_actions": [
+      "looking-around"
+    ]
+  },
   "platform_adapters": {
     "policy": "downstream derivatives may select, resample, or retime approved master actions but cannot constrain the master",
     "codex": {
-      "status": "deferred",
-      "authority": false
+      "status": "installed",
+      "authority": false,
+      "package": "final/",
+      "installation": "~/.codex/pets/capybara-lulu/",
+      "sprite_version_number": 1
     }
   },
   "active_actions": [
@@ -23,6 +33,7 @@
     "waving",
     "failed",
     "waiting",
+    "working",
     "running",
     "review"
   ],
@@ -31,6 +42,7 @@
     "waving",
     "failed",
     "waiting",
+    "working",
     "running",
     "review"
   ],
@@ -40,10 +52,16 @@
       "archive": "sequence-drafts/v1-retired-variants/jumping-overlaps-waving/"
     }
   },
+  "deferred_actions": {
+    "looking-around": {
+      "reason": "needs refinement before promotion",
+      "draft": "sequence-drafts/new-state-candidates/looking-around/"
+    }
+  },
   "assembly": {
-    "status": "deferred-until-actions-are-approved",
-    "last_snapshot": "final/",
-    "last_snapshot_note": "Historical assembled Codex V1 adapter; it may lag behind the active animation master."
+    "status": "installed",
+    "current_package": "final/",
+    "current_package_note": "Codex V1 adapter built from the active animation master and installed locally."
   },
   "draft_roots": [
     "sequence-drafts/"

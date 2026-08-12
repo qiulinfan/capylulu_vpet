@@ -1,0 +1,8 @@
+Use case: stylized-concept
+Asset type: platform-neutral desktop-pet animation continuation contact sheet, six keyframes
+Input image: the approved six-frame Lulu painting contact sheet is the authoritative visual and narrative prefix. Preserve its identity, pose, props, scale, pixel treatment, palette, and ground anchor exactly.
+Primary request: Continue the approved working animation with exactly six distinct frames in a strict 3-column by 2-row contact sheet, read left-to-right then top-to-bottom. Lulu must finish the small painting instead of stopping after the first marks.
+Frame sequence: 1) extend the initial ink stroke; 2) add two controlled curved segments; 3) the marks begin to read as one tiny original ink shrimp; 4) finish the shrimp and pause to admire it with a soft satisfied expression; 5) begin changing pages by reaching for and shifting the completed sheet; 6) settle with a fresh blank rice-paper sheet in the same working position, brush lifted and ready.
+Continuity: same yellow-orange Lulu, orange muzzle, paired glossy eyes, head fruit, orange shorts, prone pose, slim Chinese brush, small dark ink stone, and warm rice paper. Keep the completed shrimp tiny, simple, and original. Keep every prop physically connected to the action cluster.
+Style: pixel-art-adjacent low-resolution mascot sprite with stepped edges, dark compact outlines, flat warm cel shading, and the same level of detail as the approved frames.
+Avoid: redesign, new props, desk or room, calligraphy, detailed realism, gradients, blur, motion lines, watermark, detached effects, or magenta inside the subject.
