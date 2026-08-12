@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "scope": "independent-action-gifs",
+  "scope": "platform-neutral-animation-master-gifs",
   "frame_size": [
     192,
     208
@@ -15,6 +15,10 @@
     "running",
     "review"
   ],
+  "gallery": "pet-runs/capybara-lulu/qa/action-gifs/gallery.md",
+  "review_policy": {
+    "display_all_active_gifs_every_iteration": true
+  },
   "retired_actions": [
     "jumping"
   ],
@@ -58,12 +62,21 @@
         0.2711690551657948
       ],
       "loop_seam_rmse": 0.21443278474838567,
+      "alpha_areas": [
+        22223.0,
+        22102.0,
+        21685.0,
+        21919.0,
+        21685.0,
+        22102.0
+      ],
+      "eye_policy": null,
       "reversible_transition_pairs": [],
       "quality": "candidate"
     },
     "running-right": {
       "gif": "pet-runs/capybara-lulu/qa/action-gifs/02-running-right.gif",
-      "gif_sha256": "60f879d10ef50be54edc5305086fb10f0d59b050106df1e11e08d0e7a409067b",
+      "gif_sha256": "bc22f9f6e09416993d73dc10aa949d870742f66d5d4fbcd8d3d70e73b3bda82d",
       "source_frames": [
         "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-01.png",
         "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-02.png",
@@ -75,14 +88,14 @@
         "pet-runs/capybara-lulu/official-frames-v1/running-right/running-right-08.png"
       ],
       "source_frame_sha256": [
-        "861deb3a6d5c693a56ca07c831078b5defe960cd72450d4dc96a124ad0cf7d42",
-        "88b516a44fc4ab6a9a5498eb724a86a71192fff4fbf5e4e72b87ff8967e6dc71",
-        "775e4cb5d17c1ba75192d5455afd67b8faab07cd9b682d6a7c9b45e82e04415a",
-        "f17c83affdbece6b846dce16e5cc4868f45435d76d4f401ef25d43eebe88d500",
-        "5c3b0384f81351778292bbebc3e11b355106d71df404a01e9c5e3926ec088d78",
-        "5f6c8fc44b30e1db36865eee653279bb534c33534e64a6c1e2cf9fa01901a464",
-        "3701c843f261ff80d81eff592bdf6ea1e81476828f773d8e061df5f11602562e",
-        "4c19d2715d46c0e9687ade0001912364fc98b324305d86b072de91982f35c91b"
+        "26e2405c50c2d771c85e44b115808a6c5bcd911f0a5cbadd68e8a99a2bc19ede",
+        "f50e11a02d2a71d0dddfef9333062c30289a7f7d28da3c91af3d45bb692effab",
+        "4ead8146f522a703f4a32d6769bae0b5382b8155c12c155cbfaac091d06f8869",
+        "94e80f42f9217167e6716690e96da84a1a93a5121dfe31e596a0cb8f991b4f1a",
+        "e743820db941d6fa1da220b1d7ff9bd622c2bd921221841e653bce67746bae1a",
+        "e031e7bc6308348c8854a33b6e9c5e0c952463c7c0fe1b63e74c003ada972975",
+        "7dcf4f54ab9e51a9bc404197e60d1ac366f7f2ae5b607572693463d33f8c1fd8",
+        "26e2405c50c2d771c85e44b115808a6c5bcd911f0a5cbadd68e8a99a2bc19ede"
       ],
       "frame_count": 8,
       "frame_durations_ms": [
@@ -98,21 +111,32 @@
       "cycle_duration_ms": 1060,
       "loop": 0,
       "transition_rmse": [
-        0.26791937877250616,
-        0.18737355930832317,
-        0.1177230811812545,
-        0.07800344821058618,
-        0.16460758655162422,
-        0.186616058154451,
-        0.2680088928839487
+        0.31501452909095323,
+        0.10479674525640305,
+        0.2798969384527127,
+        0.17504163194214645,
+        0.3174509030663285,
+        0.31504737059578475,
+        0.08970968241675782
       ],
-      "loop_seam_rmse": 0.14528945816312183,
+      "loop_seam_rmse": 0.0,
+      "alpha_areas": [
+        17581.0,
+        17143.0,
+        17251.0,
+        17124.0,
+        17204.0,
+        17246.0,
+        17581.0,
+        17581.0
+      ],
+      "eye_policy": "closed-all",
       "reversible_transition_pairs": [],
       "quality": "candidate"
     },
     "running-left": {
       "gif": "pet-runs/capybara-lulu/qa/action-gifs/03-running-left.gif",
-      "gif_sha256": "c15ebb359fa49d005b807a053319100733b2382383d0d00eb5524bc2c2023b63",
+      "gif_sha256": "4a3506d1a84176c7533315829375a248e0779f20457c16e5f3010e7950f15d18",
       "source_frames": [
         "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-01.png",
         "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-02.png",
@@ -124,14 +148,14 @@
         "pet-runs/capybara-lulu/official-frames-v1/running-left/running-left-08.png"
       ],
       "source_frame_sha256": [
-        "c2d55db43f7fd44359cc3a95163e88c39316063c482b3b5213fde4f2cd70ff99",
-        "06bfb64abf77763cef07726bf0abb1d8856e37a5c94530719453b1616eabd2b7",
-        "084a7f68066ad835aee7e7580de79cd2844bd459813515422866b9785963c019",
-        "f4eccde70feea9af951cf19cda6a2aa43a0898877e19e58d4805fa98cd5829ea",
-        "fa6419d43cf847c26243dd5ebd5d4195909748a5949226bfd2e1029e59e31cfa",
-        "6a97b80d528a001d58146f300e6db9bd89f720eda38c9d1d5ddf08a60834a122",
-        "84eab937b40a79aad96a1724d7e1049f1d29363fbfa3edd2abaefd5c77a9ad1c",
-        "1278653b454f07fe0041f092ddbbea6c7900b6f28557b77d3a6a3186040b4575"
+        "850173c5d9768fe75e0680db1dd5346a922dbffe72d9d83ad4e4198c35b8a1d6",
+        "012a5591d9c0122dd37e2053d08c0a2fa63fac55a5f5ac7e291a55821287e952",
+        "24493cee396dc2c51f47a2d6a12c88f96de6660bd39bd6d84a02179ef2e7c704",
+        "992ce81ac6c6e1004ee814e0baed77d4db3f9f621d02a151886c1f6564fc2c35",
+        "4a44894bb65d8df5cf6e534086b952b255b6d23de1a8c328d2bb1ed476839dee",
+        "218003f454a3bf02b0c1764b51a9a682b957f8e1a4e4fef2666089c3c9a9daa2",
+        "5ff33d1f5baa56c3383e30ec1c6ab86f5ddddec730fd0dfb6a0f5948ad1706bc",
+        "850173c5d9768fe75e0680db1dd5346a922dbffe72d9d83ad4e4198c35b8a1d6"
       ],
       "frame_count": 8,
       "frame_durations_ms": [
@@ -147,15 +171,26 @@
       "cycle_duration_ms": 1060,
       "loop": 0,
       "transition_rmse": [
-        0.26791937877250616,
-        0.18737355930832317,
-        0.1177230811812545,
-        0.07800344821058618,
-        0.16460758655162422,
-        0.186616058154451,
-        0.2680088928839487
+        0.31501452909095323,
+        0.10479674525640305,
+        0.2798969384527127,
+        0.17504163194214645,
+        0.3174509030663285,
+        0.31504737059578475,
+        0.08970968241675782
       ],
-      "loop_seam_rmse": 0.14528945816312183,
+      "loop_seam_rmse": 0.0,
+      "alpha_areas": [
+        17581.0,
+        17143.0,
+        17251.0,
+        17124.0,
+        17204.0,
+        17246.0,
+        17581.0,
+        17581.0
+      ],
+      "eye_policy": "closed-all",
       "reversible_transition_pairs": [],
       "quality": "candidate"
     },
@@ -189,6 +224,13 @@
         0.14756709445504657
       ],
       "loop_seam_rmse": 0.19518213882898844,
+      "alpha_areas": [
+        17606.0,
+        17961.0,
+        17536.0,
+        17433.0
+      ],
+      "eye_policy": null,
       "reversible_transition_pairs": [],
       "quality": "gold"
     },
@@ -254,6 +296,21 @@
         0.17312112931278736
       ],
       "loop_seam_rmse": 0.14318398166597548,
+      "alpha_areas": [
+        15680.0,
+        15556.0,
+        14647.0,
+        15220.0,
+        14063.0,
+        14907.0,
+        13864.0,
+        13015.0,
+        13864.0,
+        14907.0,
+        14063.0,
+        15220.0
+      ],
+      "eye_policy": null,
       "reversible_transition_pairs": [
         [
           6,
@@ -304,6 +361,15 @@
         0.17921591979683302
       ],
       "loop_seam_rmse": 0.15794593698860993,
+      "alpha_areas": [
+        20396.0,
+        20427.0,
+        20356.0,
+        20237.0,
+        20053.0,
+        19918.0
+      ],
+      "eye_policy": null,
       "reversible_transition_pairs": [],
       "quality": "gold"
     },
@@ -345,6 +411,15 @@
         0.2711690551657948
       ],
       "loop_seam_rmse": 0.21443278474838567,
+      "alpha_areas": [
+        22223.0,
+        22102.0,
+        21685.0,
+        21919.0,
+        21685.0,
+        22102.0
+      ],
+      "eye_policy": null,
       "reversible_transition_pairs": [],
       "quality": "candidate"
     },
@@ -386,6 +461,15 @@
         0.2711690551657948
       ],
       "loop_seam_rmse": 0.21443278474838567,
+      "alpha_areas": [
+        22223.0,
+        22102.0,
+        21685.0,
+        21919.0,
+        21685.0,
+        22102.0
+      ],
+      "eye_policy": null,
       "reversible_transition_pairs": [],
       "quality": "candidate"
     }

@@ -1,8 +1,21 @@
 {
+  "contract_kind": "platform-neutral-animation-master",
+  "legacy_path_note": "official-frames-v1 is retained as lineage naming and is not a Codex contract.",
   "cell_size": [
     192,
     208
   ],
+  "cell_size_role": "current animation-master canvas, not a downstream platform limit",
+  "review_policy": {
+    "display_all_active_gifs_every_iteration": true,
+    "display_order": "action_order"
+  },
+  "platform_adapters": {
+    "codex": {
+      "status": "deferred",
+      "authority": false
+    }
+  },
   "action_order": [
     "idle",
     "running-right",
@@ -51,16 +64,17 @@
     },
     "running-right": {
       "meaning": "pointer/window dragged toward screen-right; head leads while body and limbs trail left",
-      "source_strip": "sequence-drafts/v1-action-work/drag-directional/right-drag-motion-v4-selected-alpha-hard.png",
+      "generation_lineage": "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/",
+      "identity_anchor": "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/gold/gold-neutral-open-192x208.png",
       "source_frames": [
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/right/running-right-01.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/right/running-right-02.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/right/running-right-03.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/right/running-right-04.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/right/running-right-05.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/right/running-right-06.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/right/running-right-07.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/right/running-right-08.png"
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-01.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-02.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-03.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-04.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-05.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-06.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-07.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/right/running-right-08.png"
       ],
       "order": [
         1,
@@ -83,21 +97,25 @@
         "official-frames-v1/running-right/running-right-08.png"
       ],
       "frame_durations_ms": [120, 120, 120, 120, 120, 120, 120, 220],
-      "note": "eight distinct front-facing dragged poses; V1-gold eye spacing, 190px body height, hard alpha, a progressive airborne lag arc, dangling limbs, and no autonomous footfall"
+      "eye_policy": "closed-all",
+      "alpha_area_target": 17200,
+      "alpha_area_tolerance_ratio": 0.05,
+      "palette_policy": "one shared palette derived from F1",
+      "note": "F1 body identity is preserved; F2-F6 are individually regenerated full-volume carried poses with uniform scaling only; both eyes stay closed; F7 is a one-pixel recovery bob and F8 returns exactly to F1"
     },
     "running-left": {
       "meaning": "pointer/window dragged toward screen-left",
       "derivation": "exact horizontal pixel mirror of running-right",
       "mirror_of": "running-right",
       "source_frames": [
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-01.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-02.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-03.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-04.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-05.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-06.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-07.png",
-        "sequence-drafts/v1-action-work/drag-directional/preview-motion-v4/left/running-left-08.png"
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-01.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-02.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-03.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-04.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-05.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-06.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-07.png",
+        "sequence-drafts/v1-action-work/drag-directional/roundbody-regeneration-v1/left/running-left-08.png"
       ],
       "order": [
         1,
@@ -120,7 +138,11 @@
         "official-frames-v1/running-left/running-left-08.png"
       ],
       "frame_durations_ms": [120, 120, 120, 120, 120, 120, 120, 220],
-      "note": "derived from one approved mother sequence instead of a second generation, preventing directional identity drift"
+      "eye_policy": "closed-all",
+      "alpha_area_target": 17200,
+      "alpha_area_tolerance_ratio": 0.05,
+      "palette_policy": "one shared palette derived from rightward F1",
+      "note": "exact horizontal pixel mirror of the full-volume closed-eye rightward mother sequence"
     },
     "waving": {
       "identity_gold": "sequence-drafts/v1-action-work/waving-success-windup/gold-open-face.png",
@@ -150,7 +172,7 @@
         "waving-03.png": "ad1ae7b765b28fd8f66009d0ea14fd288f0a6d1e076dd8006367dff29d701829",
         "waving-04.png": "7592d49c57b6bc6b4010d39fad51ccd6b087808e22e0a34bd6e25e151110a476"
       },
-      "note": "four-frame runtime-compatible success celebration with a normal-stand wind-up; frame 2 uses a new early limb pose but retains the exact formal V1 upper head and face; eye states are closed/closed, open/open, open/open, closed/closed so both eyes always change together"
+      "note": "four-frame success celebration with a normal-stand wind-up; frame 2 uses a new early limb pose but retains the exact approved-master upper head and face; eye states are closed/closed, open/open, open/open, closed/closed so both eyes always change together"
     },
     "failed": {
       "source_frames": [
@@ -235,7 +257,7 @@
     },
     "running": {
       "alias_of": "review",
-      "meaning": "runtime-required task-active state; no independent generic-running artwork",
+      "meaning": "task-active focused-listening loop; no independent generic-running artwork yet",
       "source_frames": [
         "official-frames-v1/review/review-01.png",
         "official-frames-v1/review/review-02.png",
@@ -261,7 +283,7 @@
         "official-frames-v1/running/running-06.png"
       ],
       "frame_durations_ms": [120, 120, 120, 120, 120, 220],
-      "note": "each runtime-required running cell is pixel-identical to the corresponding focused-listening review frame; the retired dance placeholder is preserved under sequence-drafts/v1-retired-variants/running-dance-placeholders/"
+      "note": "each current running frame is pixel-identical to the corresponding focused-listening review frame; the retired dance placeholder is preserved under sequence-drafts/v1-retired-variants/running-dance-placeholders/"
     },
     "review": {
       "source_frames": [

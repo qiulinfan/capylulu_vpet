@@ -13,6 +13,7 @@ PET = ROOT / "pet-runs" / "capybara-lulu"
 MANIFEST = PET / "official-frames-v1-manifest.json"
 OUTPUT = PET / "qa" / "action-gifs"
 VALIDATION = OUTPUT / "validation.json"
+GALLERY = OUTPUT / "gallery.md"
 
 EXPECTED_SIZE = (192, 208)
 RETIRED_ACTION = "jumping"
@@ -44,6 +45,47 @@ def rgba_rmse(left: Image.Image, right: Image.Image) -> float:
         raise ValueError("Cannot compare animation frames with different sizes")
     squared_error = sum((a - b) ** 2 for a, b in zip(left_bytes, right_bytes, strict=True))
     return math.sqrt(squared_error / len(left_bytes)) / 255
+
+
+def alpha_area(image: Image.Image) -> float:
+    return sum(image.getchannel("A").get_flattened_data()) / 255
+
+
+def has_open_eye_pair(image: Image.Image) -> bool:
+    width, height = image.size
+    remaining = {
+        (x, y)
+        for y in range(height)
+        for x in range(width)
+        if (
+            (pixel := image.getpixel((x, y)))[3]
+            and min(pixel[:3]) >= 210
+            and max(pixel[:3]) - min(pixel[:3]) <= 45
+        )
+    }
+    candidates = 0
+    while remaining:
+        todo = [remaining.pop()]
+        points: list[tuple[int, int]] = []
+        while todo:
+            point = todo.pop()
+            points.append(point)
+            x, y = point
+            for neighbor in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
+                if neighbor in remaining:
+                    remaining.remove(neighbor)
+                    todo.append(neighbor)
+        xs = [point[0] for point in points]
+        ys = [point[1] for point in points]
+        bbox = (min(xs), min(ys), max(xs) + 1, max(ys) + 1)
+        if (
+            len(points) >= 60
+            and bbox[1] < 100
+            and 12 <= bbox[2] - bbox[0] <= 26
+            and 14 <= bbox[3] - bbox[1] <= 30
+        ):
+            candidates += 1
+    return candidates >= 2
 
 
 def load_manifest() -> tuple[dict[str, object], list[str]]:
@@ -137,11 +179,34 @@ def inspect_gif(path: Path) -> tuple[int, list[int | None], int | None, list[Ima
     return frame_count, durations, loop, decoded_frames
 
 
+def write_gallery(action_order: list[str]) -> None:
+    lines = [
+        "# CapyLulu Animation Master GIF Gallery",
+        "",
+        "This generated gallery is the complete active review set. Every animation "
+        "iteration must display all GIFs below in this order.",
+        "",
+    ]
+    for index, state in enumerate(action_order, start=1):
+        filename = f"{index:02d}-{state}.gif"
+        lines.extend(
+            [
+                f"## {index:02d}. `{state}`",
+                "",
+                f"![{state}]({filename})",
+                "",
+            ]
+        )
+    GALLERY.write_text("\n".join(lines), encoding="utf-8")
+
+
 def build() -> dict[str, object]:
     states, action_order = load_manifest()
     OUTPUT.mkdir(parents=True, exist_ok=True)
     if VALIDATION.exists():
         VALIDATION.unlink()
+    if GALLERY.exists():
+        GALLERY.unlink()
     expected_names = {
         f"{index:02d}-{state}.gif"
         for index, state in enumerate(action_order, start=1)
@@ -159,6 +224,36 @@ def build() -> dict[str, object]:
             raise ValueError(f"{state}: manifest entry must be an object")
         frames, frame_paths, expected_durations = load_action(state, entry)
         loaded_frames[state] = frames
+        observed_alpha_areas = [alpha_area(frame) for frame in frames]
+        eye_policy = entry.get("eye_policy")
+        if eye_policy is not None:
+            if eye_policy != "closed-all":
+                errors.append(f"{state}: unsupported eye_policy: {eye_policy}")
+            else:
+                for frame_index, frame in enumerate(frames, start=1):
+                    if has_open_eye_pair(frame):
+                        errors.append(f"{state}: frame {frame_index} violates closed-all eyes")
+
+        alpha_area_target = entry.get("alpha_area_target")
+        alpha_area_tolerance = entry.get("alpha_area_tolerance_ratio")
+        if alpha_area_target is not None or alpha_area_tolerance is not None:
+            if (
+                not isinstance(alpha_area_target, (int, float))
+                or isinstance(alpha_area_target, bool)
+                or alpha_area_target <= 0
+                or not isinstance(alpha_area_tolerance, (int, float))
+                or isinstance(alpha_area_tolerance, bool)
+                or not 0 <= alpha_area_tolerance < 1
+            ):
+                errors.append(f"{state}: invalid alpha-area contract")
+            else:
+                for frame_index, area in enumerate(observed_alpha_areas, start=1):
+                    deviation = abs(area - alpha_area_target) / alpha_area_target
+                    if deviation > alpha_area_tolerance:
+                        errors.append(
+                            f"{state}: frame {frame_index} alpha area drifted by "
+                            f"{deviation:.3%}"
+                        )
         output = OUTPUT / f"{index:02d}-{state}.gif"
         write_gif(output, frames, expected_durations)
 
@@ -232,6 +327,8 @@ def build() -> dict[str, object]:
             "loop": loop,
             "transition_rmse": transitions,
             "loop_seam_rmse": seam,
+            "alpha_areas": observed_alpha_areas,
+            "eye_policy": eye_policy,
             "reversible_transition_pairs": entry.get("reversible_transition_pairs", []),
             "quality": entry.get("quality", "candidate"),
         }
@@ -275,11 +372,15 @@ def build() -> dict[str, object]:
             f"observed={sorted(observed_names)}, expected={sorted(expected_names)}"
         )
 
+    write_gallery(action_order)
+
     validation = {
         "ok": not errors,
-        "scope": "independent-action-gifs",
+        "scope": "platform-neutral-animation-master-gifs",
         "frame_size": list(EXPECTED_SIZE),
         "action_order": action_order,
+        "gallery": str(GALLERY.relative_to(ROOT)),
+        "review_policy": {"display_all_active_gifs_every_iteration": True},
         "retired_actions": [RETIRED_ACTION],
         "errors": errors,
         "actions": actions,
@@ -289,7 +390,8 @@ def build() -> dict[str, object]:
         json.dumps(validation, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(f"Built {len(action_order)} independent action GIFs")
+    print(f"Built {len(action_order)} animation-master GIFs")
+    print(f"Gallery: {GALLERY.relative_to(ROOT)}")
     print(f"Validation: {'OK' if validation['ok'] else 'FAILED'} ({len(errors)} errors)")
     if errors:
         raise SystemExit(1)

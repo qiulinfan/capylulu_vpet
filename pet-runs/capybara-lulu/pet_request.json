@@ -3,11 +3,25 @@
   "display_name": "\u6c34\u8c5a\u565c\u565c",
   "description": "A cute orange-yellow capybara-like desktop pet with a tiny orange fruit on its head.",
   "created_at": "2026-05-03T17:42:22.579060+00:00",
-  "production_stage": "independent-action-gif-review",
+  "production_stage": "platform-neutral-animation-master-review",
+  "project_scope": "platform-neutral complete Lulu animation master",
   "assembly": "deferred-until-actions-are-approved",
+  "review_contract": {
+    "display_all_active_gifs_every_iteration": true,
+    "order_source": "official-frames-v1-manifest.json#action_order"
+  },
+  "platform_adapters": {
+    "policy": "derive platform-specific selections, resampling, and timing from the approved master without constraining it",
+    "codex": {
+      "status": "deferred",
+      "authority": false
+    }
+  },
   "frame_contract": {
     "cell_width": 192,
-    "cell_height": 208
+    "cell_height": 208,
+    "role": "current animation-master canvas",
+    "platform_constraint": false
   },
   "actions": [
     {
@@ -18,17 +32,17 @@
     {
       "state": "running-right",
       "frames": 8,
-      "purpose": "pointer/window drag response toward screen-right; head leads while body and limbs trail left"
+      "purpose": "carried-drag response toward screen-right; rigid round body volume, head leads while limbs trail left, both eyes stay closed"
     },
     {
       "state": "running-left",
       "frames": 8,
-      "purpose": "pointer/window drag response toward screen-left; exact horizontal mirror of running-right"
+      "purpose": "carried-drag response toward screen-left; both eyes stay closed; exact horizontal mirror of running-right"
     },
     {
       "state": "waving",
       "frames": 4,
-      "purpose": "runtime-compatible success celebration: normal stand, early kick-and-wave anticipation, open-eye peak, held closed-eye cheer"
+      "purpose": "success celebration: normal stand, early kick-and-wave anticipation, open-eye peak, held closed-eye cheer"
     },
     {
       "state": "failed",
@@ -43,7 +57,7 @@
     {
       "state": "running",
       "frames": 6,
-      "purpose": "runtime-required task-active state; exact visual alias of review with no independent running artwork"
+      "purpose": "task-active focused-listening loop; current visual alias of review with no independent running artwork yet"
     },
     {
       "state": "review",
@@ -199,8 +213,8 @@
     "score": 219.77
   },
   "pet_notes": "\u6c34\u8c5a\u565c\u565c: a very round yellow-orange capybara-like cartoon companion, oversized orange muzzle and cheek area, large black glossy eyes with pale blue-white rims, tiny triangular ears, tiny orange fruit with a short green stem on top of the head, simple nubby arms and legs, orange shorts, joyful friendly face.",
-  "style_notes": "Adapt the 3D plush-like reference character into Codex digital pet style: pixel-art-adjacent, compact chibi proportions, thick dark 1-2 px outline, visible stepped edges, limited warm yellow/orange palette, flat cel shading, simple readable face, no scenery, no headphone prop unless specifically needed, no brand logos, no text.",
-  "house_style": "Codex digital pet sprite style: pixel-art-adjacent low-resolution mascot sprite, compact chibi proportions, chunky whole-body silhouette, thick dark 1-2 px outline, visible stepped/pixel edges, limited palette, flat cel shading with at most one small highlight and one shadow step, simple readable face, tiny limbs, and no detail that disappears at 192x208. Avoid polished illustration, painterly rendering, anime key art, 3D render, vector app-icon polish, glossy lighting, soft gradients, realistic fur or material texture, anti-aliased high-detail edges, and complex tiny accessories.",
+  "style_notes": "Adapt the 3D plush-like reference character into Lulu's animation-master style: pixel-art-adjacent, compact chibi proportions, thick dark 1-2 px outline, visible stepped edges, limited warm yellow/orange palette, flat cel shading, simple readable face, no scenery, no headphone prop unless specifically needed, no brand logos, no text.",
+  "house_style": "Lulu sprite animation-master style: pixel-art-adjacent low-resolution mascot sprite, compact chibi proportions, chunky whole-body silhouette, thick dark 1-2 px outline, visible stepped/pixel edges, limited palette, flat cel shading with at most one small highlight and one shadow step, simple readable face, tiny limbs, and no detail that disappears at the current 192x208 design scale. Avoid polished illustration, painterly rendering, anime key art, 3D render, vector app-icon polish, glossy lighting, soft gradients, realistic fur or material texture, anti-aliased high-detail edges, and complex tiny accessories.",
   "primary_generation_skill": "$imagegen",
   "canonical_identity_reference": {
     "path": "references/canonical-base.png",

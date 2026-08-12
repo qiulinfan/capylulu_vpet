@@ -1,8 +1,8 @@
 # Single-frame directional-drag pipeline
 
-Status: selected draft lineage for the formal V1 directional-drag frames.
-Draft artifacts remain excluded from releases; the formal builder reads only
-`official-frames-v1/`.
+Status: superseded directional-drag lineage. It was retired after visual review
+found pose-dependent body stretching/thinning, color drift, and too many
+open-eye frames. Active source work moved to `../roundbody-regeneration-v1/`.
 
 ## Production order
 

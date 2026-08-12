@@ -1,0 +1,75 @@
+{
+  "ok": true,
+  "status": "active-master-source",
+  "identity_frame": "sequence-drafts/v1-action-work/drag-directional/single-frame-pipeline/gold/gold-neutral-open-192x208.png",
+  "identity_frame_sha256": "e8cf9a7ce677531a7841321689823dd26652164517d2ea85d1b55a1bf9d5c49b",
+  "frame_durations_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    220
+  ],
+  "target_alpha_area": 17200,
+  "generated_frame_alpha_areas": {
+    "f02": 17143,
+    "f03": 17251,
+    "f04": 17124,
+    "f05": 17204,
+    "f06": 17246
+  },
+  "eye_policy": "both eyes synchronized closed in all eight frames",
+  "recovery_bob_frame": 7,
+  "exact_return_frames": [
+    8
+  ],
+  "palette_policy": "all generated frames share one 128-color palette derived from exact F1",
+  "warm_palette_mean_rgb": [
+    [
+      245.47966646162257,
+      159.38022008065067,
+      7.853188435513635
+    ],
+    [
+      248.06845601192896,
+      161.92259726175953,
+      5.383692557950386
+    ],
+    [
+      248.29045417459886,
+      160.59817786238781,
+      5.239189556703835
+    ],
+    [
+      248.72809523809525,
+      158.7939455782313,
+      5.317551020408163
+    ],
+    [
+      248.71816453977735,
+      162.3977735541678,
+      5.5027830572902525
+    ],
+    [
+      248.20675134143858,
+      157.57637709705904,
+      5.1384228757726005
+    ],
+    [
+      245.47966646162257,
+      159.38022008065067,
+      7.853188435513635
+    ],
+    [
+      245.47966646162257,
+      159.38022008065067,
+      7.853188435513635
+    ]
+  ],
+  "warm_palette_max_channel_drift": 6,
+  "left_policy": "exact pixel mirror of right",
+  "errors": []
+}

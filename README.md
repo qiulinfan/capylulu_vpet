@@ -1,14 +1,23 @@
-# CapyLulu VPet
+# CapyLulu Animation Master
 
-Animation-first asset workspace for the healing pixel-style character `水豚噜噜`.
+Platform-neutral animation workspace for the complete custom pet `水豚噜噜`.
+The animation master is the authority in this repository: actions, frame
+counts, timing, and loops are designed for Lulu first, without being limited by
+Codex or any other downstream platform.
 
-## Current production stage
+## Animation-master contract
 
 Each action is tuned and accepted as an independent looping GIF before any
-whole-pet atlas is assembled. The active action contract is
-`pet-runs/capybara-lulu/official-frames-v1-manifest.json`; its frame sources
-remain normalized `192x208` transparent PNGs under
+platform package or whole-pet atlas is assembled. The active contract is
+`pet-runs/capybara-lulu/official-frames-v1-manifest.json`; its current frame
+sources are normalized `192x208` transparent PNGs under
 `pet-runs/capybara-lulu/official-frames-v1/`.
+
+The `official-frames-v1` path is retained as lineage naming. Neither `v1` nor
+the current `192x208` canvas is a Codex contract or a permanent platform limit.
+Platform adapters are downstream derivatives: they may select, resample, or
+retime approved master actions, but they must not redefine or constrain the
+master.
 
 The current eight actions are:
 
@@ -37,21 +46,30 @@ The compatibility entry point below performs the same action-only build:
 uv run --frozen python tools/build_vpet_v1.py
 ```
 
-Both commands write only the independent previews and their validation report:
+Both commands write the independent previews, a complete gallery, and their
+validation report:
 
 - `pet-runs/capybara-lulu/qa/action-gifs/*.gif`
+- `pet-runs/capybara-lulu/qa/action-gifs/gallery.md`
 - `pet-runs/capybara-lulu/qa/action-gifs/validation.json`
 
 They intentionally do not rebuild a spritesheet. `waiting` and `waving` are
 hash-locked so an unrelated animation edit cannot silently change either gold
 action.
 
-## Whole-pet package
+## Iteration review rule
 
-`pet-runs/capybara-lulu/final/` is the last assembled V1 snapshot. It may lag
-behind the active action GIFs during animation review and is not the acceptance
-source for the current stage. A new spritesheet and pet package will be built
-only after every small animation has been reviewed.
+Every animation iteration must rebuild and display every active GIF in
+manifest `action_order`, even when only one action changed. The generated
+`gallery.md` is the canonical full-review index; a review is incomplete if it
+shows only the edited action.
+
+## Downstream packages
+
+`pet-runs/capybara-lulu/final/` is the last assembled Codex V1 adapter snapshot.
+It may lag behind the animation master and is not an acceptance source. A new
+Codex spritesheet—or an adapter for another platform—will be derived only from
+approved master actions, without discarding master frames or timing.
 
 Experimental and historical assets remain under
 `pet-runs/capybara-lulu/sequence-drafts/` and are excluded from the active

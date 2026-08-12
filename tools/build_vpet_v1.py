@@ -1,6 +1,6 @@
-"""Compatibility entry point for the current animation-first workflow.
+"""Legacy-named compatibility entry point for the animation-master workflow.
 
-Whole-pet atlas assembly is intentionally deferred until every independent
+Platform packaging is intentionally deferred until every independent master
 action GIF has been reviewed.
 """
 
@@ -8,5 +8,5 @@ from build_action_gifs import build
 
 
 if __name__ == "__main__":
-    print("Whole-pet atlas assembly is deferred; building independent action GIFs instead.")
+    print("Legacy V1 entry point: building platform-neutral animation-master GIFs.")
     build()

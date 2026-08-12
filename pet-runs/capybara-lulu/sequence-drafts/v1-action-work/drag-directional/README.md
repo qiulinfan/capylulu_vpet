@@ -1,13 +1,14 @@
 # Directional drag action work
 
-Status: selected V1 action lineage. This directory is excluded from releases;
-the normalized frames under `official-frames-v1/` are the formal runtime input.
+Status: selected animation-master action lineage. This directory preserves
+source and rejected-variant history; active normalized frames live under
+`official-frames-v1/`.
 
 ## Semantics
 
-The Codex V1 runtime uses `running-right` and `running-left` only while the pet
-window is being dragged horizontally. They are interaction reactions, not
-autonomous locomotion. The selected rightward mother sequence therefore keeps
+`running-right` and `running-left` describe Lulu being carried horizontally.
+They are interaction reactions, not autonomous locomotion. The selected
+rightward mother sequence therefore keeps
 Lulu front-facing while the head leads toward screen-right and the torso,
 arms, feet, and fruit follow with soft inertia. The leftward sequence is an
 exact horizontal pixel mirror, preventing a second generation from changing
@@ -51,24 +52,31 @@ The storyboard was informed by these Xiaohongshu desktop-pet examples:
 
 The six-pass prompt record for this retired branch remains in `prompts.md`.
 
-## Selected single-frame lineage
+## Superseded single-frame lineage
 
-The selected work is under `single-frame-pipeline/`. It follows a strict
+The earlier selected work is under `single-frame-pipeline/`. It follows a strict
 production order: approve one neutral gold sprite; author each keyframe as one
 image; author each in-between as one image; remove backgrounds and normalize
 approved frames individually; derive the left sequence by exact mirror; and
 only then assemble the eight PNGs into a strip and runtime GIF.
 
-`single-frame-pipeline/assembled-v4/right/` and `left/` contain the selected
+`single-frame-pipeline/assembled-v4/right/` and `left/` contain those superseded
 frame sequences. Frame 7 is a short synchronized two-eye blink built from the
 gold body, mouth, and silhouette rather than a separately regenerated
-character. Runtime timing is `120 ms` for frames 1-7 and `220 ms` for frame 8.
-The exact frame map, deterministic build command, rejected intermediates, and
-selected single-frame ImageGen contracts are documented in the pipeline's
-`README.md` and `prompts.md`.
+character. They were retired after visual review found pose-dependent body
+stretching/thinning, visible color drift, and too many open-eye frames.
 
-`tools/build_vpet_v1.py` treats the approved formal PNGs as its release input.
-It SHA-locks all eight rightward frames and validates the gold identity/scale,
-synchronized blink, hard alpha, eight unique poses, exact left mirror, atlas
-cells, and runtime GIF timing on every build. This draft directory is
-provenance and is not required to assemble the formal package.
+## Selected round-body regeneration
+
+`roundbody-regeneration-v1/` preserves F1's body, face geometry, palette, and
+outline; regenerates F2-F6 one isolated pose at a time; and applies deterministic
+shape, palette, eye, mirror, and loop constraints. Every frame keeps both eyes
+closed. Generated frames target the same effective visual mass, use uniform
+scaling only, and share one palette derived from F1. F7 is a one-pixel recovery
+bob, F8 returns exactly to the closed-eye F1, and the left sequence is an exact
+pixel mirror.
+
+Timing remains `120 ms` for frames 1-7 and `220 ms` for frame 8.
+The exact frame map, deterministic build command, rejected intermediates, and
+ImageGen invariants are documented in the regeneration's `README.md` and
+validated by its `build.py`.

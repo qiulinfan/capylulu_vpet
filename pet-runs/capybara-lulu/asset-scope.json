@@ -1,8 +1,21 @@
 {
-  "production_stage": "independent-action-gif-review",
+  "production_stage": "platform-neutral-animation-master-review",
+  "authority": "platform-neutral-animation-master",
   "active_frames": "official-frames-v1/",
   "active_action_manifest": "official-frames-v1-manifest.json",
   "action_gif_output": "qa/action-gifs/",
+  "review_policy": {
+    "display_all_active_gifs_every_iteration": true,
+    "display_order": "official-frames-v1-manifest.json#action_order",
+    "gallery": "qa/action-gifs/gallery.md"
+  },
+  "platform_adapters": {
+    "policy": "downstream derivatives may select, resample, or retime approved master actions but cannot constrain the master",
+    "codex": {
+      "status": "deferred",
+      "authority": false
+    }
+  },
   "active_actions": [
     "idle",
     "running-right",
@@ -26,7 +39,7 @@
   "assembly": {
     "status": "deferred-until-actions-are-approved",
     "last_snapshot": "final/",
-    "last_snapshot_note": "Historical assembled V1 package; it may lag behind the active action GIFs."
+    "last_snapshot_note": "Historical assembled Codex V1 adapter; it may lag behind the active animation master."
   },
   "draft_roots": [
     "sequence-drafts/"
