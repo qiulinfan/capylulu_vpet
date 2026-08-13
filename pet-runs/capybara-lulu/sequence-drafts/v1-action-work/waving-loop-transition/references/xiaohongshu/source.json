@@ -1,0 +1,34 @@
+{
+  "retrieved_on": "2026-08-13",
+  "primary_source": {
+    "shared_url": "http://xhslink.cn/o/8PcEQlpzN1H",
+    "resolved_url": "https://www.xiaohongshu.com/explore/69ff34e10000000036031e82",
+    "title": "下次见面会是什么季节...",
+    "author": "噜噜",
+    "provided_by_user": true,
+    "usage": "Primary motion and emotion reference for hands gathering toward the front of the body followed by a hopeful forward lean. The pet adaptation keeps both paws at the belly rather than the cheeks.",
+    "files": {
+      "user-provided-video-samples/sample-02-04s.png": {
+        "sha256": "3e4d094f978393872a26b04b3538af518c0bde8d18c4932c5a34fd3136e214d3"
+      },
+      "user-provided-video-samples/selected-main-18s.png": {
+        "sha256": "139e9c973f3917b93c970996ba86ce6408820ff8a5af823bdf298406a6c6f08e"
+      }
+    }
+  },
+  "secondary_source": {
+    "source": "https://www.xiaohongshu.com/explore/693faf47000000001e030d4c",
+    "title": "人，噜噜就这样等你带我去玩雪❄️",
+    "author": "遇见一只噜",
+    "usage": "Secondary anatomical cross-check for two paws held before the belly. Snow, scarf, props, background, and 3D rendering are excluded.",
+    "files": {
+      "expect-hands.webp": {
+        "sha256": "5df237ea77c1e540e5fd57d02dfe55393701b3cd54ed450268c96072e1417794"
+      },
+      "expect-lean.webp": {
+        "sha256": "9547c4f05960835d68f76baac3ec075aea51e60cb8b5da019249910df8ec5e52"
+      }
+    },
+    "priority": "secondary"
+  }
+}

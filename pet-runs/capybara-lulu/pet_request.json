@@ -66,8 +66,8 @@
     },
     {
       "state": "waving",
-      "frames": 4,
-      "purpose": "success celebration: normal stand, early kick-and-wave anticipation, open-eye peak, held closed-eye cheer"
+      "frames": 8,
+      "purpose": "looping wave/hover celebration: approved wind-up and peak, approved V2 outward-arm follow-through, same-side landing, hopeful belly-paws lean, and near-neutral recovery"
     },
     {
       "state": "failed",
@@ -143,7 +143,7 @@
       "cell_height": 208,
       "safe_margin_x": 18,
       "safe_margin_y": 16,
-      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+      "usage": "historical four-frame layout guide only; the current approved master has eight frames and the Codex adapter selects its fixed runtime slots"
     },
     {
       "state": "failed",

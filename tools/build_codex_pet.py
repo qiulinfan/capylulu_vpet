@@ -44,6 +44,7 @@ SPRITE_VERSION_NUMBER = 1
 CODEX_APP_VERSION = "26.803.41515"
 CODEX_REQUIRED_FRAMES_BY_ROW = [6, 8, 8, 4, 5, 8, 6, 6, 6]
 WORKING_REFERENCE_STATES = ("running-right", "running-left", "waving", "review")
+WORKING_REFERENCE_FRAME_NUMBERS = {"waving": (1, 2, 3, 4)}
 WORKING_RUNTIME_FRAME_NUMBERS = (1, 6, 8, 10, 13, 15)
 
 
@@ -68,8 +69,8 @@ ADAPTER_ROWS = (
     AdapterRow(
         "jumping",
         "waving",
-        (1, 2, 3, 4, 1),
-        "Codex-required hover row derived from the approved waving replacement",
+        (2, 4, 5, 7, 8),
+        "Codex-required five-slot hover row selects anticipation, peak, the approved V2 follow-through, the direct-to-user belly-paws pose with subtle screen-right lean, and the near-neutral loop recovery",
     ),
     AdapterRow(
         "failed",
@@ -409,6 +410,15 @@ def normalize_working_sequence(
             "excluded_props": ["paper", "ink dish", "brush", "black ink"],
         },
         "reference_states": list(WORKING_REFERENCE_STATES),
+        "reference_frame_numbers": {
+            state: list(
+                WORKING_REFERENCE_FRAME_NUMBERS.get(
+                    state,
+                    range(1, len(reference_frames[state]) + 1),
+                )
+            )
+            for state in WORKING_REFERENCE_STATES
+        },
         "reference_weighting": "equal state weight via median of state medians",
         "reference_state_medians": reference_state_medians,
         "targets": {
@@ -484,9 +494,19 @@ def load_adapter_rows() -> tuple[
         raise ValueError("Idle must exactly alias the complete failed sleeping loop")
 
     working_frames, _, working_durations = loaded["working"]
+    working_reference_frames = {
+        state: [
+            loaded[state][0][frame_number - 1]
+            for frame_number in WORKING_REFERENCE_FRAME_NUMBERS.get(
+                state,
+                range(1, len(loaded[state][0]) + 1),
+            )
+        ]
+        for state in WORKING_REFERENCE_STATES
+    }
     normalized_working_frames, normalization_report = normalize_working_sequence(
         working_frames,
-        {state: loaded[state][0] for state in WORKING_REFERENCE_STATES},
+        working_reference_frames,
     )
 
     selected_frames: list[list[Image.Image]] = []

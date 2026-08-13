@@ -1,0 +1,202 @@
+{
+  "ok": true,
+  "coordinate_system": "origin top-left; x increases screen-right; y increases down",
+  "inputs": {
+    "direct_gaze_reference": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-02.png",
+    "neutral_reference": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-01.png",
+    "frame_7": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/normalized/waving-07.png",
+    "frame_8": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/normalized/waving-08.png"
+  },
+  "checks": {
+    "direct_gaze_matches_reference_within_2px": true,
+    "body_has_subtle_screen_right_lean": true,
+    "core_is_right_of_ground_support_by_3_to_10px": true,
+    "ground_support_stays_within_1px_through_seam": true,
+    "grounded_frames_share_alpha_bottom": true,
+    "no_sprite_touches_cell_edge": true
+  },
+  "direct_gaze": {
+    "reference_eyes": [
+      {
+        "bbox": [
+          57,
+          63,
+          79,
+          85
+        ],
+        "geometric_center_px": [
+          67.5,
+          73.5
+        ],
+        "pupil_center_px": [
+          69.27513227513228,
+          74.37037037037037
+        ],
+        "pupil_offset_from_eye_center_px": [
+          1.775132275132279,
+          0.8703703703703667
+        ]
+      },
+      {
+        "bbox": [
+          111,
+          63,
+          133,
+          85
+        ],
+        "geometric_center_px": [
+          121.5,
+          73.5
+        ],
+        "pupil_center_px": [
+          120.97849462365592,
+          74.64516129032258
+        ],
+        "pupil_offset_from_eye_center_px": [
+          -0.5215053763440807,
+          1.1451612903225765
+        ]
+      }
+    ],
+    "pose_eyes": [
+      {
+        "bbox": [
+          68,
+          73,
+          90,
+          94
+        ],
+        "geometric_center_px": [
+          78.5,
+          83.0
+        ],
+        "pupil_center_px": [
+          79.61214953271028,
+          84.67757009345794
+        ],
+        "pupil_offset_from_eye_center_px": [
+          1.1121495327102764,
+          1.6775700934579447
+        ]
+      },
+      {
+        "bbox": [
+          123,
+          75,
+          145,
+          96
+        ],
+        "geometric_center_px": [
+          133.5,
+          85.0
+        ],
+        "pupil_center_px": [
+          132.1,
+          86.32
+        ],
+        "pupil_offset_from_eye_center_px": [
+          -1.4000000000000057,
+          1.3199999999999932
+        ]
+      }
+    ],
+    "pose_minus_reference_pupil_offsets_px": [
+      [
+        -0.6629827424220025,
+        0.807199723087578
+      ],
+      [
+        -0.878494623655925,
+        0.17483870967741666
+      ]
+    ],
+    "maximum_absolute_offset_delta_px": 0.878494623655925
+  },
+  "lean": {
+    "eye_center_line_angle_degrees_clockwise": 2.0825652797308845,
+    "lulu_core_centroid_x_px": 104.21786446187548,
+    "support_center_x_px": 99.4793893129771,
+    "core_centroid_minus_support_center_x_px": 4.738475148898374
+  },
+  "loop_registration": {
+    "support_centers_x_px": {
+      "frame_7": 99.4793893129771,
+      "frame_8": 99.35443037974683,
+      "neutral_reference": 99.31379310344828
+    },
+    "maximum_pairwise_support_center_difference_px": 0.1655962095288288,
+    "outlines": {
+      "frame_7": {
+        "area_px": 16989.0,
+        "equivalent_diameter_px": 147.07503739760082,
+        "bbox": [
+          46,
+          8,
+          164,
+          200
+        ],
+        "bbox_width_px": 118,
+        "bbox_height_px": 192,
+        "bbox_geometric_mean_px": 150.51910177781423,
+        "bbox_center_x_px": 105.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 99.4793893129771
+      },
+      "frame_8": {
+        "area_px": 17069.0,
+        "equivalent_diameter_px": 147.42091367606054,
+        "bbox": [
+          42,
+          7,
+          161,
+          200
+        ],
+        "bbox_width_px": 119,
+        "bbox_height_px": 193,
+        "bbox_geometric_mean_px": 151.5486720496092,
+        "bbox_center_x_px": 101.5,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 99.35443037974683
+      },
+      "neutral_reference": {
+        "area_px": 17606.0,
+        "equivalent_diameter_px": 149.72192700004658,
+        "bbox": [
+          34,
+          10,
+          158,
+          200
+        ],
+        "bbox_width_px": 124,
+        "bbox_height_px": 190,
+        "bbox_geometric_mean_px": 153.49267083479916,
+        "bbox_center_x_px": 96.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 99.31379310344828
+      }
+    },
+    "edge_margins_px": {
+      "frame_7": {
+        "left": 46,
+        "top": 8,
+        "right": 28,
+        "bottom": 8
+      },
+      "frame_8": {
+        "left": 42,
+        "top": 7,
+        "right": 31,
+        "bottom": 8
+      },
+      "neutral_reference": {
+        "left": 34,
+        "top": 10,
+        "right": 34,
+        "bottom": 8
+      }
+    }
+  }
+}

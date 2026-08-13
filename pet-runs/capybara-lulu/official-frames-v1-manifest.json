@@ -213,29 +213,58 @@
         "sequence-drafts/v1-action-work/waving-success-windup/gold-normal-stand.png",
         "sequence-drafts/v1-action-work/waving-success-windup/anticipation-gold-face-preview.png",
         "sequence-drafts/v1-retired-variants/waving-no-windup/frames/waving-01.png",
-        "sequence-drafts/v1-retired-variants/waving-no-windup/frames/waving-04.png"
+        "sequence-drafts/v1-retired-variants/waving-no-windup/frames/waving-04.png",
+        "sequence-drafts/expanded-frames-v2-alpha-192x208/one-foot-wave/one-foot-wave-04.png",
+        "sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/normalized/waving-06.png",
+        "sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/normalized/waving-07.png",
+        "sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/normalized/waving-08.png"
       ],
       "order": [
         1,
         2,
         3,
-        4
+        4,
+        5,
+        6,
+        7,
+        8
       ],
       "frames": [
         "official-frames-v1/waving/waving-01.png",
         "official-frames-v1/waving/waving-02.png",
         "official-frames-v1/waving/waving-03.png",
-        "official-frames-v1/waving/waving-04.png"
+        "official-frames-v1/waving/waving-04.png",
+        "official-frames-v1/waving/waving-05.png",
+        "official-frames-v1/waving/waving-06.png",
+        "official-frames-v1/waving/waving-07.png",
+        "official-frames-v1/waving/waving-08.png"
       ],
-      "frame_durations_ms": [140, 140, 140, 280],
+      "frame_durations_ms": [140, 120, 120, 180, 120, 120, 160, 220],
+      "loop_seam": "frame 8 is a closed-eye near-neutral recovery pose designed to return to frame 1",
+      "transition_roles": {
+        "6": "both arms settle inward and downward while the lifted foot decelerates toward landing",
+        "7": "both feet ground, both paws meet before the belly, and Lulu warmly faces the user with a subtle screen-right lean",
+        "8": "the grounded body straightens into a closed-eye recovery matched to frame 1"
+      },
+      "pose_reference": {
+        "source": "sequence-drafts/v1-action-work/waving-loop-transition/references/xiaohongshu/source.json",
+        "primary_shared_url": "http://xhslink.cn/o/8PcEQlpzN1H",
+        "usage": "user-provided motion source for the expectant hands-in-front and gentle forward lean"
+      },
+      "size_normalization_report": "sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/processing-report.json",
+      "performance_qa_report": "qa/waving-loop-correction-review/selected-pose-measurements.json",
       "quality": "gold",
       "frame_sha256": {
         "waving-01.png": "4927bb779a107d6a357f0ae7fdfa73817a1bc350a45e9720e34bece0e04a11c6",
         "waving-02.png": "844c6bb342b2f4c0544da18d86154cd416a0fde9e85878a3d5811bfa284c5f70",
         "waving-03.png": "ad1ae7b765b28fd8f66009d0ea14fd288f0a6d1e076dd8006367dff29d701829",
-        "waving-04.png": "7592d49c57b6bc6b4010d39fad51ccd6b087808e22e0a34bd6e25e151110a476"
+        "waving-04.png": "7592d49c57b6bc6b4010d39fad51ccd6b087808e22e0a34bd6e25e151110a476",
+        "waving-05.png": "c530ac9d18f3217f61be41f99b8fdf80990aafff3533bd0d1b874fc76cdc840a",
+        "waving-06.png": "62b56dbf5fbf3b1998ab56baf1a5feb8f0f72272f10adff8d4d7c7746f278111",
+        "waving-07.png": "d595f25171a5ea7fb5b1e6c8e1098b14113e3860851bfc9e157b3173d744e505",
+        "waving-08.png": "1205b5bc4e6b50e626caa10da1d53d1e738180d78314a21f420754b22d0d1b14"
       },
-      "note": "four-frame success celebration with a normal-stand wind-up; frame 2 uses a new early limb pose but retains the exact approved-master upper head and face; eye states are closed/closed, open/open, open/open, closed/closed so both eyes always change together"
+      "note": "eight-frame looping celebration: frames 1-5 remain byte-identical to the approved milestone; frames 6-8 now settle into a grounded belly-paws pose whose pupil placement matches the direct-gaze gold reference, whose anatomical core shifts subtly screen-right over a fixed support, and whose recovery closes cleanly through frame 1"
     },
     "failed": {
       "source_frames": [

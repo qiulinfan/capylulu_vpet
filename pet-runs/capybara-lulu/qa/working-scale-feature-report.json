@@ -33,6 +33,42 @@
     "waving",
     "review"
   ],
+  "reference_frame_numbers": {
+    "running-right": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "running-left": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "waving": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "review": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
   "reference_weighting": "equal state weight via median of state medians",
   "reference_state_medians": {
     "running-right": {

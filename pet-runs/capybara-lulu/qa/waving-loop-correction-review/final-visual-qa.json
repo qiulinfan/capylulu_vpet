@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "reviewer": "independent visual QA subagent",
+  "scope": "rebuilt waving master, Codex hover adapter, all nine action GIFs, validation, and installed package",
+  "checks": {
+    "frame_7_belly_paws": true,
+    "frame_7_direct_user_gaze": true,
+    "frame_7_warm_expectant_expression": true,
+    "frame_7_subtle_screen_right_lean_over_fixed_feet": true,
+    "frame_5_through_frame_1_loop_is_coherent": true,
+    "no_visible_size_pop": true,
+    "no_visible_foot_slide": true,
+    "no_clipping_or_magenta_fringe": true,
+    "no_identity_drift": true,
+    "codex_hover_mapping_is_2_4_5_7_8": true,
+    "approved_frames_1_through_5_are_byte_identical": true,
+    "other_eight_actions_have_no_visual_regression": true,
+    "built_and_installed_packages_match": true
+  },
+  "measurement_evidence": {
+    "maximum_pupil_offset_delta_from_direct_gaze_reference_px": 0.878494623655925,
+    "frame_7_core_right_offset_over_support_px": 4.738475148898374,
+    "maximum_frame_7_frame_8_frame_1_support_drift_px": 0.1655962095288288
+  },
+  "remaining_risk": "The five-slot Codex hover adapter skips master frame 6, so frame 5 to frame 7 is brisk but remains directionally coherent; the intended right lean is deliberately subtle at very small display sizes."
+}

@@ -1,0 +1,352 @@
+{
+  "ok": true,
+  "input_strip": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/candidates/candidate-01.png",
+  "input_sha256": "d2dd9ff4a4e5553e10e6da60237af666dba2a8986e6626c0e0e7fdb45e53d66d",
+  "frame_count": 3,
+  "master_frame_numbers": [
+    6,
+    7,
+    8
+  ],
+  "extraction": {
+    "method": "hatch-pet extract_stable_slot_frames",
+    "chroma_key": "#FF00FF",
+    "key_threshold": 96.0,
+    "outputs": [
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-01/extracted/waving-06.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-01/extracted/waving-07.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-01/extracted/waving-08.png"
+    ]
+  },
+  "despill": {
+    "method": "hatch-pet edge-local-chroma-spill-suppression",
+    "outputs": [
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-01/despilled/waving-06.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-01/despilled/waving-07.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-01/despilled/waving-08.png"
+    ],
+    "frames": [
+      {
+        "master_frame_number": 6,
+        "algorithm": "edge-local-chroma-spill-suppression",
+        "strength": 1,
+        "edge_radius": 5,
+        "spill_tolerance": 0.15,
+        "minimum_saturation": 0.1,
+        "changed_pixels": 1639,
+        "decontaminated_pixels": 1446,
+        "spill_suppressed_pixels": 1639,
+        "rejected_pixels": 0,
+        "changed_by_cell": {
+          "r0c0": 1639
+        },
+        "alpha_preserved": true
+      },
+      {
+        "master_frame_number": 7,
+        "algorithm": "edge-local-chroma-spill-suppression",
+        "strength": 1,
+        "edge_radius": 5,
+        "spill_tolerance": 0.15,
+        "minimum_saturation": 0.1,
+        "changed_pixels": 1507,
+        "decontaminated_pixels": 1360,
+        "spill_suppressed_pixels": 1507,
+        "rejected_pixels": 0,
+        "changed_by_cell": {
+          "r0c0": 1507
+        },
+        "alpha_preserved": true
+      },
+      {
+        "master_frame_number": 8,
+        "algorithm": "edge-local-chroma-spill-suppression",
+        "strength": 1,
+        "edge_radius": 5,
+        "spill_tolerance": 0.15,
+        "minimum_saturation": 0.1,
+        "changed_pixels": 1542,
+        "decontaminated_pixels": 1399,
+        "spill_suppressed_pixels": 1542,
+        "rejected_pixels": 0,
+        "changed_by_cell": {
+          "r0c0": 1542
+        },
+        "alpha_preserved": true
+      }
+    ]
+  },
+  "feature_normalization": {
+    "method": "semantic-anchor-alpha-outline-feature-normalization",
+    "feature_formula": "sqrt((target equivalent diameter / source equivalent diameter) * (target bbox geometric mean / source bbox geometric mean))",
+    "semantic_anchors": {
+      "frame_6": "approved waving frame 5 follow-through",
+      "frames_7_8": "approved waving frame 1 compact neutral stance"
+    },
+    "registration": {
+      "initial_bbox_center_x_px": 96,
+      "horizontal_anchor": "semantic anchor frame's alpha centroid within the bottom 12-pixel support band",
+      "alpha_bottom_px": 200,
+      "minimum_top_margin_px": 5,
+      "minimum_side_margin_px": 5
+    },
+    "resampling": "nearest-neighbor",
+    "alpha_policy": "binary alpha at threshold 128 after despill and scaling",
+    "source_master_modified": false,
+    "new_master_frame_numbers": [
+      6,
+      7,
+      8
+    ],
+    "frames": [
+      {
+        "master_frame_number": 6,
+        "anchor_master_frame_number": 5,
+        "source_outline": {
+          "area_px": 17929.98431372549,
+          "equivalent_diameter_px": 151.093233020928,
+          "bbox": [
+            25,
+            6,
+            167,
+            203
+          ],
+          "bbox_width_px": 142,
+          "bbox_height_px": 197,
+          "bbox_geometric_mean_px": 167.25429740368406,
+          "bbox_center_x_px": 96.0,
+          "alpha_bottom_px": 203,
+          "support_band_top_px": 191,
+          "support_center_x_px": 97.20183486238533
+        },
+        "target_outline": {
+          "area_px": 17667.0,
+          "equivalent_diameter_px": 149.9810755956768,
+          "bbox": [
+            21,
+            10,
+            171,
+            200
+          ],
+          "bbox_width_px": 150,
+          "bbox_height_px": 190,
+          "bbox_geometric_mean_px": 168.81943016134133,
+          "bbox_center_x_px": 96.0,
+          "alpha_bottom_px": 200,
+          "support_band_top_px": 188,
+          "support_center_x_px": 88.44619422572178
+        },
+        "diameter_scale": 0.9926392638305835,
+        "bbox_scale": 1.0093578029500772,
+        "requested_feature_scale": 1.0009636289406423,
+        "vertical_fit_scale": 0.9898477157360406,
+        "horizontal_fit_scale": 1.2816901408450705,
+        "applied_scale": 0.9898477157360406,
+        "vertical_fit_constraint_active": true,
+        "offset_px": [
+          26,
+          5
+        ],
+        "post_binary_registration_shift_px": [
+          -10,
+          1
+        ],
+        "output_outline": {
+          "area_px": 17546.0,
+          "equivalent_diameter_px": 149.46658841334127,
+          "bbox": [
+            16,
+            6,
+            157,
+            200
+          ],
+          "bbox_width_px": 141,
+          "bbox_height_px": 194,
+          "bbox_geometric_mean_px": 165.39044712437294,
+          "bbox_center_x_px": 86.5,
+          "alpha_bottom_px": 200,
+          "support_band_top_px": 188,
+          "support_center_x_px": 88.6219512195122
+        },
+        "output_fused_size_ratio": 0.988093004618962
+      },
+      {
+        "master_frame_number": 7,
+        "anchor_master_frame_number": 1,
+        "source_outline": {
+          "area_px": 17224.26274509804,
+          "equivalent_diameter_px": 148.08987965410552,
+          "bbox": [
+            28,
+            13,
+            164,
+            202
+          ],
+          "bbox_width_px": 136,
+          "bbox_height_px": 189,
+          "bbox_geometric_mean_px": 160.32467059064865,
+          "bbox_center_x_px": 96.0,
+          "alpha_bottom_px": 202,
+          "support_band_top_px": 190,
+          "support_center_x_px": 74.216
+        },
+        "target_outline": {
+          "area_px": 17606.0,
+          "equivalent_diameter_px": 149.72192700004658,
+          "bbox": [
+            34,
+            10,
+            158,
+            200
+          ],
+          "bbox_width_px": 124,
+          "bbox_height_px": 190,
+          "bbox_geometric_mean_px": 153.49267083479916,
+          "bbox_center_x_px": 96.0,
+          "alpha_bottom_px": 200,
+          "support_band_top_px": 188,
+          "support_center_x_px": 99.31379310344828
+        },
+        "diameter_scale": 1.0110206541443145,
+        "bbox_scale": 0.957386472520543,
+        "requested_feature_scale": 0.9838381460975363,
+        "vertical_fit_scale": 1.0317460317460319,
+        "horizontal_fit_scale": 1.338235294117647,
+        "applied_scale": 0.9838381460975363,
+        "vertical_fit_constraint_active": false,
+        "offset_px": [
+          29,
+          14
+        ],
+        "post_binary_registration_shift_px": [
+          24,
+          0
+        ],
+        "output_outline": {
+          "area_px": 16622.0,
+          "equivalent_diameter_px": 145.47779113180087,
+          "bbox": [
+            55,
+            17,
+            185,
+            200
+          ],
+          "bbox_width_px": 130,
+          "bbox_height_px": 183,
+          "bbox_geometric_mean_px": 154.2400726140908,
+          "bbox_center_x_px": 120.0,
+          "alpha_bottom_px": 200,
+          "support_band_top_px": 188,
+          "support_center_x_px": 98.85528455284553
+        },
+        "output_fused_size_ratio": 0.9881216936644812
+      },
+      {
+        "master_frame_number": 8,
+        "anchor_master_frame_number": 1,
+        "source_outline": {
+          "area_px": 17231.945098039214,
+          "equivalent_diameter_px": 148.12290144177155,
+          "bbox": [
+            33,
+            6,
+            159,
+            202
+          ],
+          "bbox_width_px": 126,
+          "bbox_height_px": 196,
+          "bbox_geometric_mean_px": 157.14961024450554,
+          "bbox_center_x_px": 96.0,
+          "alpha_bottom_px": 202,
+          "support_band_top_px": 190,
+          "support_center_x_px": 95.76315789473684
+        },
+        "target_outline": {
+          "area_px": 17606.0,
+          "equivalent_diameter_px": 149.72192700004658,
+          "bbox": [
+            34,
+            10,
+            158,
+            200
+          ],
+          "bbox_width_px": 124,
+          "bbox_height_px": 190,
+          "bbox_geometric_mean_px": 153.49267083479916,
+          "bbox_center_x_px": 96.0,
+          "alpha_bottom_px": 200,
+          "support_band_top_px": 188,
+          "support_center_x_px": 99.31379310344828
+        },
+        "diameter_scale": 1.0107952621958571,
+        "bbox_scale": 0.9767295674229377,
+        "requested_feature_scale": 0.9936164346455398,
+        "vertical_fit_scale": 0.9948979591836735,
+        "horizontal_fit_scale": 1.4444444444444444,
+        "applied_scale": 0.9936164346455398,
+        "vertical_fit_constraint_active": false,
+        "offset_px": [
+          34,
+          5
+        ],
+        "post_binary_registration_shift_px": [
+          3,
+          0
+        ],
+        "output_outline": {
+          "area_px": 16970.0,
+          "equivalent_diameter_px": 146.99277218338224,
+          "bbox": [
+            40,
+            5,
+            159,
+            200
+          ],
+          "bbox_width_px": 119,
+          "bbox_height_px": 195,
+          "bbox_geometric_mean_px": 152.33187453714342,
+          "bbox_center_x_px": 99.5,
+          "alpha_bottom_px": 200,
+          "support_band_top_px": 188,
+          "support_center_x_px": 99.25986842105263
+        },
+        "output_fused_size_ratio": 0.987090240183458
+      }
+    ],
+    "applied_scale_range": [
+      0.9838381460975363,
+      0.9936164346455398
+    ],
+    "output_fused_size_ratio_range": [
+      0.987090240183458,
+      0.9881216936644812
+    ],
+    "output_fused_size_max_deviation": 0.012909759816541966
+  },
+  "outputs": [
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-01/normalized/waving-06.png",
+      "sha256": "52f31279ea452f8a21cc7e13f363c36182ba948cf726d5df6bb00b42c87083f4",
+      "size": [
+        192,
+        208
+      ]
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-01/normalized/waving-07.png",
+      "sha256": "bf35607d10ee157a2af2f36004b9d38cdc45ca12052acbb9ec4ebae48e4bf8af",
+      "size": [
+        192,
+        208
+      ]
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-01/normalized/waving-08.png",
+      "sha256": "0c08e5241ae14e7e5ab0c15a3df4832778da26893e03dd35b95d665ff0a1bb37",
+      "size": [
+        192,
+        208
+      ]
+    }
+  ]
+}
