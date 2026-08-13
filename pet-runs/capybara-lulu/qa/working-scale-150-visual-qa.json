@@ -1,0 +1,20 @@
+{
+  "ok": false,
+  "scope": "Codex adapter working row",
+  "scale": 1.5,
+  "status": "trial-pending-user-review",
+  "verdict": "visual-qa-fail",
+  "issues": [
+    "Lulu is larger than the other actions rather than merely matching them.",
+    "The head fruit is clipped at the top in working runtime frames 1-4 and 6.",
+    "The ink dish is clipped at the left in most frames and disappears in frame 5.",
+    "The paper is clipped at the right edge.",
+    "Frame 5 visibly shrinks and shifts relative to the surrounding frames."
+  ],
+  "passed_checks": [
+    "No duplicate ghost image is visible.",
+    "The bottom edge remains clear.",
+    "All six runtime cells remain structurally valid."
+  ],
+  "recommendation": "Try a complete-frame scale between 1.25x and 1.35x with a revised anchor."
+}

@@ -23,7 +23,22 @@
       "authority": false,
       "package": "final/",
       "installation": "~/.codex/pets/capybara-lulu/",
-      "sprite_version_number": 1
+      "sprite_version_number": 1,
+      "working_scale_mode": "feature-normalization-with-semantic-contour-fit",
+      "working_scale_reference_states": [
+        "running-right",
+        "running-left",
+        "waving",
+        "review"
+      ],
+      "working_scale_range": [
+        1.121616008894782,
+        1.2122127693764375
+      ],
+      "working_scale_scope": "complete working composition in the adapter only",
+      "working_scale_status": "installed-visual-qa-pass",
+      "working_scale_report": "qa/working-scale-feature-report.json",
+      "working_scale_visual_qa": "qa/working-scale-feature-visual-qa.json"
     }
   },
   "active_actions": [

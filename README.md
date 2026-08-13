@@ -82,7 +82,20 @@ It maps the complete animation master into Codex's fixed 8-column by 9-row,
 `1536x1872` custom-pet spritesheet contract. The adapter uses the sleeping
 `failed` artwork for both `idle` and `failed`, uses `waving` for Codex's required
 hover/`jumping` row, and maps the approved `working` action to Codex's task-active
-`running` row. Selection in the adapter never removes or redefines master frames.
+`running` row. The adapter isolates Lulu's orange/yellow-and-green silhouette
+from the paper, ink dish, brush, and black ink, then normalizes every working
+frame against the equal-weight medians of four approved, unobscured reference
+actions: `running-right`, `running-left`, `waving`, and `review`. It combines
+silhouette equivalent diameter with bounding-box geometric mean. A second
+semantic-contour pass includes detached paws and limbs, then applies the closest
+safe common target ratio that keeps Lulu and its dark outline inside Codex's
+fixed cell across the complete loop. The resulting per-frame scales are about
+`1.12x`–`1.21x`; their variation compensates for source-frame size drift, so the
+measured output silhouette stays constant. Lulu, paper, ink dish, and brush are
+still enlarged together; every other action remains pixel-identical.
+The full measurement record is
+`pet-runs/capybara-lulu/qa/working-scale-feature-report.json`. This adapter-only
+normalization never changes any approved gold master frame.
 
 The installed local package is `~/.codex/pets/capybara-lulu/`. Its app-facing
 identity is `custom:capybara-lulu`.

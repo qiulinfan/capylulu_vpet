@@ -1,0 +1,2423 @@
+{
+  "method": "per-frame-lulu-silhouette-feature-normalization-with-semantic-contour-fit",
+  "segmentation": {
+    "alpha_min": 16,
+    "orange_yellow_hsv": {
+      "hue": [
+        0.025,
+        0.19
+      ],
+      "saturation_min": 0.43,
+      "value_min": 0.35
+    },
+    "leaf_green_hsv": {
+      "hue": [
+        0.2,
+        0.48
+      ],
+      "saturation_min": 0.38,
+      "value_min": 0.2
+    },
+    "component": "largest 4-connected palette component",
+    "semantic_contour": "anatomical core plus detached palette components of at least 80 pixels above the core baseline",
+    "excluded_props": [
+      "paper",
+      "ink dish",
+      "brush",
+      "black ink"
+    ]
+  },
+  "reference_states": [
+    "running-right",
+    "running-left",
+    "waving",
+    "review"
+  ],
+  "reference_weighting": "equal state weight via median of state medians",
+  "reference_state_medians": {
+    "running-right": {
+      "area_px": 15977.5,
+      "equivalent_diameter_px": 142.62953684696834,
+      "bbox_geometric_mean_px": 151.79183250153903,
+      "centroid_x_px": 95.7465676521071,
+      "alpha_bottom_px": 196.5
+    },
+    "running-left": {
+      "area_px": 15977.5,
+      "equivalent_diameter_px": 142.62953684696834,
+      "bbox_geometric_mean_px": 151.79183250153903,
+      "centroid_x_px": 95.2534323478929,
+      "alpha_bottom_px": 196.5
+    },
+    "waving": {
+      "area_px": 15112.5,
+      "equivalent_diameter_px": 138.7143516628566,
+      "bbox_geometric_mean_px": 155.0587307491163,
+      "centroid_x_px": 97.58987821420642,
+      "alpha_bottom_px": 200.0
+    },
+    "review": {
+      "area_px": 17363.5,
+      "equivalent_diameter_px": 148.68709921533272,
+      "bbox_geometric_mean_px": 159.90412235644888,
+      "centroid_x_px": 95.78092548058703,
+      "alpha_bottom_px": 200.0
+    }
+  },
+  "targets": {
+    "equivalent_diameter_px": 142.62953684696834,
+    "bbox_geometric_mean_px": 153.42528162532767,
+    "lulu_centroid_x_px": 95.76374656634707,
+    "composition_alpha_bottom_px": 198
+  },
+  "scale_formula": "sqrt((target_equivalent_diameter / source_equivalent_diameter) * (target_bbox_geometric_mean / source_bbox_geometric_mean))",
+  "contour_fit_constraint": {
+    "source_outline_padding_px": 2,
+    "output_margin_px": 2,
+    "common_safe_target_ratio": 0.8976642931866722,
+    "rule": "common_safe_target_ratio = min(contour_fit_scale / requested_feature_scale) across all frames; applied_scale = requested_feature_scale * common_safe_target_ratio",
+    "temporal_policy": "one shared feasible target ratio preserves the normalized Lulu size across the complete fifteen-frame loop"
+  },
+  "transform_scope": [
+    "Lulu",
+    "paper",
+    "ink dish",
+    "brush"
+  ],
+  "resampling": "nearest-neighbor",
+  "source_master_modified": false,
+  "runtime_master_frame_numbers": [
+    1,
+    6,
+    8,
+    10,
+    13,
+    15
+  ],
+  "frames": [
+    {
+      "frame_number": 1,
+      "selected_for_codex_runtime": true,
+      "source_lulu": {
+        "area_px": 9367,
+        "equivalent_diameter_px": 109.20821771063873,
+        "bbox": [
+          49,
+          55,
+          184,
+          164
+        ],
+        "bbox_width_px": 135,
+        "bbox_height_px": 109,
+        "bbox_geometric_mean_px": 121.30539971493437,
+        "centroid_x_px": 109.97064161417744,
+        "centroid_y_px": 114.88448809650902
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          35,
+          55,
+          184,
+          164
+        ],
+        "component_count": 3,
+        "components": [
+          {
+            "area_px": 9367,
+            "bbox": [
+              49,
+              55,
+              184,
+              164
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 176,
+            "bbox": [
+              35,
+              139,
+              48,
+              157
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 127,
+            "bbox": [
+              55,
+              156,
+              106,
+              162
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.3060330059124643,
+      "bbox_scale": 1.2647852608859498,
+      "requested_feature_scale": 1.2852436718804172,
+      "contour_fit_scale": 1.2222222222222223,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1537173522911779,
+      "offset_px": [
+        -31,
+        -30
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 12488,
+        "equivalent_diameter_px": 126.09605638025604,
+        "bbox": [
+          26,
+          33,
+          182,
+          159
+        ],
+        "bbox_width_px": 156,
+        "bbox_height_px": 126,
+        "bbox_geometric_mean_px": 140.19985734657507,
+        "centroid_x_px": 96.2497597693786,
+        "centroid_y_px": 102.56454196028187
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          9,
+          33,
+          182,
+          159
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 12488,
+            "bbox": [
+              26,
+              33,
+              182,
+              159
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 238,
+            "bbox": [
+              9,
+              130,
+              25,
+              151
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 202,
+            "bbox": [
+              33,
+              150,
+              92,
+              157
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 92,
+            "bbox": [
+              18,
+              113,
+              26,
+              136
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8988171232093425,
+      "output_alpha_bbox": [
+        0,
+        25,
+        184,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 34
+      }
+    },
+    {
+      "frame_number": 2,
+      "selected_for_codex_runtime": false,
+      "source_lulu": {
+        "area_px": 9179,
+        "equivalent_diameter_px": 108.10673328301091,
+        "bbox": [
+          46,
+          53,
+          181,
+          164
+        ],
+        "bbox_width_px": 135,
+        "bbox_height_px": 111,
+        "bbox_geometric_mean_px": 122.41323457861898,
+        "centroid_x_px": 108.49852925155245,
+        "centroid_y_px": 112.56280640592657
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          23,
+          53,
+          181,
+          164
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 9179,
+            "bbox": [
+              46,
+              53,
+              181,
+              164
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 431,
+            "bbox": [
+              32,
+              131,
+              64,
+              152
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 100,
+            "bbox": [
+              53,
+              157,
+              96,
+              161
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 93,
+            "bbox": [
+              23,
+              137,
+              32,
+              152
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.319339994055511,
+      "bbox_scale": 1.2533390049977924,
+      "requested_feature_scale": 1.2859161230046567,
+      "contour_fit_scale": 1.154320987654321,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.154320987654321,
+      "offset_px": [
+        -22,
+        -31
+      ],
+      "horizontal_safety_shift_px": 7,
+      "output_lulu": {
+        "area_px": 12222,
+        "equivalent_diameter_px": 124.74587654809741,
+        "bbox": [
+          31,
+          30,
+          187,
+          158
+        ],
+        "bbox_width_px": 156,
+        "bbox_height_px": 128,
+        "bbox_geometric_mean_px": 141.30817386124556,
+        "centroid_x_px": 103.42202585501555,
+        "centroid_y_px": 98.92546228113238
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          5,
+          30,
+          187,
+          158
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 12222,
+            "bbox": [
+              31,
+              30,
+              187,
+              158
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 575,
+            "bbox": [
+              15,
+              120,
+              52,
+              144
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 157,
+            "bbox": [
+              39,
+              150,
+              89,
+              155
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 123,
+            "bbox": [
+              5,
+              127,
+              15,
+              144
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.897518772318837,
+      "output_alpha_bbox": [
+        0,
+        22,
+        190,
+        197
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 39
+      }
+    },
+    {
+      "frame_number": 3,
+      "selected_for_codex_runtime": false,
+      "source_lulu": {
+        "area_px": 9429,
+        "equivalent_diameter_px": 109.56904520578725,
+        "bbox": [
+          38,
+          53,
+          183,
+          164
+        ],
+        "bbox_width_px": 145,
+        "bbox_height_px": 111,
+        "bbox_geometric_mean_px": 126.86607111438424,
+        "centroid_x_px": 109.48022059603352,
+        "centroid_y_px": 113.39580019090042
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          33,
+          53,
+          183,
+          164
+        ],
+        "component_count": 3,
+        "components": [
+          {
+            "area_px": 9429,
+            "bbox": [
+              38,
+              53,
+              183,
+              164
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 193,
+            "bbox": [
+              33,
+              135,
+              46,
+              154
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 103,
+            "bbox": [
+              56,
+              156,
+              98,
+              161
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.3017320410074622,
+      "bbox_scale": 1.2093484118933364,
+      "requested_feature_scale": 1.254690231293384,
+      "contour_fit_scale": 1.2142857142857142,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1262906196421978,
+      "offset_px": [
+        -28,
+        -25
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 11942,
+        "equivalent_diameter_px": 123.30866410446312,
+        "bbox": [
+          15,
+          35,
+          178,
+          160
+        ],
+        "bbox_width_px": 163,
+        "bbox_height_px": 125,
+        "bbox_geometric_mean_px": 142.74102423620198,
+        "centroid_x_px": 95.21604421369955,
+        "centroid_y_px": 102.7765030983085
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          9,
+          35,
+          178,
+          160
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 11942,
+            "bbox": [
+              15,
+              35,
+              178,
+              160
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 251,
+            "bbox": [
+              9,
+              127,
+              24,
+              148
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 115,
+            "bbox": [
+              35,
+              151,
+              82,
+              156
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 94,
+            "bbox": [
+              68,
+              147,
+              92,
+              152
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8968462574790844,
+      "output_alpha_bbox": [
+        0,
+        27,
+        180,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 32
+      }
+    },
+    {
+      "frame_number": 4,
+      "selected_for_codex_runtime": false,
+      "source_lulu": {
+        "area_px": 9444,
+        "equivalent_diameter_px": 109.65616380522746,
+        "bbox": [
+          43,
+          52,
+          183,
+          166
+        ],
+        "bbox_width_px": 140,
+        "bbox_height_px": 114,
+        "bbox_geometric_mean_px": 126.33289357883005,
+        "centroid_x_px": 110.13045319779755,
+        "centroid_y_px": 112.84371029224904
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          39,
+          52,
+          183,
+          166
+        ],
+        "component_count": 2,
+        "components": [
+          {
+            "area_px": 9444,
+            "bbox": [
+              43,
+              52,
+              183,
+              166
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 194,
+            "bbox": [
+              39,
+              136,
+              53,
+              155
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.300697853157699,
+      "bbox_scale": 1.214452366909433,
+      "requested_feature_scale": 1.2568355446920594,
+      "contour_fit_scale": 1.2635135135135136,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1282163908778837,
+      "offset_px": [
+        -28,
+        -25
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 12022,
+        "equivalent_diameter_px": 123.72099986181055,
+        "bbox": [
+          21,
+          34,
+          179,
+          163
+        ],
+        "bbox_width_px": 158,
+        "bbox_height_px": 129,
+        "bbox_geometric_mean_px": 142.765542061101,
+        "centroid_x_px": 96.67908833804691,
+        "centroid_y_px": 102.45316918981867
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          16,
+          34,
+          179,
+          163
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 12022,
+            "bbox": [
+              21,
+              34,
+              179,
+              163
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 253,
+            "bbox": [
+              16,
+              129,
+              32,
+              150
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 114,
+            "bbox": [
+              40,
+              151,
+              93,
+              157
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 84,
+            "bbox": [
+              30,
+              141,
+              39,
+              158
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8984216508411839,
+      "output_alpha_bbox": [
+        0,
+        26,
+        181,
+        199
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 32
+      }
+    },
+    {
+      "frame_number": 5,
+      "selected_for_codex_runtime": false,
+      "source_lulu": {
+        "area_px": 9204,
+        "equivalent_diameter_px": 108.25385337133473,
+        "bbox": [
+          47,
+          55,
+          174,
+          164
+        ],
+        "bbox_width_px": 127,
+        "bbox_height_px": 109,
+        "bbox_geometric_mean_px": 117.65627905046122,
+        "centroid_x_px": 107.11549326379834,
+        "centroid_y_px": 114.33941764450239
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          32,
+          55,
+          184,
+          164
+        ],
+        "component_count": 5,
+        "components": [
+          {
+            "area_px": 9204,
+            "bbox": [
+              47,
+              55,
+              174,
+              164
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 200,
+            "bbox": [
+              32,
+              137,
+              46,
+              156
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 164,
+            "bbox": [
+              170,
+              132,
+              184,
+              152
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 93,
+            "bbox": [
+              38,
+              120,
+              47,
+              143
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 86,
+            "bbox": [
+              56,
+              157,
+              105,
+              161
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.3175469732030451,
+      "bbox_scale": 1.3040126958249767,
+      "requested_feature_scale": 1.3107623661070458,
+      "contour_fit_scale": 1.1987179487179487,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1766245729071714,
+      "offset_px": [
+        -30,
+        -35
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 12743,
+        "equivalent_diameter_px": 127.37696620095872,
+        "bbox": [
+          25,
+          30,
+          175,
+          158
+        ],
+        "bbox_width_px": 150,
+        "bbox_height_px": 128,
+        "bbox_geometric_mean_px": 138.5640646055102,
+        "centroid_x_px": 96.19979596641294,
+        "centroid_y_px": 99.72730126343875
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          8,
+          30,
+          187,
+          158
+        ],
+        "component_count": 6,
+        "components": [
+          {
+            "area_px": 12743,
+            "bbox": [
+              25,
+              30,
+              175,
+              158
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 278,
+            "bbox": [
+              8,
+              126,
+              24,
+              149
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 231,
+            "bbox": [
+              170,
+              120,
+              187,
+              144
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 126,
+            "bbox": [
+              15,
+              106,
+              25,
+              133
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 103,
+            "bbox": [
+              36,
+              150,
+              94,
+              155
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 94,
+            "bbox": [
+              22,
+              139,
+              30,
+              157
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8980852363457178,
+      "output_alpha_bbox": [
+        0,
+        22,
+        188,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 33
+      }
+    },
+    {
+      "frame_number": 6,
+      "selected_for_codex_runtime": true,
+      "source_lulu": {
+        "area_px": 9601,
+        "equivalent_diameter_px": 110.56388591670563,
+        "bbox": [
+          46,
+          49,
+          183,
+          164
+        ],
+        "bbox_width_px": 137,
+        "bbox_height_px": 115,
+        "bbox_geometric_mean_px": 125.51892287619425,
+        "centroid_x_px": 109.78606395167171,
+        "centroid_y_px": 111.65149463597542
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          31,
+          49,
+          183,
+          164
+        ],
+        "component_count": 3,
+        "components": [
+          {
+            "area_px": 9601,
+            "bbox": [
+              46,
+              49,
+              183,
+              164
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 274,
+            "bbox": [
+              31,
+              108,
+              45,
+              143
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 91,
+            "bbox": [
+              55,
+              156,
+              104,
+              160
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.2900192107431867,
+      "bbox_scale": 1.22232790171932,
+      "requested_feature_scale": 1.2557175140314532,
+      "contour_fit_scale": 1.1987179487179487,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1272127746751694,
+      "offset_px": [
+        -28,
+        -25
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 12167,
+        "equivalent_diameter_px": 124.46487673553823,
+        "bbox": [
+          24,
+          30,
+          178,
+          160
+        ],
+        "bbox_width_px": 154,
+        "bbox_height_px": 130,
+        "bbox_geometric_mean_px": 141.49204924659193,
+        "centroid_x_px": 95.59044957672393,
+        "centroid_y_px": 100.73337716774883
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          7,
+          30,
+          178,
+          160
+        ],
+        "component_count": 3,
+        "components": [
+          {
+            "area_px": 12167,
+            "bbox": [
+              24,
+              30,
+              178,
+              160
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 345,
+            "bbox": [
+              7,
+              97,
+              23,
+              136
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 103,
+            "bbox": [
+              34,
+              151,
+              89,
+              155
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8970904314203275,
+      "output_alpha_bbox": [
+        0,
+        22,
+        180,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 32
+      }
+    },
+    {
+      "frame_number": 7,
+      "selected_for_codex_runtime": false,
+      "source_lulu": {
+        "area_px": 9502,
+        "equivalent_diameter_px": 109.99237316320398,
+        "bbox": [
+          42,
+          53,
+          184,
+          164
+        ],
+        "bbox_width_px": 142,
+        "bbox_height_px": 111,
+        "bbox_geometric_mean_px": 125.54680402144851,
+        "centroid_x_px": 109.61408124605346,
+        "centroid_y_px": 113.55967164807409
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          35,
+          53,
+          184,
+          164
+        ],
+        "component_count": 3,
+        "components": [
+          {
+            "area_px": 9502,
+            "bbox": [
+              42,
+              53,
+              184,
+              164
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 184,
+            "bbox": [
+              35,
+              138,
+              48,
+              156
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 103,
+            "bbox": [
+              55,
+              155,
+              95,
+              162
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.2967220612227188,
+      "bbox_scale": 1.2220564499524527,
+      "requested_feature_scale": 1.2588357949760018,
+      "contour_fit_scale": 1.2222222222222223,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1300119441352152,
+      "offset_px": [
+        -28,
+        -26
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 12118,
+        "equivalent_diameter_px": 124.21399600327132,
+        "bbox": [
+          19,
+          34,
+          180,
+          159
+        ],
+        "bbox_width_px": 161,
+        "bbox_height_px": 125,
+        "bbox_geometric_mean_px": 141.86260959111107,
+        "centroid_x_px": 96.02442647301535,
+        "centroid_y_px": 102.31977223964351
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          12,
+          34,
+          180,
+          159
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 12118,
+            "bbox": [
+              19,
+              34,
+              180,
+              159
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 227,
+            "bbox": [
+              12,
+              130,
+              26,
+              150
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 155,
+            "bbox": [
+              34,
+              149,
+              79,
+              157
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 80,
+            "bbox": [
+              25,
+              141,
+              32,
+              157
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8973586188126679,
+      "output_alpha_bbox": [
+        0,
+        26,
+        182,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 32
+      }
+    },
+    {
+      "frame_number": 8,
+      "selected_for_codex_runtime": true,
+      "source_lulu": {
+        "area_px": 9455,
+        "equivalent_diameter_px": 109.72000681494221,
+        "bbox": [
+          45,
+          53,
+          181,
+          173
+        ],
+        "bbox_width_px": 136,
+        "bbox_height_px": 120,
+        "bbox_geometric_mean_px": 127.74975538137049,
+        "centroid_x_px": 107.87202538339503,
+        "centroid_y_px": 113.24939185616076
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          31,
+          53,
+          181,
+          173
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 9455,
+            "bbox": [
+              45,
+              53,
+              181,
+              173
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 196,
+            "bbox": [
+              31,
+              136,
+              45,
+              155
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 92,
+            "bbox": [
+              55,
+              156,
+              92,
+              160
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 89,
+            "bbox": [
+              35,
+              119,
+              45,
+              141
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.2999410133790144,
+      "bbox_scale": 1.200982977754503,
+      "requested_feature_scale": 1.2494827046234513,
+      "contour_fit_scale": 1.2142857142857142,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.121616008894782,
+      "offset_px": [
+        -25,
+        -24
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 11864,
+        "equivalent_diameter_px": 122.90530484376161,
+        "bbox": [
+          25,
+          35,
+          178,
+          170
+        ],
+        "bbox_width_px": 153,
+        "bbox_height_px": 135,
+        "bbox_geometric_mean_px": 143.71847480404182,
+        "centroid_x_px": 95.95220836142954,
+        "centroid_y_px": 103.00977747808496
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          10,
+          35,
+          178,
+          170
+        ],
+        "component_count": 5,
+        "components": [
+          {
+            "area_px": 11864,
+            "bbox": [
+              25,
+              35,
+              178,
+              170
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 244,
+            "bbox": [
+              10,
+              128,
+              25,
+              150
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 114,
+            "bbox": [
+              14,
+              109,
+              25,
+              134
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 103,
+            "bbox": [
+              37,
+              151,
+              78,
+              155
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 83,
+            "bbox": [
+              24,
+              140,
+              32,
+              159
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.898438622784123,
+      "output_alpha_bbox": [
+        0,
+        28,
+        180,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 32
+      }
+    },
+    {
+      "frame_number": 9,
+      "selected_for_codex_runtime": false,
+      "source_lulu": {
+        "area_px": 9409,
+        "equivalent_diameter_px": 109.45277920826473,
+        "bbox": [
+          47,
+          48,
+          184,
+          164
+        ],
+        "bbox_width_px": 137,
+        "bbox_height_px": 116,
+        "bbox_geometric_mean_px": 126.0634760745554,
+        "centroid_x_px": 110.8418535444787,
+        "centroid_y_px": 112.47954086512914
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          33,
+          48,
+          184,
+          164
+        ],
+        "component_count": 3,
+        "components": [
+          {
+            "area_px": 9409,
+            "bbox": [
+              47,
+              48,
+              184,
+              164
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 268,
+            "bbox": [
+              33,
+              120,
+              47,
+              154
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 92,
+            "bbox": [
+              56,
+              156,
+              95,
+              160
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.3031148032849442,
+      "bbox_scale": 1.217047842902493,
+      "requested_feature_scale": 1.25934628295487,
+      "contour_fit_scale": 1.206451612903226,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1304701909659463,
+      "offset_px": [
+        -30,
+        -26
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 11994,
+        "equivalent_diameter_px": 123.5768388475508,
+        "bbox": [
+          23,
+          28,
+          178,
+          159
+        ],
+        "bbox_width_px": 155,
+        "bbox_height_px": 131,
+        "bbox_geometric_mean_px": 142.4956139675885,
+        "centroid_x_px": 95.34142071035518,
+        "centroid_y_px": 101.12864765716192
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          7,
+          28,
+          178,
+          159
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 11994,
+            "bbox": [
+              23,
+              28,
+              178,
+              159
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 347,
+            "bbox": [
+              7,
+              110,
+              23,
+              148
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 142,
+            "bbox": [
+              33,
+              150,
+              77,
+              155
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 81,
+            "bbox": [
+              21,
+              138,
+              29,
+              154
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8970488395025915,
+      "output_alpha_bbox": [
+        0,
+        26,
+        180,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 34
+      }
+    },
+    {
+      "frame_number": 10,
+      "selected_for_codex_runtime": true,
+      "source_lulu": {
+        "area_px": 9398,
+        "equivalent_diameter_px": 109.3887802355482,
+        "bbox": [
+          46,
+          52,
+          184,
+          164
+        ],
+        "bbox_width_px": 138,
+        "bbox_height_px": 112,
+        "bbox_geometric_mean_px": 124.32216214336043,
+        "centroid_x_px": 112.27867631410939,
+        "centroid_y_px": 112.98776335390508
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          32,
+          52,
+          184,
+          164
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 9398,
+            "bbox": [
+              46,
+              52,
+              184,
+              164
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 221,
+            "bbox": [
+              32,
+              128,
+              49,
+              152
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 100,
+            "bbox": [
+              55,
+              156,
+              108,
+              161
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 89,
+            "bbox": [
+              38,
+              112,
+              46,
+              134
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.3038772033095387,
+      "bbox_scale": 1.234094380118706,
+      "requested_feature_scale": 1.2685060224410436,
+      "contour_fit_scale": 1.1987179487179487,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1386925620375763,
+      "offset_px": [
+        -32,
+        -27
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 12216,
+        "equivalent_diameter_px": 124.71525279004469,
+        "bbox": [
+          20,
+          32,
+          178,
+          160
+        ],
+        "bbox_width_px": 158,
+        "bbox_height_px": 128,
+        "bbox_geometric_mean_px": 142.21111067704942,
+        "centroid_x_px": 96.24959070072036,
+        "centroid_y_px": 101.84553045186641
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          4,
+          32,
+          178,
+          160
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 12216,
+            "bbox": [
+              20,
+              32,
+              178,
+              160
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 285,
+            "bbox": [
+              4,
+              119,
+              24,
+              146
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 114,
+            "bbox": [
+              31,
+              151,
+              91,
+              156
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 112,
+            "bbox": [
+              11,
+              101,
+              20,
+              126
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.9002711837192849,
+      "output_alpha_bbox": [
+        0,
+        24,
+        180,
+        199
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 45
+      }
+    },
+    {
+      "frame_number": 11,
+      "selected_for_codex_runtime": false,
+      "source_lulu": {
+        "area_px": 8353,
+        "equivalent_diameter_px": 103.12792985982418,
+        "bbox": [
+          37,
+          66,
+          179,
+          168
+        ],
+        "bbox_width_px": 142,
+        "bbox_height_px": 102,
+        "bbox_geometric_mean_px": 120.34949106664307,
+        "centroid_x_px": 106.43433496947205,
+        "centroid_y_px": 120.98395785945169
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          31,
+          66,
+          179,
+          168
+        ],
+        "component_count": 3,
+        "components": [
+          {
+            "area_px": 8353,
+            "bbox": [
+              37,
+              66,
+              179,
+              168
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 145,
+            "bbox": [
+              31,
+              142,
+              43,
+              159
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 110,
+            "bbox": [
+              61,
+              157,
+              113,
+              163
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.3830350036196442,
+      "bbox_scale": 1.2748311626874185,
+      "requested_feature_scale": 1.327831360415105,
+      "contour_fit_scale": 1.230263157894737,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1919467996181226,
+      "offset_px": [
+        -31,
+        -38
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 11830,
+        "equivalent_diameter_px": 122.72906670474185,
+        "bbox": [
+          13,
+          41,
+          182,
+          162
+        ],
+        "bbox_width_px": 169,
+        "bbox_height_px": 121,
+        "bbox_geometric_mean_px": 143.0,
+        "centroid_x_px": 96.06179205409974,
+        "centroid_y_px": 106.25181741335588
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          6,
+          41,
+          182,
+          162
+        ],
+        "component_count": 3,
+        "components": [
+          {
+            "area_px": 11830,
+            "bbox": [
+              13,
+              41,
+              182,
+              162
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 209,
+            "bbox": [
+              6,
+              131,
+              20,
+              152
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 157,
+            "bbox": [
+              42,
+              149,
+              104,
+              156
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.895547310597688,
+      "output_alpha_bbox": [
+        0,
+        32,
+        184,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 30
+      }
+    },
+    {
+      "frame_number": 12,
+      "selected_for_codex_runtime": false,
+      "source_lulu": {
+        "area_px": 8314,
+        "equivalent_diameter_px": 102.88689700310795,
+        "bbox": [
+          44,
+          67,
+          179,
+          194
+        ],
+        "bbox_width_px": 135,
+        "bbox_height_px": 127,
+        "bbox_geometric_mean_px": 130.93891705677117,
+        "centroid_x_px": 108.57950445032475,
+        "centroid_y_px": 123.83389463555449
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          31,
+          67,
+          179,
+          194
+        ],
+        "component_count": 2,
+        "components": [
+          {
+            "area_px": 8314,
+            "bbox": [
+              44,
+              67,
+              179,
+              194
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 212,
+            "bbox": [
+              31,
+              128,
+              44,
+              159
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.3862750360005498,
+      "bbox_scale": 1.171731713336281,
+      "requested_feature_scale": 1.2744969294149904,
+      "contour_fit_scale": 1.230263157894737,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1440703853118914,
+      "offset_px": [
+        -28,
+        -29
+      ],
+      "horizontal_safety_shift_px": 0,
+      "output_lulu": {
+        "area_px": 10938,
+        "equivalent_diameter_px": 118.01141529662802,
+        "bbox": [
+          22,
+          48,
+          177,
+          193
+        ],
+        "bbox_width_px": 155,
+        "bbox_height_px": 145,
+        "bbox_geometric_mean_px": 149.9166435056495,
+        "centroid_x_px": 96.42283781312854,
+        "centroid_y_px": 112.95319071128176
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          8,
+          48,
+          177,
+          193
+        ],
+        "component_count": 2,
+        "components": [
+          {
+            "area_px": 10938,
+            "bbox": [
+              22,
+              48,
+              177,
+              193
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 275,
+            "bbox": [
+              8,
+              117,
+              22,
+              153
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8991532822818578,
+      "output_alpha_bbox": [
+        0,
+        40,
+        178,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 26
+      }
+    },
+    {
+      "frame_number": 13,
+      "selected_for_codex_runtime": true,
+      "source_lulu": {
+        "area_px": 8537,
+        "equivalent_diameter_px": 104.2575944159661,
+        "bbox": [
+          39,
+          65,
+          175,
+          173
+        ],
+        "bbox_width_px": 136,
+        "bbox_height_px": 108,
+        "bbox_geometric_mean_px": 121.19405926034493,
+        "centroid_x_px": 106.53906524540237,
+        "centroid_y_px": 121.96860723907696
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          26,
+          65,
+          175,
+          173
+        ],
+        "component_count": 2,
+        "components": [
+          {
+            "area_px": 8537,
+            "bbox": [
+              39,
+              65,
+              175,
+              173
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 128,
+            "bbox": [
+              26,
+              142,
+              36,
+              158
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.3680493746854179,
+      "bbox_scale": 1.2659472135985208,
+      "requested_feature_scale": 1.316008470317803,
+      "contour_fit_scale": 1.2222222222222223,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.1813338133355042,
+      "offset_px": [
+        -26,
+        -36
+      ],
+      "horizontal_safety_shift_px": 4,
+      "output_lulu": {
+        "area_px": 11999,
+        "equivalent_diameter_px": 123.60259421742415,
+        "bbox": [
+          20,
+          41,
+          181,
+          169
+        ],
+        "bbox_width_px": 161,
+        "bbox_height_px": 128,
+        "bbox_geometric_mean_px": 143.5548675594109,
+        "centroid_x_px": 100.1129260771731,
+        "centroid_y_px": 108.43695307942329
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          5,
+          34,
+          181,
+          169
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 11999,
+            "bbox": [
+              20,
+              41,
+              181,
+              169
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 181,
+            "bbox": [
+              5,
+              132,
+              17,
+              151
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 104,
+            "bbox": [
+              12,
+              115,
+              20,
+              138
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 81,
+            "bbox": [
+              86,
+              34,
+              96,
+              47
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.9004706332121053,
+      "output_alpha_bbox": [
+        0,
+        33,
+        192,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 35,
+        "bottom": 0,
+        "left": 38
+      }
+    },
+    {
+      "frame_number": 14,
+      "selected_for_codex_runtime": false,
+      "source_lulu": {
+        "area_px": 8106,
+        "equivalent_diameter_px": 101.59173071477437,
+        "bbox": [
+          44,
+          58,
+          172,
+          167
+        ],
+        "bbox_width_px": 128,
+        "bbox_height_px": 109,
+        "bbox_geometric_mean_px": 118.1185844818672,
+        "centroid_x_px": 109.773254379472,
+        "centroid_y_px": 118.70367628916851
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          32,
+          58,
+          180,
+          167
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 8106,
+            "bbox": [
+              44,
+              58,
+              172,
+              167
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 125,
+            "bbox": [
+              168,
+              136,
+              180,
+              154
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 118,
+            "bbox": [
+              32,
+              119,
+              42,
+              136
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 103,
+            "bbox": [
+              81,
+              154,
+              122,
+              161
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.4039482922818824,
+      "bbox_scale": 1.298908908351171,
+      "requested_feature_scale": 1.350407695368088,
+      "contour_fit_scale": 1.230263157894737,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.2122127693764375,
+      "offset_px": [
+        -34,
+        -42
+      ],
+      "horizontal_safety_shift_px": 3,
+      "output_lulu": {
+        "area_px": 11897,
+        "equivalent_diameter_px": 123.0761181696686,
+        "bbox": [
+          19,
+          28,
+          175,
+          160
+        ],
+        "bbox_width_px": 156,
+        "bbox_height_px": 132,
+        "bbox_geometric_mean_px": 143.49912891721678,
+        "centroid_x_px": 99.47978481970245,
+        "centroid_y_px": 101.95242498108767
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          5,
+          28,
+          184,
+          160
+        ],
+        "component_count": 6,
+        "components": [
+          {
+            "area_px": 11897,
+            "bbox": [
+              19,
+              28,
+              175,
+              160
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 178,
+            "bbox": [
+              5,
+              102,
+              17,
+              123
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 178,
+            "bbox": [
+              170,
+              123,
+              184,
+              145
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 148,
+            "bbox": [
+              64,
+              145,
+              114,
+              153
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 99,
+            "bbox": [
+              15,
+              89,
+              22,
+              109
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 91,
+            "bbox": [
+              41,
+              153,
+              86,
+              157
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8983763839566278,
+      "output_alpha_bbox": [
+        0,
+        27,
+        186,
+        198
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 41
+      }
+    },
+    {
+      "frame_number": 15,
+      "selected_for_codex_runtime": true,
+      "source_lulu": {
+        "area_px": 9221,
+        "equivalent_diameter_px": 108.35378093081448,
+        "bbox": [
+          51,
+          46,
+          184,
+          165
+        ],
+        "bbox_width_px": 133,
+        "bbox_height_px": 119,
+        "bbox_geometric_mean_px": 125.80540528928,
+        "centroid_x_px": 111.65676173950764,
+        "centroid_y_px": 112.40939160611647
+      },
+      "source_lulu_semantic_contour": {
+        "bbox": [
+          31,
+          46,
+          184,
+          165
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 9221,
+            "bbox": [
+              51,
+              46,
+              184,
+              165
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 266,
+            "bbox": [
+              46,
+              131,
+              68,
+              152
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 261,
+            "bbox": [
+              31,
+              117,
+              45,
+              152
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 83,
+            "bbox": [
+              56,
+              157,
+              105,
+              161
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "diameter_scale": 1.3163318863606563,
+      "bbox_scale": 1.2195444327096905,
+      "requested_feature_scale": 1.2670142949506857,
+      "contour_fit_scale": 1.1910828025477707,
+      "common_safe_target_ratio": 0.8976642931866722,
+      "contour_fit_constraint_active": true,
+      "applied_scale": 1.137353491534317,
+      "offset_px": [
+        -30,
+        -27
+      ],
+      "horizontal_safety_shift_px": 1,
+      "output_lulu": {
+        "area_px": 11955,
+        "equivalent_diameter_px": 123.3757624386122,
+        "bbox": [
+          28,
+          25,
+          179,
+          161
+        ],
+        "bbox_width_px": 151,
+        "bbox_height_px": 136,
+        "bbox_geometric_mean_px": 143.30387294138285,
+        "centroid_x_px": 96.85060644081975,
+        "centroid_y_px": 101.13584274362192
+      },
+      "output_lulu_semantic_contour": {
+        "bbox": [
+          5,
+          25,
+          179,
+          161
+        ],
+        "component_count": 4,
+        "components": [
+          {
+            "area_px": 11955,
+            "bbox": [
+              28,
+              25,
+              179,
+              161
+            ],
+            "role": "anatomical-core"
+          },
+          {
+            "area_px": 351,
+            "bbox": [
+              22,
+              122,
+              47,
+              146
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 348,
+            "bbox": [
+              5,
+              106,
+              21,
+              146
+            ],
+            "role": "detached-limb"
+          },
+          {
+            "area_px": 94,
+            "bbox": [
+              34,
+              152,
+              89,
+              156
+            ],
+            "role": "detached-limb"
+          }
+        ]
+      },
+      "output_fused_size_ratio": 0.8988571722572968,
+      "output_alpha_bbox": [
+        0,
+        24,
+        180,
+        199
+      ],
+      "output_alpha_edge_pixels": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 33
+      }
+    }
+  ],
+  "applied_scale_range": [
+    1.121616008894782,
+    1.2122127693764375
+  ],
+  "output_fused_size_ratio_range": [
+    0.895547310597688,
+    0.9004706332121053
+  ],
+  "output_fused_size_max_deviation": 0.104452689402312
+}

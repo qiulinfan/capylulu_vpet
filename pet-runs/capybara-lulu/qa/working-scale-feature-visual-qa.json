@@ -1,0 +1,25 @@
+{
+  "scope": "Codex adapter working row and complete fifteen-frame normalized preview",
+  "method": "independent read-only visual QA",
+  "status": "pass",
+  "artifacts_reviewed": [
+    "codex-adapter-contact-sheet.png",
+    "codex-working-normalized-full-contact-sheet.png",
+    "codex-working-preview.gif",
+    "codex-working-normalized-full-preview.gif",
+    "working-scale-feature-report.json"
+  ],
+  "checks": {
+    "detached_left_paw_complete": true,
+    "right_haunch_and_hind_paw_outline_complete": true,
+    "head_fruit_complete": true,
+    "transparent_outline_margin_present": true,
+    "visible_scale_pulsing": false,
+    "runtime_frame_10_to_13_scale_jump": false,
+    "page_turn_readable": true,
+    "prop_clipping_breaks_semantics": false,
+    "ghosting": false
+  },
+  "qa_note": "第2、3、6、8、9、10帧右侧臀部、后爪及深色外轮廓均完整并留有透明边距；左侧持笔前爪和头顶橙子无裁切。完整15帧与运行时6帧未见可感知的尺度脉动，仅保留书写与换页所需的自然位移。11至15帧换页语义连贯，道具边缘裁切不影响识别，两个GIF均未见残影。",
+  "repair_note": "none"
+}
