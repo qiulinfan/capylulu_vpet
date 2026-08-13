@@ -13,6 +13,7 @@
   "milestone": {
     "status": "frozen",
     "active_actions": 9,
+    "gold_actions": 9,
     "deferred_actions": [
       "looking-around"
     ]
@@ -66,8 +67,8 @@
     },
     {
       "state": "waving",
-      "frames": 8,
-      "purpose": "looping wave/hover celebration: approved wind-up and peak, approved V2 outward-arm follow-through, same-side landing, hopeful belly-paws lean, and near-neutral recovery"
+      "frames": 12,
+      "purpose": "looping hover response: approved five-frame wave, a fully redrawn seven-frame tail that gathers both paws low above the waistband, an extended direct-gaze ready-and-expectant screen-right lean, and a grounded near-neutral recovery"
     },
     {
       "state": "failed",
@@ -143,7 +144,7 @@
       "cell_height": 208,
       "safe_margin_x": 18,
       "safe_margin_y": 16,
-      "usage": "historical four-frame layout guide only; the current approved master has eight frames and the Codex adapter selects its fixed runtime slots"
+      "usage": "historical four-frame layout guide only; the current approved master has twelve frames and the Codex adapter selects its fixed runtime slots"
     },
     {
       "state": "failed",

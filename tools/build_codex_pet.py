@@ -65,12 +65,17 @@ ADAPTER_ROWS = (
     ),
     AdapterRow("running-right", "running-right", tuple(range(1, 9)), "exact master action"),
     AdapterRow("running-left", "running-left", tuple(range(1, 9)), "exact master action"),
-    AdapterRow("waving", "waving", tuple(range(1, 5)), "exact master action"),
+    AdapterRow(
+        "waving",
+        "waving",
+        tuple(range(1, 5)),
+        "four-frame pure-wave excerpt from the complete twelve-frame master action",
+    ),
     AdapterRow(
         "jumping",
         "waving",
-        (2, 4, 5, 7, 8),
-        "Codex-required five-slot hover row selects anticipation, peak, the approved V2 follow-through, the direct-to-user belly-paws pose with subtle screen-right lean, and the near-neutral loop recovery",
+        (2, 4, 8, 9, 12),
+        "Codex-required five-slot hover row selects recognition, wave peak, low-clasp entry, the ready-and-expectant direct-gaze hold, and the near-neutral loop recovery",
     ),
     AdapterRow(
         "failed",
@@ -764,7 +769,10 @@ def build(*, install: bool) -> dict[str, object]:
             "required_frames_by_row": CODEX_REQUIRED_FRAMES_BY_ROW,
         },
         "runtime_state_mapping": row_report,
-        "master_aliases": {"idle": "failed"},
+        "master_aliases": {
+            "idle": "failed",
+            "running": "review",
+        },
         "adapter_aliases": {
             "idle": "failed sleeping artwork",
             "jumping": "waving",

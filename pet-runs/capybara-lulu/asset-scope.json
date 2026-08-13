@@ -11,7 +11,7 @@
   },
   "milestone": {
     "status": "frozen",
-    "scope": "the current nine active actions",
+    "scope": "the current nine approved gold actions",
     "deferred_actions": [
       "looking-around"
     ]
@@ -54,6 +54,8 @@
   ],
   "gold_actions": [
     "idle",
+    "running-right",
+    "running-left",
     "waving",
     "failed",
     "waiting",
@@ -76,7 +78,7 @@
   "assembly": {
     "status": "installed",
     "current_package": "final/",
-    "current_package_note": "Codex V1 adapter built from the active animation master and installed locally."
+    "current_package_note": "Codex V1 adapter built from the frozen nine-action gold animation master and installed locally."
   },
   "draft_roots": [
     "sequence-drafts/"

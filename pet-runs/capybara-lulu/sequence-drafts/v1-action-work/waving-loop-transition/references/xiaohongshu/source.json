@@ -6,13 +6,14 @@
     "title": "下次见面会是什么季节...",
     "author": "噜噜",
     "provided_by_user": true,
-    "usage": "Primary motion and emotion reference for hands gathering toward the front of the body followed by a hopeful forward lean. The pet adaptation keeps both paws at the belly rather than the cheeks.",
+    "usage": "Primary motion and emotion reference for direct eye contact, a slight screen-right head-and-body lean, and both paws gathered low before the belly in a ready-and-expectant pose. The cropped 3D source is not authoritative for body proportions, feet, palette, rendering style, teeth, subtitles, or player UI; those remain locked to the approved 2D master frames.",
     "files": {
+      "user-provided-video-samples/sample-01-00s.png": {
+        "sha256": "86bcbb08f1221a03d3527972612db232871d214dcecb5e5d16170d8ef709368e",
+        "role": "user-selected primary pose and emotion source"
+      },
       "user-provided-video-samples/sample-02-04s.png": {
         "sha256": "3e4d094f978393872a26b04b3538af518c0bde8d18c4932c5a34fd3136e214d3"
-      },
-      "user-provided-video-samples/selected-main-18s.png": {
-        "sha256": "139e9c973f3917b93c970996ba86ce6408820ff8a5af823bdf298406a6c6f08e"
       }
     }
   },

@@ -269,6 +269,55 @@
       "recording_owner": "parent"
     },
     {
+      "id": "waving-expectant-tail-v2",
+      "kind": "continuation-strip",
+      "status": "complete",
+      "status_note": "Seven-pose redraw for master frames 6-12; the user-selected sample controls direct gaze, low clasp, slight screen-right lean, and ready-and-expectant intent while approved frames 1-5 control identity, palette, proportions, and loop continuity.",
+      "prompt_file": "sequence-drafts/v1-action-work/waving-expectant-tail-v2/prompt.md",
+      "input_images": [
+        {
+          "path": "sequence-drafts/v1-action-work/waving-loop-transition/references/xiaohongshu/user-provided-video-samples/sample-01-00s.png",
+          "sha256": "86bcbb08f1221a03d3527972612db232871d214dcecb5e5d16170d8ef709368e",
+          "role": "user-selected primary pose and emotion source"
+        },
+        {
+          "path": "sequence-drafts/v1-action-work/waving-expectant-tail-v2/references/approved-prefix-01-05.png",
+          "sha256": "f447544d68469bc048df9a9d148c706b283b6256b979804134f07216bd180039",
+          "role": "approved identity, palette, motion entry, and loop reference"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "sha256": "a1b96e3bbf17b53337170d816dac85eb61ce8fa724bf5c1007adb6a6db8c887e",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "sequence-drafts/v1-action-work/waving-expectant-tail-v2/references/layout-guide-7.png",
+          "sha256": "c3048f8641a5a7810b578d309c373e05127e343c9f450d47e77321d1643d0e31",
+          "role": "seven-slot spacing guide only; visible guide lines are excluded"
+        }
+      ],
+      "source_output": "sequence-drafts/v1-action-work/waving-expectant-tail-v2/candidates/candidate-01.png",
+      "source_output_sha256": "60ce47d6d168b29e6786325e5869eaabe5de1e28e48e1c0f5f30de90df828b2b",
+      "output_path": "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/normalized/",
+      "processing_report": "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/processing-report.json",
+      "depends_on": [
+        "waving"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "sequence-drafts/v1-action-work/waving-expectant-tail-v2/references/approved-prefix-01-05.png"
+      ],
+      "parallelizable_after": [
+        "waving"
+      ],
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "completed_at": "2026-08-13"
+    },
+    {
       "id": "jumping",
       "kind": "row-strip",
       "status": "retired",

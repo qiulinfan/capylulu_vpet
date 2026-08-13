@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "review_type": "independent-read-only-visual-qa",
+  "reviewed_on": "2026-08-13",
+  "checks": {
+    "source_semantics_matched": true,
+    "f1_f5_byte_identical_to_prechange_gold": true,
+    "f8_f10_low_clasp": true,
+    "f8_f10_direct_gaze": true,
+    "f8_f10_not_shy_or_downcast": true,
+    "f8_f10_screen_right_lean": true,
+    "warm_skin_palette_preserved": true,
+    "f12_to_f1_small_loop_step": true,
+    "no_clipping_extra_limbs_or_missing_fruit": true,
+    "hover_f2_f4_f8_f9_f12_conveys_full_intent": true,
+    "action_gif_validation_ok": true,
+    "other_eight_actions_gold": true
+  },
+  "evidence": {
+    "primary_source": "sequence-drafts/v1-action-work/waving-loop-transition/references/xiaohongshu/user-provided-video-samples/sample-01-00s.png",
+    "master_contact_sheet": "qa/waving-expectant-tail-v2/master-12-frame-contact-sheet.png",
+    "master_gif": "qa/waving-expectant-tail-v2/waving-12-frame-preview.gif",
+    "hover_contact_sheet": "qa/waving-expectant-tail-v2/codex-hover-5-slot-contact-sheet.png",
+    "hover_gif": "qa/waving-expectant-tail-v2/codex-hover-5-slot-preview.gif",
+    "loop_seam_contact_sheet": "qa/waving-expectant-tail-v2/loop-seam-contact-sheet.png",
+    "measurements": "qa/waving-expectant-tail-v2/expectant-pose-measurements.json",
+    "action_validation": "qa/action-gifs/validation.json"
+  },
+  "notes": [
+    "Frames 8-10 clasp both paws low above the waistband, keep open direct gaze, and lean head and body screen-right; the result reads warm and ready rather than shy or downcast.",
+    "Frame 9 is the clearest expectant hold; frames 8 and 10 provide meaningful entry and living micro-motion.",
+    "Warm yellow skin and orange accent median RGB values in frames 8-10 have zero distance from the approved frames 1-5 gold medians.",
+    "Frame 12 to frame 1 is a small closed-eye neutral recovery step with 0.79px maximum support drift and no visible pop.",
+    "The Codex hover selection 2, 4, 8, 9, 12 communicates recognition, wave peak, clasp entry, expectant hold, and recovery within the fixed five-slot row.",
+    "The review image viewer exposes only the first GIF frame, so dynamic conclusions also use the complete contact sheets, all original PNG frames, GIF metadata, measurements, and validation."
+  ],
+  "blocking_issues": []
+}

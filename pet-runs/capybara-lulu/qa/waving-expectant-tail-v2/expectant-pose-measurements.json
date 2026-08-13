@@ -1,0 +1,532 @@
+{
+  "ok": true,
+  "coordinate_system": "origin top-left; x increases screen-right; y increases down",
+  "inputs": {
+    "direct_gaze_reference": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-02.png",
+    "neutral_reference": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-01.png",
+    "palette_references": [
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-01.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-02.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-03.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-04.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-05.png"
+    ],
+    "expectant_frames": [
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-08.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-09.png",
+      "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-10.png"
+    ],
+    "loop_tail_frame": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-12.png"
+  },
+  "checks": {
+    "all_expectant_pose_checks_pass": true,
+    "ground_support_stays_within_2px_through_hold_and_seam": true,
+    "grounded_frames_share_alpha_bottom": true,
+    "loop_tail_to_neutral_rmse_at_most_0_19": true,
+    "no_sprite_touches_cell_edge": true
+  },
+  "direct_gaze": {
+    "reference_eyes": [
+      {
+        "bbox": [
+          57,
+          63,
+          79,
+          85
+        ],
+        "geometric_center_px": [
+          67.5,
+          73.5
+        ],
+        "pupil_center_px": [
+          69.27513227513228,
+          74.37037037037037
+        ],
+        "pupil_offset_from_eye_center_px": [
+          1.775132275132279,
+          0.8703703703703667
+        ]
+      },
+      {
+        "bbox": [
+          111,
+          63,
+          133,
+          85
+        ],
+        "geometric_center_px": [
+          121.5,
+          73.5
+        ],
+        "pupil_center_px": [
+          120.97849462365592,
+          74.64516129032258
+        ],
+        "pupil_offset_from_eye_center_px": [
+          -0.5215053763440807,
+          1.1451612903225765
+        ]
+      }
+    ],
+    "reference_eye_center_y_from_alpha_top_px": 63.5
+  },
+  "gold_warm_palette_median_rgb": {
+    "yellow_skin": [
+      253,
+      201,
+      14
+    ],
+    "orange_accents": [
+      250,
+      135,
+      1
+    ]
+  },
+  "expectant_poses": [
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-08.png",
+      "eyes": [
+        {
+          "bbox": [
+            72,
+            58,
+            93,
+            80
+          ],
+          "geometric_center_px": [
+            82.0,
+            68.5
+          ],
+          "pupil_center_px": [
+            82.76960784313725,
+            68.77941176470588
+          ],
+          "pupil_offset_from_eye_center_px": [
+            0.7696078431372513,
+            0.279411764705884
+          ]
+        },
+        {
+          "bbox": [
+            122,
+            65,
+            143,
+            87
+          ],
+          "geometric_center_px": [
+            132.0,
+            75.5
+          ],
+          "pupil_center_px": [
+            131.45408163265307,
+            75.58673469387755
+          ],
+          "pupil_offset_from_eye_center_px": [
+            -0.5459183673469283,
+            0.08673469387754551
+          ]
+        }
+      ],
+      "pose_minus_reference_pupil_offsets_px": [
+        [
+          -1.0055244319950276,
+          -0.5909586056644827
+        ],
+        [
+          -0.02441299100284766,
+          -1.058426596445031
+        ]
+      ],
+      "maximum_absolute_gaze_offset_delta_px": 1.058426596445031,
+      "eye_center_line_angle_degrees_clockwise": 7.96961039432136,
+      "eye_center_y_from_alpha_top_px": 62.0,
+      "eye_center_y_delta_from_direct_reference_px": -1.5,
+      "lulu_core_centroid_x_px": 101.91136680613668,
+      "support_center_x_px": 99.02932098765432,
+      "core_centroid_minus_support_center_x_px": 2.882045818482368,
+      "warm_palette_median_rgb": {
+        "yellow_skin": [
+          253,
+          201,
+          14
+        ],
+        "orange_accents": [
+          250,
+          135,
+          1
+        ]
+      },
+      "warm_palette_distance_to_gold": {
+        "yellow_skin": 0.0,
+        "orange_accents": 0.0
+      },
+      "outline": {
+        "area_px": 16583.0,
+        "equivalent_diameter_px": 145.3070245044719,
+        "bbox": [
+          43,
+          10,
+          165,
+          200
+        ],
+        "bbox_width_px": 122,
+        "bbox_height_px": 190,
+        "bbox_geometric_mean_px": 152.24979474534604,
+        "bbox_center_x_px": 104.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 99.02932098765432
+      },
+      "checks": {
+        "direct_gaze_within_3px_of_reference": true,
+        "eyes_not_lowered_on_face": true,
+        "head_has_4_to_12_degree_screen_right_lean": true,
+        "core_is_right_of_support_by_2_5_to_12px": true,
+        "warm_palette_within_3_rgb_units": true
+      }
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-09.png",
+      "eyes": [
+        {
+          "bbox": [
+            78,
+            58,
+            99,
+            79
+          ],
+          "geometric_center_px": [
+            88.0,
+            68.0
+          ],
+          "pupil_center_px": [
+            88.98067632850241,
+            68.22705314009661
+          ],
+          "pupil_offset_from_eye_center_px": [
+            0.9806763285024118,
+            0.22705314009661492
+          ]
+        },
+        {
+          "bbox": [
+            129,
+            67,
+            149,
+            90
+          ],
+          "geometric_center_px": [
+            138.5,
+            78.0
+          ],
+          "pupil_center_px": [
+            138.08585858585857,
+            78.45454545454545
+          ],
+          "pupil_offset_from_eye_center_px": [
+            -0.4141414141414259,
+            0.45454545454545325
+          ]
+        }
+      ],
+      "pose_minus_reference_pupil_offsets_px": [
+        [
+          -0.7944559466298671,
+          -0.6433172302737518
+        ],
+        [
+          0.10736396220265476,
+          -0.6906158357771233
+        ]
+      ],
+      "maximum_absolute_gaze_offset_delta_px": 0.7944559466298671,
+      "eye_center_line_angle_degrees_clockwise": 11.200797787884431,
+      "eye_center_y_from_alpha_top_px": 60.0,
+      "eye_center_y_delta_from_direct_reference_px": -3.5,
+      "lulu_core_centroid_x_px": 106.29393177737882,
+      "support_center_x_px": 99.65842349304482,
+      "core_centroid_minus_support_center_x_px": 6.635508284333994,
+      "warm_palette_median_rgb": {
+        "yellow_skin": [
+          253,
+          201,
+          14
+        ],
+        "orange_accents": [
+          250,
+          135,
+          1
+        ]
+      },
+      "warm_palette_distance_to_gold": {
+        "yellow_skin": 0.0,
+        "orange_accents": 0.0
+      },
+      "outline": {
+        "area_px": 16652.0,
+        "equivalent_diameter_px": 145.60901379698282,
+        "bbox": [
+          47,
+          13,
+          171,
+          200
+        ],
+        "bbox_width_px": 124,
+        "bbox_height_px": 187,
+        "bbox_geometric_mean_px": 152.27606509231842,
+        "bbox_center_x_px": 109.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 99.65842349304482
+      },
+      "checks": {
+        "direct_gaze_within_3px_of_reference": true,
+        "eyes_not_lowered_on_face": true,
+        "head_has_4_to_12_degree_screen_right_lean": true,
+        "core_is_right_of_support_by_2_5_to_12px": true,
+        "warm_palette_within_3_rgb_units": true
+      }
+    },
+    {
+      "path": "/Users/qiulinfan/Desktop/capylulu_vpet/pet-runs/capybara-lulu/official-frames-v1/waving/waving-10.png",
+      "eyes": [
+        {
+          "bbox": [
+            72,
+            58,
+            93,
+            79
+          ],
+          "geometric_center_px": [
+            82.0,
+            68.0
+          ],
+          "pupil_center_px": [
+            82.34285714285714,
+            68.9
+          ],
+          "pupil_offset_from_eye_center_px": [
+            0.34285714285714164,
+            0.9000000000000057
+          ]
+        },
+        {
+          "bbox": [
+            123,
+            64,
+            144,
+            86
+          ],
+          "geometric_center_px": [
+            133.0,
+            74.5
+          ],
+          "pupil_center_px": [
+            132.49519230769232,
+            75.20192307692308
+          ],
+          "pupil_offset_from_eye_center_px": [
+            -0.5048076923076792,
+            0.7019230769230802
+          ]
+        }
+      ],
+      "pose_minus_reference_pupil_offsets_px": [
+        [
+          -1.4322751322751373,
+          0.029629629629639
+        ],
+        [
+          0.016697684036401483,
+          -0.4432382133994963
+        ]
+      ],
+      "maximum_absolute_gaze_offset_delta_px": 1.4322751322751373,
+      "eye_center_line_angle_degrees_clockwise": 7.263244740584562,
+      "eye_center_y_from_alpha_top_px": 62.25,
+      "eye_center_y_delta_from_direct_reference_px": -1.25,
+      "lulu_core_centroid_x_px": 102.06072225320692,
+      "support_center_x_px": 98.86726998491704,
+      "core_centroid_minus_support_center_x_px": 3.1934522682898745,
+      "warm_palette_median_rgb": {
+        "yellow_skin": [
+          253,
+          201,
+          14
+        ],
+        "orange_accents": [
+          250,
+          135,
+          1
+        ]
+      },
+      "warm_palette_distance_to_gold": {
+        "yellow_skin": 0.0,
+        "orange_accents": 0.0
+      },
+      "outline": {
+        "area_px": 16771.0,
+        "equivalent_diameter_px": 146.1283696095779,
+        "bbox": [
+          43,
+          9,
+          165,
+          200
+        ],
+        "bbox_width_px": 122,
+        "bbox_height_px": 191,
+        "bbox_geometric_mean_px": 152.64992630198026,
+        "bbox_center_x_px": 104.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 98.86726998491704
+      },
+      "checks": {
+        "direct_gaze_within_3px_of_reference": true,
+        "eyes_not_lowered_on_face": true,
+        "head_has_4_to_12_degree_screen_right_lean": true,
+        "core_is_right_of_support_by_2_5_to_12px": true,
+        "warm_palette_within_3_rgb_units": true
+      }
+    }
+  ],
+  "loop_registration": {
+    "support_centers_x_px": {
+      "expectant_1": 99.02932098765432,
+      "expectant_2": 99.65842349304482,
+      "expectant_3": 98.86726998491704,
+      "loop_tail": 98.9478672985782,
+      "neutral_reference": 99.31379310344828
+    },
+    "maximum_pairwise_support_center_difference_px": 0.7911535081277776,
+    "loop_tail_to_neutral_rgba_rmse": 0.18128296972219543,
+    "outlines": {
+      "expectant_1": {
+        "area_px": 16583.0,
+        "equivalent_diameter_px": 145.3070245044719,
+        "bbox": [
+          43,
+          10,
+          165,
+          200
+        ],
+        "bbox_width_px": 122,
+        "bbox_height_px": 190,
+        "bbox_geometric_mean_px": 152.24979474534604,
+        "bbox_center_x_px": 104.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 99.02932098765432
+      },
+      "expectant_2": {
+        "area_px": 16652.0,
+        "equivalent_diameter_px": 145.60901379698282,
+        "bbox": [
+          47,
+          13,
+          171,
+          200
+        ],
+        "bbox_width_px": 124,
+        "bbox_height_px": 187,
+        "bbox_geometric_mean_px": 152.27606509231842,
+        "bbox_center_x_px": 109.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 99.65842349304482
+      },
+      "expectant_3": {
+        "area_px": 16771.0,
+        "equivalent_diameter_px": 146.1283696095779,
+        "bbox": [
+          43,
+          9,
+          165,
+          200
+        ],
+        "bbox_width_px": 122,
+        "bbox_height_px": 191,
+        "bbox_geometric_mean_px": 152.64992630198026,
+        "bbox_center_x_px": 104.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 98.86726998491704
+      },
+      "loop_tail": {
+        "area_px": 16682.0,
+        "equivalent_diameter_px": 145.74011831088922,
+        "bbox": [
+          36,
+          15,
+          162,
+          200
+        ],
+        "bbox_width_px": 126,
+        "bbox_height_px": 185,
+        "bbox_geometric_mean_px": 152.67612779999368,
+        "bbox_center_x_px": 99.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 98.9478672985782
+      },
+      "neutral_reference": {
+        "area_px": 17606.0,
+        "equivalent_diameter_px": 149.72192700004658,
+        "bbox": [
+          34,
+          10,
+          158,
+          200
+        ],
+        "bbox_width_px": 124,
+        "bbox_height_px": 190,
+        "bbox_geometric_mean_px": 153.49267083479916,
+        "bbox_center_x_px": 96.0,
+        "alpha_bottom_px": 200,
+        "support_band_top_px": 188,
+        "support_center_x_px": 99.31379310344828
+      }
+    },
+    "edge_margins_px": {
+      "expectant_1": {
+        "left": 43,
+        "top": 10,
+        "right": 27,
+        "bottom": 8
+      },
+      "expectant_2": {
+        "left": 47,
+        "top": 13,
+        "right": 21,
+        "bottom": 8
+      },
+      "expectant_3": {
+        "left": 43,
+        "top": 9,
+        "right": 27,
+        "bottom": 8
+      },
+      "loop_tail": {
+        "left": 36,
+        "top": 15,
+        "right": 30,
+        "bottom": 8
+      },
+      "neutral_reference": {
+        "left": 34,
+        "top": 10,
+        "right": 34,
+        "bottom": 8
+      }
+    }
+  },
+  "semantic_visual_gate": {
+    "required": true,
+    "reason": "Automated geometry cannot reliably distinguish a low gentle paw clasp from a high V-shaped self-hug or infer emotional intent.",
+    "must_confirm": [
+      "paws clasp low above the shorts waistband in frames 8-10",
+      "pose reads attentive and ready, not shy or downcast",
+      "frame 12 is one small motion step from neutral frame 1"
+    ]
+  }
+}

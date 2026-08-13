@@ -164,6 +164,17 @@
       "alpha_area_target": 17600,
       "alpha_area_tolerance_ratio": 0.05,
       "palette_policy": "one shared 128-color palette derived from all six gold actions",
+      "quality": "gold",
+      "frame_sha256": {
+        "running-right-01.png": "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376",
+        "running-right-02.png": "059d06921f01b251b858ea15c0759e9ab1d2c7d1d871fd90997ffbb7045d036f",
+        "running-right-03.png": "e00787139c5540627a40dd263318d2c1e5b03e8327d744b91a418aae7a074244",
+        "running-right-04.png": "a3da4e3ce168ce5cbaa33507a86018073319fb65a40d2fbca72bcfe06da4fd88",
+        "running-right-05.png": "cbb047177ce02283103ee687acc180eba42991aa74eddba18c31ab1abc114c1f",
+        "running-right-06.png": "ec8663dbdb54e34b2b8594d1415f68dba6093e51ac1e7051493c8b34e9831a59",
+        "running-right-07.png": "307a802b9e542f26ef275210d97e0a793066076157afc9fc14595b3b5b44d70b",
+        "running-right-08.png": "306a4ba1f83d535f000a84181255848e3a7652efeac500f9f7f6df7134ac8376"
+      },
       "note": "F1-F6 are complete reruns from the six non-directional gold actions, not patches of former drag frames; every frame uses a small closed smile, clean eye-to-muzzle separation, and flat two-leg shorts; F7 is a one-pixel recovery bob and F8 returns exactly to F1"
     },
     "running-left": {
@@ -205,6 +216,17 @@
       "alpha_area_target": 17600,
       "alpha_area_tolerance_ratio": 0.05,
       "palette_policy": "exact mirror of the rightward sequence's six-gold palette",
+      "quality": "gold",
+      "frame_sha256": {
+        "running-left-01.png": "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f",
+        "running-left-02.png": "441e77388336e301ddaaacb6926d3c01d35c419ebaefa958fb0606fcea331732",
+        "running-left-03.png": "d255b5ab0d453c7aa2ee1b57b16a927a300b8b9117f295f05fafdd78eb8947bd",
+        "running-left-04.png": "1b382203e32adfc167ffd83814e7fd415912e323fbf9fa1e793389e55456a7fc",
+        "running-left-05.png": "8a41fe98f3a20c7c4ec2f905ba8696f393015c0b404f56e9ea40ad554d72e90b",
+        "running-left-06.png": "3a9b9bddd1a0c3f6b9ebd64e12d89420256e39d936dd14aa5f88674add41182e",
+        "running-left-07.png": "3300a8ca73b86a4bb8c26eef17f56786f6c63d79721dc087fdd2940126eace0e",
+        "running-left-08.png": "0e0403ed1caa4af5e313984e8e31ccc6f9f50894dd579d01fc49b78fb272f33f"
+      },
       "note": "exact horizontal pixel mirror of the six-gold full-rerun rightward mother sequence"
     },
     "waving": {
@@ -215,9 +237,13 @@
         "sequence-drafts/v1-retired-variants/waving-no-windup/frames/waving-01.png",
         "sequence-drafts/v1-retired-variants/waving-no-windup/frames/waving-04.png",
         "sequence-drafts/expanded-frames-v2-alpha-192x208/one-foot-wave/one-foot-wave-04.png",
-        "sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/normalized/waving-06.png",
-        "sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/normalized/waving-07.png",
-        "sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/normalized/waving-08.png"
+        "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/normalized/waving-06.png",
+        "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/normalized/waving-07.png",
+        "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/normalized/waving-08.png",
+        "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/normalized/waving-09.png",
+        "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/normalized/waving-10.png",
+        "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/normalized/waving-11.png",
+        "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/normalized/waving-12.png"
       ],
       "order": [
         1,
@@ -227,7 +253,11 @@
         5,
         6,
         7,
-        8
+        8,
+        9,
+        10,
+        11,
+        12
       ],
       "frames": [
         "official-frames-v1/waving/waving-01.png",
@@ -237,22 +267,35 @@
         "official-frames-v1/waving/waving-05.png",
         "official-frames-v1/waving/waving-06.png",
         "official-frames-v1/waving/waving-07.png",
-        "official-frames-v1/waving/waving-08.png"
+        "official-frames-v1/waving/waving-08.png",
+        "official-frames-v1/waving/waving-09.png",
+        "official-frames-v1/waving/waving-10.png",
+        "official-frames-v1/waving/waving-11.png",
+        "official-frames-v1/waving/waving-12.png"
       ],
-      "frame_durations_ms": [140, 120, 120, 180, 120, 120, 160, 220],
-      "loop_seam": "frame 8 is a closed-eye near-neutral recovery pose designed to return to frame 1",
+      "frame_durations_ms": [140, 120, 120, 180, 120, 120, 140, 160, 360, 180, 140, 180],
+      "held_pose_frame": 9,
+      "loop_seam": "frame 12 is a closed-eye near-neutral recovery one small motion step before the exact approved frame 1",
       "transition_roles": {
-        "6": "both arms settle inward and downward while the lifted foot decelerates toward landing",
-        "7": "both feet ground, both paws meet before the belly, and Lulu warmly faces the user with a subtle screen-right lean",
-        "8": "the grounded body straightens into a closed-eye recovery matched to frame 1"
+        "6": "the wave follows through while both arms begin gathering inward and the lifted foot descends",
+        "7": "both feet land, direct eye contact reconnects with the user, and both paws travel toward the lower belly",
+        "8": "both paws meet low above the shorts waistband as the head and body begin a screen-right lean",
+        "9": "primary ready-and-expectant hold: low clasp, warm smile, sustained direct gaze, and clear screen-right lean",
+        "10": "living hold with only a tiny breath and fruit counter-settle while direct gaze and the low clasp remain",
+        "11": "Lulu straightens halfway and gently releases the clasp without losing eye contact",
+        "12": "paws return to the sides and eyes softly close into the near-neutral loop recovery"
       },
       "pose_reference": {
         "source": "sequence-drafts/v1-action-work/waving-loop-transition/references/xiaohongshu/source.json",
         "primary_shared_url": "http://xhslink.cn/o/8PcEQlpzN1H",
-        "usage": "user-provided motion source for the expectant hands-in-front and gentle forward lean"
+        "primary_image": "sequence-drafts/v1-action-work/waving-loop-transition/references/xiaohongshu/user-provided-video-samples/sample-01-00s.png",
+        "primary_image_sha256": "86bcbb08f1221a03d3527972612db232871d214dcecb5e5d16170d8ef709368e",
+        "usage": "user-selected source for direct gaze, a slight screen-right lean, and low clasped-paw ready-and-expectant intent; approved master frames remain authoritative for identity, full body, feet, style, and palette"
       },
-      "size_normalization_report": "sequence-drafts/v1-action-work/waving-loop-transition-direct-gaze/processed/candidate-04/processing-report.json",
-      "performance_qa_report": "qa/waving-loop-correction-review/selected-pose-measurements.json",
+      "size_normalization_report": "sequence-drafts/v1-action-work/waving-expectant-tail-v2/processed-candidate-01/processing-report.json",
+      "performance_qa_report": "qa/waving-expectant-tail-v2/expectant-pose-measurements.json",
+      "visual_qa_report": "qa/waving-expectant-tail-v2/final-visual-qa.json",
+      "palette_policy": "frames 6-12 align their warm yellow skin and orange accent median RGB values to approved frames 1-5",
       "quality": "gold",
       "frame_sha256": {
         "waving-01.png": "4927bb779a107d6a357f0ae7fdfa73817a1bc350a45e9720e34bece0e04a11c6",
@@ -260,11 +303,15 @@
         "waving-03.png": "ad1ae7b765b28fd8f66009d0ea14fd288f0a6d1e076dd8006367dff29d701829",
         "waving-04.png": "7592d49c57b6bc6b4010d39fad51ccd6b087808e22e0a34bd6e25e151110a476",
         "waving-05.png": "c530ac9d18f3217f61be41f99b8fdf80990aafff3533bd0d1b874fc76cdc840a",
-        "waving-06.png": "62b56dbf5fbf3b1998ab56baf1a5feb8f0f72272f10adff8d4d7c7746f278111",
-        "waving-07.png": "d595f25171a5ea7fb5b1e6c8e1098b14113e3860851bfc9e157b3173d744e505",
-        "waving-08.png": "1205b5bc4e6b50e626caa10da1d53d1e738180d78314a21f420754b22d0d1b14"
+        "waving-06.png": "6249337557c615f3806da968a3d30ad8c907d72ac682e2fada2666922971d311",
+        "waving-07.png": "7148ef4581c0c880f6dd5365f1c24f627c9917d2466a33b6d083c890ea73d0f8",
+        "waving-08.png": "587b2a29f49f2844097a03ff7b726f3dfb61c7136cdc2bdc813326e3a7bcc5ae",
+        "waving-09.png": "92ac719ba8d1ad6387799b5345e7512f544ac8f387315c71fac961ff6037f40c",
+        "waving-10.png": "155a4bfcd0338edac693c58236720ceba45b80a49d28ee5d1e39f8b793c7841e",
+        "waving-11.png": "6f515325a06c149629d79ebcee3782b2fa8b901879d27b60fa59917cb03c0bdf",
+        "waving-12.png": "ca0caa490e265ce03712af5b2f2ac03267987d98dfcaa19ec354491d68f137c8"
       },
-      "note": "eight-frame looping celebration: frames 1-5 remain byte-identical to the approved milestone; frames 6-8 now settle into a grounded belly-paws pose whose pupil placement matches the direct-gaze gold reference, whose anatomical core shifts subtly screen-right over a fixed support, and whose recovery closes cleanly through frame 1"
+      "note": "approved twelve-frame hover response: frames 1-5 remain byte-identical to the prior gold prefix; frames 6-12 move from the wave into a longer low-clasp, direct-gaze ready-and-expectant hold before a grounded near-neutral loop recovery"
     },
     "failed": {
       "source_frames": [
