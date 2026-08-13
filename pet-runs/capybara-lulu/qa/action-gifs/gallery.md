@@ -26,14 +26,10 @@ This generated gallery is the complete active review set. Every animation iterat
 
 ![waiting](06-waiting.gif)
 
-## 07. `working`
+## 07. `running`
 
-![working](07-working.gif)
+![running](07-running.gif)
 
-## 08. `running`
+## 08. `review`
 
-![running](08-running.gif)
-
-## 09. `review`
-
-![review](09-review.gif)
+![review](08-review.gif)

@@ -1,13 +1,13 @@
 {
-  "scope": "Codex adapter working row and complete fifteen-frame normalized preview",
+  "scope": "Codex adapter running row and complete fifteen-frame normalized preview",
   "method": "independent read-only visual QA",
   "status": "pass",
   "artifacts_reviewed": [
     "codex-adapter-contact-sheet.png",
-    "codex-working-normalized-full-contact-sheet.png",
-    "codex-working-preview.gif",
-    "codex-working-normalized-full-preview.gif",
-    "working-scale-feature-report.json"
+    "codex-running-normalized-full-contact-sheet.png",
+    "codex-running-preview.gif",
+    "codex-running-normalized-full-preview.gif",
+    "running-scale-feature-report.json"
   ],
   "checks": {
     "detached_left_paw_complete": true,

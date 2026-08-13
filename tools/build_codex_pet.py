@@ -27,13 +27,13 @@ PET = ROOT / "pet-runs" / "capybara-lulu"
 MANIFEST = PET / "official-frames-v1-manifest.json"
 FINAL = PET / "final"
 CONTACT_SHEET = PET / "qa" / "codex-adapter-contact-sheet.png"
-WORKING_PREVIEW = PET / "qa" / "codex-working-preview.gif"
-WORKING_FULL_PREVIEW = PET / "qa" / "codex-working-normalized-full-preview.gif"
-WORKING_FULL_CONTACT_SHEET = (
-    PET / "qa" / "codex-working-normalized-full-contact-sheet.png"
+RUNNING_PREVIEW = PET / "qa" / "codex-running-preview.gif"
+RUNNING_FULL_PREVIEW = PET / "qa" / "codex-running-normalized-full-preview.gif"
+RUNNING_FULL_CONTACT_SHEET = (
+    PET / "qa" / "codex-running-normalized-full-contact-sheet.png"
 )
-WORKING_SCALE_REPORT = PET / "qa" / "working-scale-feature-report.json"
-WORKING_VISUAL_QA = PET / "qa" / "working-scale-feature-visual-qa.json"
+RUNNING_SCALE_REPORT = PET / "qa" / "running-scale-feature-report.json"
+RUNNING_VISUAL_QA = PET / "qa" / "running-scale-feature-visual-qa.json"
 
 PET_ID = "capybara-lulu"
 CELL_SIZE = (192, 208)
@@ -43,9 +43,9 @@ ATLAS_SIZE = (ATLAS_COLUMNS * CELL_SIZE[0], ATLAS_ROWS * CELL_SIZE[1])
 SPRITE_VERSION_NUMBER = 1
 CODEX_APP_VERSION = "26.803.41515"
 CODEX_REQUIRED_FRAMES_BY_ROW = [6, 8, 8, 4, 5, 8, 6, 6, 6]
-WORKING_REFERENCE_STATES = ("running-right", "running-left", "waving", "review")
-WORKING_REFERENCE_FRAME_NUMBERS = {"waving": (1, 2, 3, 4)}
-WORKING_RUNTIME_FRAME_NUMBERS = (1, 6, 8, 10, 13, 15)
+RUNNING_REFERENCE_STATES = ("running-right", "running-left", "waving", "review")
+RUNNING_REFERENCE_FRAME_NUMBERS = {"waving": (1, 2, 3, 4)}
+RUNNING_RUNTIME_FRAME_NUMBERS = (1, 6, 8, 10, 13, 15)
 
 
 @dataclass(frozen=True)
@@ -86,9 +86,9 @@ ADAPTER_ROWS = (
     AdapterRow("waiting", "waiting", tuple(range(1, 7)), "exact master action"),
     AdapterRow(
         "running",
-        "working",
+        "running",
         (1, 6, 8, 10, 13, 15),
-        "Codex task-running state mapped to the approved work cycle: blank page, marks, finished shrimp, page change, reset",
+        "Codex task-running state uses the approved work cycle: blank page, marks, finished shrimp, page change, reset",
     ),
     AdapterRow("review", "review", tuple(range(1, 7)), "exact master action"),
 )
@@ -221,14 +221,14 @@ def median_feature_summary(frames: list[Image.Image]) -> dict[str, float]:
     }
 
 
-def normalize_working_sequence(
-    working_frames: list[Image.Image],
+def normalize_running_sequence(
+    running_frames: list[Image.Image],
     reference_frames: dict[str, list[Image.Image]],
 ) -> tuple[list[Image.Image], dict[str, object]]:
-    """Equalize Lulu per frame while scaling the complete working composition."""
+    """Equalize Lulu per frame while scaling the complete running composition."""
     reference_state_medians = {
         state: median_feature_summary(reference_frames[state])
-        for state in WORKING_REFERENCE_STATES
+        for state in RUNNING_REFERENCE_STATES
     }
     target_equivalent_diameter = statistics.median(
         summary["equivalent_diameter_px"]
@@ -252,7 +252,7 @@ def normalize_working_sequence(
     contour_source_padding = 2
     contour_output_margin = 2
     source_measurements: list[dict[str, object]] = []
-    for frame_number, frame in enumerate(working_frames, start=1):
+    for frame_number, frame in enumerate(running_frames, start=1):
         source_features = lulu_core_features(frame)
         source_contour = lulu_semantic_contour(frame)
         diameter_scale = target_equivalent_diameter / float(
@@ -271,7 +271,7 @@ def normalize_working_sequence(
         ) / padded_contour_width
         alpha_bbox = frame.getchannel("A").getbbox()
         if alpha_bbox is None:
-            raise ValueError(f"Working frame {frame_number} is fully transparent")
+            raise ValueError(f"Running frame {frame_number} is fully transparent")
         source_measurements.append(
             {
                 "frame_number": frame_number,
@@ -321,7 +321,7 @@ def normalize_working_sequence(
         )
         if minimum_offset_x > maximum_offset_x:
             raise ValueError(
-                f"Working frame {frame_number}: contour fit rounding escaped its cell"
+                f"Running frame {frame_number}: contour fit rounding escaped its cell"
             )
         offset = (
             min(max(requested_offset_x, minimum_offset_x), maximum_offset_x),
@@ -370,7 +370,7 @@ def normalize_working_sequence(
             {
                 "frame_number": frame_number,
                 "selected_for_codex_runtime": frame_number
-                in WORKING_RUNTIME_FRAME_NUMBERS,
+                in RUNNING_RUNTIME_FRAME_NUMBERS,
                 "source_lulu": source_features,
                 "source_lulu_semantic_contour": source_contour,
                 "diameter_scale": diameter_scale,
@@ -414,15 +414,15 @@ def normalize_working_sequence(
             ),
             "excluded_props": ["paper", "ink dish", "brush", "black ink"],
         },
-        "reference_states": list(WORKING_REFERENCE_STATES),
+        "reference_states": list(RUNNING_REFERENCE_STATES),
         "reference_frame_numbers": {
             state: list(
-                WORKING_REFERENCE_FRAME_NUMBERS.get(
+                RUNNING_REFERENCE_FRAME_NUMBERS.get(
                     state,
                     range(1, len(reference_frames[state]) + 1),
                 )
             )
-            for state in WORKING_REFERENCE_STATES
+            for state in RUNNING_REFERENCE_STATES
         },
         "reference_weighting": "equal state weight via median of state medians",
         "reference_state_medians": reference_state_medians,
@@ -453,7 +453,7 @@ def normalize_working_sequence(
         "transform_scope": ["Lulu", "paper", "ink dish", "brush"],
         "resampling": "nearest-neighbor",
         "source_master_modified": False,
-        "runtime_master_frame_numbers": list(WORKING_RUNTIME_FRAME_NUMBERS),
+        "runtime_master_frame_numbers": list(RUNNING_RUNTIME_FRAME_NUMBERS),
         "frames": frame_reports,
         "applied_scale_range": [
             min(float(frame["applied_scale"]) for frame in frame_reports),
@@ -498,20 +498,20 @@ def load_adapter_rows() -> tuple[
     ):
         raise ValueError("Idle must exactly alias the complete failed sleeping loop")
 
-    working_frames, _, working_durations = loaded["working"]
-    working_reference_frames = {
+    running_frames, _, running_durations = loaded["running"]
+    running_reference_frames = {
         state: [
             loaded[state][0][frame_number - 1]
-            for frame_number in WORKING_REFERENCE_FRAME_NUMBERS.get(
+            for frame_number in RUNNING_REFERENCE_FRAME_NUMBERS.get(
                 state,
                 range(1, len(loaded[state][0]) + 1),
             )
         ]
-        for state in WORKING_REFERENCE_STATES
+        for state in RUNNING_REFERENCE_STATES
     }
-    normalized_working_frames, normalization_report = normalize_working_sequence(
-        working_frames,
-        working_reference_frames,
+    normalized_running_frames, normalization_report = normalize_running_sequence(
+        running_frames,
+        running_reference_frames,
     )
 
     selected_frames: list[list[Image.Image]] = []
@@ -524,8 +524,8 @@ def load_adapter_rows() -> tuple[
             raise ValueError(f"{row.runtime_state}: adapter selection escaped master frames")
         selected = [frames[index].copy() for index in indices]
         transform: dict[str, object] | None = None
-        if row.runtime_state == "running" and row.master_state == "working":
-            selected = [normalized_working_frames[index].copy() for index in indices]
+        if row.runtime_state == "running":
+            selected = [normalized_running_frames[index].copy() for index in indices]
             transform = normalization_report
         selected_frames.append(selected)
         selected_paths.append([paths[index] for index in indices])
@@ -542,8 +542,8 @@ def load_adapter_rows() -> tuple[
         selected_frames,
         selected_paths,
         row_report,
-        normalized_working_frames,
-        working_durations,
+        normalized_running_frames,
+        running_durations,
         normalization_report,
     )
 
@@ -594,7 +594,7 @@ def write_contact_sheet(rows: list[list[Image.Image]]) -> None:
     canvas.save(CONTACT_SHEET, optimize=True)
 
 
-def write_working_full_contact_sheet(frames: list[Image.Image]) -> None:
+def write_running_full_contact_sheet(frames: list[Image.Image]) -> None:
     columns = 5
     rows = math.ceil(len(frames) / columns)
     label_height = 20
@@ -609,7 +609,7 @@ def write_working_full_contact_sheet(frames: list[Image.Image]) -> None:
         row = index // columns
         x = column * CELL_SIZE[0]
         y = row * (CELL_SIZE[1] + label_height)
-        draw.text((x + 5, y + 4), f"working {index + 1:02d}", fill=(255, 255, 255))
+        draw.text((x + 5, y + 4), f"running {index + 1:02d}", fill=(255, 255, 255))
         cell = checker(CELL_SIZE)
         cell.alpha_composite(frame)
         canvas.paste(cell.convert("RGB"), (x, y + label_height))
@@ -617,23 +617,23 @@ def write_working_full_contact_sheet(frames: list[Image.Image]) -> None:
             (x, y + label_height, x + CELL_SIZE[0] - 1, y + label_height + CELL_SIZE[1] - 1),
             outline=(27, 198, 118),
         )
-    WORKING_FULL_CONTACT_SHEET.parent.mkdir(parents=True, exist_ok=True)
-    canvas.save(WORKING_FULL_CONTACT_SHEET, optimize=True)
+    RUNNING_FULL_CONTACT_SHEET.parent.mkdir(parents=True, exist_ok=True)
+    canvas.save(RUNNING_FULL_CONTACT_SHEET, optimize=True)
 
 
 def write_adapter_previews(
     rows: list[list[Image.Image]],
-    normalized_working_frames: list[Image.Image],
-    working_durations: list[int],
+    normalized_running_frames: list[Image.Image],
+    running_durations: list[int],
     normalization_report: dict[str, object],
 ) -> None:
-    working_row = next(
+    running_row = next(
         index for index, row in enumerate(ADAPTER_ROWS) if row.runtime_state == "running"
     )
-    write_gif(WORKING_PREVIEW, rows[working_row], [120, 120, 120, 120, 120, 220])
-    write_gif(WORKING_FULL_PREVIEW, normalized_working_frames, working_durations)
-    write_working_full_contact_sheet(normalized_working_frames)
-    WORKING_SCALE_REPORT.write_text(
+    write_gif(RUNNING_PREVIEW, rows[running_row], [120, 120, 120, 120, 120, 220])
+    write_gif(RUNNING_FULL_PREVIEW, normalized_running_frames, running_durations)
+    write_running_full_contact_sheet(normalized_running_frames)
+    RUNNING_SCALE_REPORT.write_text(
         json.dumps(normalization_report, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
@@ -707,8 +707,8 @@ def build(*, install: bool) -> dict[str, object]:
         rows,
         _,
         row_report,
-        normalized_working_frames,
-        working_durations,
+        normalized_running_frames,
+        running_durations,
         normalization_report,
     ) = load_adapter_rows()
     atlas = build_atlas(rows)
@@ -738,8 +738,8 @@ def build(*, install: bool) -> dict[str, object]:
     write_contact_sheet(rows)
     write_adapter_previews(
         rows,
-        normalized_working_frames,
-        working_durations,
+        normalized_running_frames,
+        running_durations,
         normalization_report,
     )
     cells = validate_atlas(atlas, rows)
@@ -769,14 +769,10 @@ def build(*, install: bool) -> dict[str, object]:
             "required_frames_by_row": CODEX_REQUIRED_FRAMES_BY_ROW,
         },
         "runtime_state_mapping": row_report,
-        "master_aliases": {
-            "idle": "failed",
-            "running": "review",
-        },
+        "master_aliases": {"idle": "failed"},
         "adapter_aliases": {
             "idle": "failed sleeping artwork",
             "jumping": "waving",
-            "running": "working",
         },
         "cells": cells,
         "installation": installation,
@@ -785,11 +781,11 @@ def build(*, install: bool) -> dict[str, object]:
             "spritesheet.png": sha256(FINAL / "spritesheet.png"),
             "spritesheet.webp": sha256(FINAL / "spritesheet.webp"),
             "contact_sheet": sha256(CONTACT_SHEET),
-            "working_preview": sha256(WORKING_PREVIEW),
-            "working_full_preview": sha256(WORKING_FULL_PREVIEW),
-            "working_full_contact_sheet": sha256(WORKING_FULL_CONTACT_SHEET),
-            "working_scale_report": sha256(WORKING_SCALE_REPORT),
-            "working_visual_qa": sha256(WORKING_VISUAL_QA),
+            "running_preview": sha256(RUNNING_PREVIEW),
+            "running_full_preview": sha256(RUNNING_FULL_PREVIEW),
+            "running_full_contact_sheet": sha256(RUNNING_FULL_CONTACT_SHEET),
+            "running_scale_report": sha256(RUNNING_SCALE_REPORT),
+            "running_visual_qa": sha256(RUNNING_VISUAL_QA),
             "source_manifest": sha256(MANIFEST),
         },
         "toolchain": {

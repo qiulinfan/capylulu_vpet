@@ -1,12 +1,12 @@
 {
   "ok": false,
-  "scope": "Codex adapter working row",
+  "scope": "Codex adapter running row",
   "scale": 1.5,
   "status": "trial-pending-user-review",
   "verdict": "visual-qa-fail",
   "issues": [
     "Lulu is larger than the other actions rather than merely matching them.",
-    "The head fruit is clipped at the top in working runtime frames 1-4 and 6.",
+    "The head fruit is clipped at the top in running runtime frames 1-4 and 6.",
     "The ink dish is clipped at the left in most frames and disappears in frame 5.",
     "The paper is clipped at the right edge.",
     "Frame 5 visibly shrinks and shifts relative to the surrounding frames."

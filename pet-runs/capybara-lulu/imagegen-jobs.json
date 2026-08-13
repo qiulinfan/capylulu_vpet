@@ -3,7 +3,7 @@
   "created_at": "2026-05-03T17:42:22.594061+00:00",
   "updated_at": "2026-08-12",
   "run_dir": ".",
-  "status_note": "The active action set is reviewed as independent GIFs before atlas assembly. Jumping is retired because it overlaps waving; directional running names are pointer-drag reactions; the approved working action is a hash-locked 15-frame ink-painting and page-change sequence.",
+  "status_note": "The active action set is reviewed as independent GIFs before atlas assembly. Jumping is retired because it overlaps waving; directional running names are pointer-drag reactions; the approved running action is a hash-locked 15-frame ink-painting and page-change sequence.",
   "primary_generation_skill": "$imagegen",
   "jobs": [
     {
@@ -475,7 +475,8 @@
       "recording_owner": "parent"
     },
     {
-      "id": "working",
+      "id": "running",
+      "historical_authoring_id": "working",
       "kind": "multi-contact-sheet-derived-sequence",
       "status": "complete",
       "prompt_file": "sequence-drafts/new-state-candidates/prompts/working.md",
@@ -486,7 +487,7 @@
       "input_images": [
         {
           "path": "sequence-drafts/new-state-candidates/working/source-contact-sheet-magenta.png",
-          "role": "approved six-frame working prefix"
+          "role": "approved six-frame painting prefix"
         },
         {
           "path": "sequence-drafts/new-state-candidates/working/source-continuation-contact-sheet-magenta.png",
@@ -497,7 +498,7 @@
           "role": "accepted page-change in-betweens"
         }
       ],
-      "output_path": "official-frames-v1/working/",
+      "output_path": "official-frames-v1/running/",
       "selected_frame_path": "sequence-drafts/new-state-candidates/working/frames/",
       "build_script": "sequence-drafts/new-state-candidates/build_candidates.py",
       "source_sha256": {

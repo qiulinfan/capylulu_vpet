@@ -1,7 +1,7 @@
 {
   "ok": true,
   "reviewer": "independent visual QA subagent",
-  "scope": "rebuilt waving master, Codex hover adapter, all nine action GIFs, validation, and installed package",
+  "scope": "rebuilt waving master, Codex hover adapter, the then-current nine-action GIF set, validation, and installed package",
   "checks": {
     "frame_7_belly_paws": true,
     "frame_7_direct_user_gaze": true,

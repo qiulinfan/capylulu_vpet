@@ -12,7 +12,6 @@
     "waving",
     "failed",
     "waiting",
-    "working",
     "running",
     "review"
   ],
@@ -453,25 +452,25 @@
       "reversible_transition_pairs": [],
       "quality": "gold"
     },
-    "working": {
-      "gif": "pet-runs/capybara-lulu/qa/action-gifs/07-working.gif",
+    "running": {
+      "gif": "pet-runs/capybara-lulu/qa/action-gifs/07-running.gif",
       "gif_sha256": "859bfaf85b64184c4363865f455ac7d62c45c952ed2f599d0d6494e3d525954e",
       "source_frames": [
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-01.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-02.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-03.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-04.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-05.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-06.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-07.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-08.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-09.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-10.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-11.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-12.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-13.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-14.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-15.png"
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-02.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-03.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-04.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-05.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-06.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-07.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-08.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-09.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-10.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-11.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-12.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-13.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-14.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-15.png"
       ],
       "source_frame_sha256": [
         "f018a39570742a3b165d1bae4a4c235fce2d1edc4a7ffc06bae778966f5095e9",
@@ -548,58 +547,8 @@
       "reversible_transition_pairs": [],
       "quality": "gold"
     },
-    "running": {
-      "gif": "pet-runs/capybara-lulu/qa/action-gifs/08-running.gif",
-      "gif_sha256": "8ba448575aeeb36f99198e0f361e52da1f7daa174b7e696593ef40e3c090ac03",
-      "source_frames": [
-        "pet-runs/capybara-lulu/official-frames-v1/running/running-01.png",
-        "pet-runs/capybara-lulu/official-frames-v1/running/running-02.png",
-        "pet-runs/capybara-lulu/official-frames-v1/running/running-03.png",
-        "pet-runs/capybara-lulu/official-frames-v1/running/running-04.png",
-        "pet-runs/capybara-lulu/official-frames-v1/running/running-05.png",
-        "pet-runs/capybara-lulu/official-frames-v1/running/running-06.png"
-      ],
-      "source_frame_sha256": [
-        "93e07fbe05b277197b2e9ab942d22d230d591d0026365e5b86d8c76b25cf1e62",
-        "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651",
-        "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
-        "4386e5f3548b7c76041b52127e19213a6be87fcafb0a8e3cb317b344fefa31f9",
-        "6acc94eed7825a8d88bd4092626d0b289ad34ab487cfe871c8e12fe45e46d500",
-        "c5725fd76225c2980ac0e6ce12178a885ffe99c92e7e213724be8d6e103e3651"
-      ],
-      "frame_count": 6,
-      "frame_durations_ms": [
-        120,
-        120,
-        120,
-        120,
-        120,
-        220
-      ],
-      "cycle_duration_ms": 820,
-      "loop": 0,
-      "transition_rmse": [
-        0.21443278474838567,
-        0.2711690551657948,
-        0.24332680762890982,
-        0.24332680762890982,
-        0.2711690551657948
-      ],
-      "loop_seam_rmse": 0.21443278474838567,
-      "alpha_areas": [
-        22223.0,
-        22102.0,
-        21685.0,
-        21919.0,
-        21685.0,
-        22102.0
-      ],
-      "eye_policy": null,
-      "reversible_transition_pairs": [],
-      "quality": "gold"
-    },
     "review": {
-      "gif": "pet-runs/capybara-lulu/qa/action-gifs/09-review.gif",
+      "gif": "pet-runs/capybara-lulu/qa/action-gifs/08-review.gif",
       "gif_sha256": "4e8521bf9587c1ced53ecb91ba71e431e756cbe7dfac321f3b267cd88def9405",
       "source_frames": [
         "pet-runs/capybara-lulu/official-frames-v1/review/review-01.png",

@@ -250,7 +250,7 @@
     },
     "running": {
       "row_index": 7,
-      "master_state": "working",
+      "master_state": "running",
       "master_frame_numbers": [
         1,
         6,
@@ -260,12 +260,12 @@
         15
       ],
       "source_frames": [
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-01.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-06.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-08.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-10.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-13.png",
-        "pet-runs/capybara-lulu/official-frames-v1/working/working-15.png"
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-01.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-06.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-08.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-10.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-13.png",
+        "pet-runs/capybara-lulu/official-frames-v1/running/running-15.png"
       ],
       "source_frame_sha256": [
         "f018a39570742a3b165d1bae4a4c235fce2d1edc4a7ffc06bae778966f5095e9",
@@ -275,7 +275,7 @@
         "3ad6ef70623a1fa5985dd062cec5fe6f8929e587b57837bca52611df5403cc00",
         "20ca08ec9798a6398f26b61b6d1aceb1fd4da4bc21356747f919db0a30dc892f"
       ],
-      "note": "Codex task-running state mapped to the approved work cycle: blank page, marks, finished shrimp, page change, reset",
+      "note": "Codex task-running state uses the approved work cycle: blank page, marks, finished shrimp, page change, reset",
       "adapter_transform": {
         "method": "per-frame-lulu-silhouette-feature-normalization-with-semantic-contour-fit",
         "segmentation": {
@@ -2768,13 +2768,11 @@
     }
   },
   "master_aliases": {
-    "idle": "failed",
-    "running": "review"
+    "idle": "failed"
   },
   "adapter_aliases": {
     "idle": "failed sleeping artwork",
-    "jumping": "waving",
-    "running": "working"
+    "jumping": "waving"
   },
   "cells": [
     {
@@ -3580,13 +3578,13 @@
     "pet.json": "e2ba79c508bbd45b26701b527afd5dbcd6a481028c37085dc941809b0bcdd556",
     "spritesheet.png": "53a079387bc6ab32723f7f6a912e17897848e73ea51b317d34506f39a48e37ab",
     "spritesheet.webp": "3f13cd6c26a3493f0c0ef80e548c4d60005b3a1f33b15e7f8af60a36179328cc",
-    "contact_sheet": "46a4870f5854d86d12b42a024e3b9e362a661f63cb4b8be23b1e5487ee96d1d3",
-    "working_preview": "3e99adbb7eb686d51464ff205cff41fa99464e263b768d6f4b5108869ec4c583",
-    "working_full_preview": "7be543d0de9863096a0b6e333a13faa3ab8965766c4b1346d529dbc434422c6d",
-    "working_full_contact_sheet": "027cfb2ee8a10c4423e0a425a9bce2b51a826d7061ff5b8727a3633225592e5a",
-    "working_scale_report": "b389329d7bf49a3b21d855174fa8e4bd2c52808ca31b19f28c2fd343ca874dba",
-    "working_visual_qa": "13bf293a2127633d0dcedf5535d7d58a58a1878f5d4161562c8f352128cb76f4",
-    "source_manifest": "de82d635837ac2dda175dd94b84cc42d86cf057cf025f330d45c4ea1580b4beb"
+    "contact_sheet": "88171eb3486c70920faf7825eed40c74059ef6169fe071434b2fc2ae89943aa7",
+    "running_preview": "3e99adbb7eb686d51464ff205cff41fa99464e263b768d6f4b5108869ec4c583",
+    "running_full_preview": "7be543d0de9863096a0b6e333a13faa3ab8965766c4b1346d529dbc434422c6d",
+    "running_full_contact_sheet": "7f924e0c94b9187740b39d4425cebaa619d276cb66de411351811b9f6a25cd2e",
+    "running_scale_report": "b389329d7bf49a3b21d855174fa8e4bd2c52808ca31b19f28c2fd343ca874dba",
+    "running_visual_qa": "a618e39ffc12709d9411f47f8ca390b686fc3ee3f1686bc4ad52836b48baf1a9",
+    "source_manifest": "9a16e0a26faafcf7a86a540a385987c1afecccee797eecf9b07d75799b301fe0"
   },
   "toolchain": {
     "pillow": "12.3.0",

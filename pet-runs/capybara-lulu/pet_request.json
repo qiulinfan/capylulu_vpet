@@ -12,8 +12,8 @@
   },
   "milestone": {
     "status": "frozen",
-    "active_actions": 9,
-    "gold_actions": 9,
+    "active_actions": 8,
+    "gold_actions": 8,
     "deferred_actions": [
       "looking-around"
     ]
@@ -26,21 +26,21 @@
       "package": "final/",
       "installation": "~/.codex/pets/capybara-lulu/",
       "sprite_version_number": 1,
-      "working_scale_mode": "feature-normalization-with-semantic-contour-fit",
-      "working_scale_reference_states": [
+      "running_scale_mode": "feature-normalization-with-semantic-contour-fit",
+      "running_scale_reference_states": [
         "running-right",
         "running-left",
         "waving",
         "review"
       ],
-      "working_scale_range": [
+      "running_scale_range": [
         1.121616008894782,
         1.2122127693764375
       ],
-      "working_scale_scope": "complete working composition in the adapter only",
-      "working_scale_status": "installed-visual-qa-pass",
-      "working_scale_report": "qa/working-scale-feature-report.json",
-      "working_scale_visual_qa": "qa/working-scale-feature-visual-qa.json"
+      "running_scale_scope": "complete running composition in the adapter only",
+      "running_scale_status": "installed-visual-qa-pass",
+      "running_scale_report": "qa/running-scale-feature-report.json",
+      "running_scale_visual_qa": "qa/running-scale-feature-visual-qa.json"
     }
   },
   "frame_contract": {
@@ -81,14 +81,9 @@
       "purpose": "patient waiting loop with small motion"
     },
     {
-      "state": "working",
-      "frames": 15,
-      "purpose": "focused work loop: paint and complete a tiny ink shrimp, change the finished page, and settle with a fresh sheet"
-    },
-    {
       "state": "running",
-      "frames": 6,
-      "purpose": "master focused-listening action retained for lineage; the Codex adapter maps its runtime running row to working"
+      "frames": 15,
+      "purpose": "Codex task-running loop: paint and complete a tiny ink shrimp, change the finished page, and settle with a fresh sheet"
     },
     {
       "state": "review",
