@@ -1,0 +1,154 @@
+{
+  "id": "capybara-lulu",
+  "displayName": "水豚噜噜",
+  "cellSize": [
+    192,
+    208
+  ],
+  "columns": 8,
+  "states": {
+    "idle": {
+      "row": 0,
+      "column": 0,
+      "count": 6,
+      "durations": [
+        180,
+        180,
+        120,
+        360,
+        120,
+        180
+      ],
+      "meaning": "soft sleeping rest"
+    },
+    "wave": {
+      "row": 1,
+      "column": 0,
+      "count": 4,
+      "durations": [
+        140,
+        120,
+        120,
+        180
+      ],
+      "meaning": "four-frame pure-wave greeting excerpt"
+    },
+    "failed": {
+      "row": 2,
+      "column": 0,
+      "count": 8,
+      "durations": [
+        180,
+        180,
+        120,
+        120,
+        360,
+        120,
+        120,
+        180
+      ],
+      "meaning": "soft failure/rest sleeping roll"
+    },
+    "waiting": {
+      "row": 3,
+      "column": 0,
+      "count": 6,
+      "durations": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "meaning": "healing unicorn-hug waiting loop"
+    },
+    "running": {
+      "row": 4,
+      "column": 0,
+      "count": 6,
+      "durations": [
+        180,
+        300,
+        180,
+        500,
+        180,
+        300
+      ],
+      "meaning": "focused work loop: ink shrimp, page change, fresh sheet"
+    }
+  },
+  "source": {
+    "codex_adapter_atlas": "pet-runs/capybara-lulu/final/spritesheet.webp",
+    "selection": [
+      {
+        "dsh_state": "idle",
+        "codex_row": 0,
+        "master_state": "idle",
+        "master_frame_numbers": [
+          1,
+          4,
+          6,
+          8,
+          10,
+          12
+        ]
+      },
+      {
+        "dsh_state": "wave",
+        "codex_row": 3,
+        "master_state": "waving",
+        "master_frame_numbers": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "dsh_state": "failed",
+        "codex_row": 5,
+        "master_state": "failed",
+        "master_frame_numbers": [
+          1,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12
+        ]
+      },
+      {
+        "dsh_state": "waiting",
+        "codex_row": 6,
+        "master_state": "waiting",
+        "master_frame_numbers": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "dsh_state": "running",
+        "codex_row": 7,
+        "master_state": "running",
+        "master_frame_numbers": [
+          1,
+          6,
+          8,
+          10,
+          13,
+          15
+        ]
+      }
+    ],
+    "note": "cells cropped from the installed Codex adapter atlas; running cells carry the normalized work loop"
+  },
+  "atlas_sha256": "a92fe870225bb1dc2df7ca71ec555eaffb357b8ecd75818b7c99a53af24e7a65",
+  "png_sha256": "11bb510395c2f33c7461a514c2561c8d92b50bca2bff89398c7ece12e9d73a7a"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "capylulu-pet",
+  "version": "0.1.0",
+  "description": "水豚噜噜 (CapyLulu) desktop pet for the DeepSeek Harness web GUI — floating shell-overlay pet driven by session activity",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib/client.js"
+  ],
+  "scripts": {
+    "build": "node scripts/build-client.mjs"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "license": "MIT"
+}
